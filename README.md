@@ -47,14 +47,6 @@ The MA plot visualizes log2 fold changes against the mean expression for all gen
 
 This dendrogram shows co-expressed gene modules detected using WGCNA. Modules of genes are color-coded based on their similarity.
 
-##### 5. **KEGG Pathway Enrichment**: Visualizing enriched pathways
-
-<p align="center">
-  <img src="path_to_kegg_plot.png" alt="KEGG Pathway Enrichment" width="400"/>
-</p>
-
-KEGG pathway enrichment analysis highlights significant pathways that are overrepresented among the differentially expressed genes.
-
 ---
 
 #### Workflow:
@@ -74,10 +66,6 @@ KEGG pathway enrichment analysis highlights significant pathways that are overre
 4. **Co-expression Analysis**:
    - Perform **WGCNA** to detect gene modules that are co-expressed.
    - Output dendrogram plots and visualize co-expression networks.
-
-5. **Pathway Enrichment**:
-   - Use **clusterProfiler** to perform KEGG enrichment on differentially expressed genes and co-expressed modules.
-
 ---
 
 #### Tools and Technologies:
@@ -90,7 +78,6 @@ KEGG pathway enrichment analysis highlights significant pathways that are overre
   - **EnhancedVolcano**: For creating volcano plots.
   - **clusterProfiler**: For KEGG pathway enrichment analysis.
   - **org.Hs.eg.db**: For gene ID mapping.
-  - **KEGGREST**: For pathway analysis from KEGG.
 
 ---
 
@@ -98,8 +85,6 @@ KEGG pathway enrichment analysis highlights significant pathways that are overre
 - **differential_expression_results.csv**: Contains log fold changes, p-values, and adjusted p-values for each gene.
 - **Volcano Plot, PCA Plot, Heatmap, MA Plot**: High-quality figures summarizing the analysis.
 - **Co-expression Network Results**: Identifies gene modules and network structure.
-- **Pathway Enrichment Results**: Highlights significantly enriched pathways based on the KEGG database.
-
 ---
 
 #### Example Usage:
