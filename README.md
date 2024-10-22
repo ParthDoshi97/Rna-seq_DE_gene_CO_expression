@@ -1,7 +1,3 @@
-Yes, we can definitely add plots to the README to make it more visually informative and engaging. Here's an example of how we can integrate the plots into the README:
-
----
-
 ### RNA-seq Differential Expression and Co-expression Analysis Pipeline
 
 #### Project Overview:
