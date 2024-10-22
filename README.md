@@ -11,8 +11,6 @@ This project is a comprehensive RNA-seq analysis pipeline designed to perform **
 - **Co-expression Network Analysis (WGCNA)**: **WGCNA** is used to identify modules of co-expressed genes and generate a network structure based on expression similarities.
 - **Interactive Visualizations**: Generates easy-to-interpret visual outputs, including PCA, heatmaps, volcano plots, and MA plots.
 - **Gene ID Mapping**: Automatically maps **NCBI Entrez Gene IDs** to **HGNC gene symbols** using the **org.Hs.eg.db** database for easy interpretation.
-- **Pathway Enrichment**: Integrates **clusterProfiler** to perform KEGG pathway enrichment on significant gene sets.
-
 ---
 
 #### Example Outputs:
