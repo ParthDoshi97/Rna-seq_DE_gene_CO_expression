@@ -26,7 +26,7 @@ The volcano plot shows significant genes based on log2 fold change and adjusted 
 ##### 2. **Principal Component Analysis (PCA) Plot**: Visualizing overall variance between samples
 
 <p align="center">
-  <img src="path_to_pca_plot.png" alt="PCA Plot" width="400"/>
+  <img src="pca_plot.png" alt="PCA Plot" width="400"/>
 </p>
 
 PCA plot of the variance-stabilized data helps to assess sample separation based on the top principal components, offering insight into the major sources of variance in the data.
