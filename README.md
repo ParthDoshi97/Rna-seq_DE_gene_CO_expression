@@ -18,7 +18,7 @@ This project is a comprehensive RNA-seq analysis pipeline designed to perform **
 ##### 1. **Volcano Plot**: Visualizing differentially expressed genes
 
 <p align="center">
-  <img src="path_to_volcano_plot.png" alt="Volcano Plot" width="400"/>
+  <img src="volcano_plot_tumor_vs_normal.png" alt="Volcano Plot" width="400"/>
 </p>
 
 The volcano plot shows significant genes based on log2 fold change and adjusted p-values (padj). Genes with higher fold changes and statistical significance are highlighted in red.
