@@ -111,7 +111,6 @@ The heatmap legend indicates the correlation scale from -1 to 1. Modules with st
 # Example Usage for GEO dataset GSE37764
 geo_id <- "GSE37764"
 counts_file <- "path_to/GSE37764_raw_counts_GRCh38.p13_NCBI.tsv"
-run_analysis(geo_id, counts_file)
 ```
 
 ---
