@@ -49,7 +49,7 @@ The heatmap provides a visualization of the expression patterns of the top 50 di
 ##### 5. **Co-expression Network (WGCNA) Dendrogram**: Module detection via hierarchical clustering
 
 <p align="center">
-  <img src="path_to_wgcna_dendrogram.png" alt="WGCNA Dendrogram" width="400"/>
+  <img src="dendrogram_with_modules.png" alt="WGCNA Dendrogram" width="600"/>
 </p>
 
 This dendrogram shows co-expressed gene modules detected using WGCNA. Modules of genes are color-coded based on their similarity.
