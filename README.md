@@ -18,7 +18,7 @@ This project is a comprehensive RNA-seq analysis pipeline designed to perform **
 ##### 1. **Volcano Plot**: Visualizing differentially expressed genes
 
 <p align="center">
-  <img src="volcano_plot_tumor_vs_normal.png" alt="Volcano Plot" width="400"/>
+  <img src="volcano_plot_tumor_vs_normal.png" alt="Volcano Plot" width="600"/>
 </p>
 
 The volcano plot shows significant genes based on log2 fold change and adjusted p-values (padj). Genes with higher fold changes and statistical significance are highlighted in red.
@@ -26,7 +26,7 @@ The volcano plot shows significant genes based on log2 fold change and adjusted 
 ##### 2. **Principal Component Analysis (PCA) Plot**: Visualizing overall variance between samples
 
 <p align="center">
-  <img src="pca_plot.png" alt="PCA Plot" width="400"/>
+  <img src="pca_plot.png" alt="PCA Plot" width="600"/>
 </p>
 
 PCA plot of the variance-stabilized data helps to assess sample separation based on the top principal components, offering insight into the major sources of variance in the data.
@@ -34,14 +34,14 @@ PCA plot of the variance-stabilized data helps to assess sample separation based
 ##### 3. **MA Plot**: Log fold change vs. mean expression
 
 <p align="center">
-  <img src="path_to_ma_plot.png" alt="MA Plot" width="400"/>
+  <img src="MA_plot.png" alt="MA Plot" width="600"/>
 </p>
 
 The MA plot visualizes log2 fold changes against the mean expression for all genes, where significant genes are highlighted.
 ##### 4. **Heatmap**: Visualization of Top Differentially Expressed Genes
 
 <p align="center">
-  <img src="heatmap.png" alt="Heatmap" width="400"/>
+  <img src="heatmap.png" alt="Heatmap" width="600"/>
 </p>
 
 The heatmap provides a visualization of the expression patterns of the top 50 differentially expressed genes across samples. Each row represents a gene, and each column represents a sample. The color intensity indicates the relative expression level after centering (subtracting the row mean). Samples are clustered by similarity to reveal patterns associated with different conditions, such as “normal” and “tumor,” allowing for quick identification of co-expression patterns and differences between groups.
