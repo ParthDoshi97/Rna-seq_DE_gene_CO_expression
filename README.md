@@ -57,7 +57,7 @@ This dendrogram displays co-expressed gene modules identified through hierarchic
 ##### 6. **Module-Trait Relationship Heatmap**: Correlating Modules with External Traits
 
 <p align="center">
-  <img src="" alt="Module-Trait Relationship Heatmap
+  <img src="module_trait_relationships_conditions_no_labels_adjusted.png" alt="Module-Trait Relationship Heatmap
 " width="600"/>
 </p>
 
