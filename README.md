@@ -38,8 +38,15 @@ PCA plot of the variance-stabilized data helps to assess sample separation based
 </p>
 
 The MA plot visualizes log2 fold changes against the mean expression for all genes, where significant genes are highlighted.
+##### 4. **Heatmap**: Visualization of Top Differentially Expressed Genes
 
-##### 4. **Co-expression Network (WGCNA) Dendrogram**: Module detection via hierarchical clustering
+<p align="center">
+  <img src="" alt="MA Plot" width="400"/>
+</p>
+
+The heatmap provides a visualization of the expression patterns of the top 50 differentially expressed genes across samples. Each row represents a gene, and each column represents a sample. The color intensity indicates the relative expression level after centering (subtracting the row mean). Samples are clustered by similarity to reveal patterns associated with different conditions, such as “normal” and “tumor,” allowing for quick identification of co-expression patterns and differences between groups.
+
+##### 5. **Co-expression Network (WGCNA) Dendrogram**: Module detection via hierarchical clustering
 
 <p align="center">
   <img src="path_to_wgcna_dendrogram.png" alt="WGCNA Dendrogram" width="400"/>
