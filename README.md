@@ -52,7 +52,18 @@ The heatmap provides a visualization of the expression patterns of the top 50 di
   <img src="dendrogram_with_modules.png" alt="WGCNA Dendrogram" width="600"/>
 </p>
 
-This dendrogram shows co-expressed gene modules detected using WGCNA. Modules of genes are color-coded based on their similarity.
+This dendrogram displays co-expressed gene modules identified through hierarchical clustering in WGCNA. Modules are color-coded based on gene similarity, providing a visual grouping of genes that are likely co-regulated. Each branch represents a module with genes sharing similar expression patterns, potentially associated with specific biological functions.
+
+##### 6. **Module-Trait Relationship Heatmap**: Correlating Modules with External Traits
+
+<p align="center">
+  <img src="" alt="Module-Trait Relationship Heatmap
+" width="600"/>
+</p>
+
+The module-trait relationship heatmap provides a summary of the correlations between gene modules and external sample traits (e.g., tumor vs. normal). Each row represents a module (colored by module name, such as "blue" or "turquoise"), and each column represents a sample trait. The color of each cell reflects the strength and direction of the correlation: red for positive correlations, blue for negative correlations, and white for no correlation.
+
+The heatmap legend indicates the correlation scale from -1 to 1. Modules with strong positive or negative correlations to a trait may contain genes involved in processes related to that condition. This heatmap allows for quick identification of potentially biologically relevant modules associated with specific sample traits, making it a useful tool for further investigation into gene-trait relationships.
 
 ---
 
