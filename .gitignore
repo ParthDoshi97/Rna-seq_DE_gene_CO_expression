@@ -1,0 +1,50 @@
+# R session / history
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+*.Rproj
+
+# Snakemake
+.snakemake/
+logs/
+
+# Quarto
+/.quarto/
+report/_freeze/
+report/*.html
+!docs/index.html
+
+# Python / virtualenv (in case Snakemake env leaks in)
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Raw and intermediate data — never commit
+data/*
+!data/demo/
+!data/.gitkeep
+data/demo/*
+!data/demo/.gitkeep
+
+# Generated results — only the curated example set is committed
+results/*
+!results/example/
+!results/.gitkeep
+
+# Container build artefacts
+containers/*.sif
+containers/*.img
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Claude Code / agent tooling
+.claude/

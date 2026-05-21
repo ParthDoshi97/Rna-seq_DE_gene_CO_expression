@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+title: "rnaseq-deseq2-wgcna: A reproducible RNA-seq differential expression and co-expression analysis pipeline"
+abstract: >-
+  A Snakemake pipeline for RNA-seq differential expression (DESeq2)
+  and weighted gene co-expression network analysis (WGCNA) of
+  TCGA-BRCA tumor vs normal samples, with GO/KEGG enrichment,
+  hub-gene identification, and a rendered HTML report.
+authors:
+  - family-names: Doshi
+    given-names: Parth
+type: software
+version: "1.0.0"
+license: Apache-2.0
+repository-code: "https://github.com/ParthDoshi97/rnaseq-deseq2-wgcna"
+keywords:
+  - rna-seq
+  - deseq2
+  - wgcna
+  - bioinformatics
+  - snakemake
+  - differential-expression
+  - co-expression
+  - tcga
