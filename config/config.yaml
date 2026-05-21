@@ -1,0 +1,127 @@
+# =============================================================================
+# rnaseq-deseq2-wgcna — pipeline configuration
+# -----------------------------------------------------------------------------
+# Single source of truth for paths, dataset, thresholds, and WGCNA parameters.
+# To analyse a different cancer or dataset, edit this file only — no script
+# in workflow/scripts/ should contain a hard-coded path, accession, or cutoff.
+# =============================================================================
+
+project:
+  name: rnaseq-deseq2-wgcna
+  cancer: "Breast invasive carcinoma"
+  cancer_short: "BRCA"
+  organism: "Homo sapiens"
+  genome_build: "GRCh38 / GENCODE v26 (recount3 uniform reprocessing)"
+
+# -----------------------------------------------------------------------------
+# Dataset
+# -----------------------------------------------------------------------------
+# Entry point is a counts matrix. We pull TCGA-BRCA counts via recount3
+# (Bioconductor), which delivers a uniformly reprocessed RangedSummarizedExperiment.
+# A FASTQ → counts upstream stage is out of scope for v1.0 (see README roadmap).
+dataset:
+  source: "recount3"            # one of: recount3 | geo | local
+  project: "BRCA"               # recount3 project / GDC accession
+  project_home: "data_sources/tcga"
+  organism: "human"
+
+  # When source == "geo", these are used instead:
+  geo_accession: null           # e.g. "GSE37764"
+  geo_counts_url: null
+
+  # Grouping variable in the sample metadata that defines the contrast.
+  # For TCGA recount3 this is derived from tcga.cgc_sample_sample_type.
+  condition_column: "condition"
+  reference_level: "normal"     # baseline group in the DESeq2 contrast
+  treatment_level: "tumor"      # group of interest
+
+# -----------------------------------------------------------------------------
+# Paths — all relative to the repo root
+# -----------------------------------------------------------------------------
+paths:
+  # Inputs
+  raw_counts: "data/counts.tsv"
+  sample_metadata: "data/samples.tsv"
+
+  # Demo subset for CI (committed; tiny so CI stays under a minute)
+  demo_counts: "data/demo/counts.tsv"
+  demo_metadata: "data/demo/samples.tsv"
+
+  # Intermediate artefacts
+  rds_dir: "results/rds"
+  dds_rds: "results/rds/dds.rds"
+  vsd_rds: "results/rds/vsd.rds"
+  de_results_rds: "results/rds/de_results.rds"
+  wgcna_rds: "results/rds/wgcna.rds"
+
+  # Deliverable tables (committed under results/example/tables/ for the canonical run)
+  tables_dir: "results/tables"
+  de_results_csv: "results/tables/de_results.tsv"
+  module_assignments_csv: "results/tables/module_assignments.tsv"
+  hub_genes_csv: "results/tables/hub_genes.tsv"
+  enrichment_go_csv: "results/tables/enrichment_go.tsv"
+  enrichment_kegg_csv: "results/tables/enrichment_kegg.tsv"
+
+  # Figures
+  figures_dir: "results/figures"
+
+  # Report
+  report_qmd: "report/report.qmd"
+  report_html: "docs/index.html"
+
+# -----------------------------------------------------------------------------
+# Pre-filtering — drop genes with very low counts before DESeq2 / WGCNA
+# -----------------------------------------------------------------------------
+prefilter:
+  min_count: 10                 # keep gene if it has >= min_count
+  min_samples: 3                # in >= min_samples samples
+
+# -----------------------------------------------------------------------------
+# Differential expression (DESeq2)
+# -----------------------------------------------------------------------------
+deseq2:
+  padj_threshold: 0.05          # adjusted p-value cutoff for "significant"
+  log2fc_threshold: 1.0         # absolute log2 fold change cutoff
+  shrink_method: "apeglm"       # lfcShrink type: apeglm | ashr | normal
+  independent_filtering: true
+  top_n_heatmap: 50             # number of top DE genes shown in the heatmap
+
+# -----------------------------------------------------------------------------
+# WGCNA — co-expression network parameters
+# -----------------------------------------------------------------------------
+# These have a large effect on module count and biological interpretability.
+# Defaults match WGCNA tutorial best practice for a tumor-vs-normal RNA-seq
+# study; revisit soft_power after inspecting the scale-free topology fit plot.
+wgcna:
+  variance_quantile: 0.75       # keep genes above this variance percentile
+  soft_power: 8                 # soft-thresholding power; 6 typical for unsigned, 12 for signed
+  network_type: "unsigned"      # unsigned | signed | signed hybrid
+  tom_type: "unsigned"
+  min_module_size: 30           # minimum genes per module
+  merge_cut_height: 0.25        # modules with eigengene correlation > (1 - this) are merged
+  deep_split: 2                 # 0-4; higher = more, smaller modules
+  pam_respects_dendro: false
+  hub_gene_top_n: 10            # number of hub genes reported per trait-correlated module
+  kme_threshold: 0.8            # module membership cutoff for "hub" candidacy
+
+# -----------------------------------------------------------------------------
+# Enrichment (clusterProfiler)
+# -----------------------------------------------------------------------------
+enrichment:
+  org_db: "org.Hs.eg.db"
+  keytype: "ENTREZID"
+  go_ontology: "BP"             # BP | MF | CC | ALL
+  kegg_organism: "hsa"
+  pvalue_cutoff: 0.05
+  qvalue_cutoff: 0.10
+  min_gs_size: 10
+  max_gs_size: 500
+  top_n_dotplot: 15             # categories to plot per dotplot
+
+# -----------------------------------------------------------------------------
+# Runtime
+# -----------------------------------------------------------------------------
+runtime:
+  seed: 42                      # for set.seed() across the pipeline
+  threads: 4                    # passed to WGCNAnThreads() and DESeq2 parallel
+  log_level: "INFO"             # DEBUG | INFO | WARN | ERROR
