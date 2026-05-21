@@ -45,3 +45,6 @@ containers/*.img
 .vscode/
 .idea/
 *.swp
+
+# Claude Code / agent tooling
+.claude/
