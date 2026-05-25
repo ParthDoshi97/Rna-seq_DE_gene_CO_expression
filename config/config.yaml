@@ -126,6 +126,8 @@ wgcna:
   exclude_grey_in_hub: true     # grey is the unassigned bin — exclude from hub nomination
   hub_gene_top_n: 10            # number of hub genes reported per trait-correlated module
   kme_threshold: 0.8            # module membership cutoff for "hub" candidacy
+  trait_pval_cutoff: 0.05       # a (module, trait) pair counts as "significantly correlated"
+                                # at p < this; drives hub gene + GS-vs-MM scatter selection
 
 # -----------------------------------------------------------------------------
 # Clinical traits — pulled from recount3 colData in 01_load_and_qc.R, used as
@@ -169,6 +171,9 @@ enrichment:
   min_input_genes: 10            # skip a run if the input gene list is smaller than this
                                  # (conceptually distinct from min_gs_size)
   top_n_dotplot: 15              # categories to plot per dotplot
+  per_module: true               # run GO BP on every non-grey WGCNA module so each can
+                                 # be labelled with biology in the report
+  per_module_min_size: 30        # skip modules below this size for per-module enrichment
 
 # -----------------------------------------------------------------------------
 # Runtime
