@@ -275,6 +275,111 @@ if (isTRUE(cfg$wgcna$exclude_grey_in_hub %||% TRUE) &&
   message("kME: dropped 'grey' (unassigned bin) from hub-gene candidate pool")
 }
 
+# ---- Hub gene table (PDF §3: the key missing piece) -------------------------
+# For each trait, pick the module with the strongest significant correlation,
+# then take the top-N genes in that module by |kME| above kme_threshold.
+# Those are the centrality "hubs" -- the genes whose expression best summarises
+# the module's signal. Joined with gene symbols from genes.tsv so the table
+# is human-readable.
+
+trait_p_cut <- cfg$wgcna$trait_pval_cutoff %||% 0.05
+hub_top_n   <- cfg$wgcna$hub_gene_top_n %||% 10
+kme_min     <- cfg$wgcna$kme_threshold %||% 0.7
+
+best_module_for_trait <- function(tr) {
+  sig_rows <- which(moduleTraitPval[, tr] < trait_p_cut)
+  if (length(sig_rows) == 0) return(NULL)
+  best <- sig_rows[which.max(abs(moduleTraitCor[sig_rows, tr]))]
+  list(
+    module = sub("^ME", "", rownames(moduleTraitCor)[best]),
+    cor    = moduleTraitCor[best, tr],
+    pval   = moduleTraitPval[best, tr]
+  )
+}
+
+trait_modules <- Filter(Negate(is.null),
+                        setNames(lapply(colnames(moduleTraitCor),
+                                        best_module_for_trait),
+                                 colnames(moduleTraitCor)))
+
+hub_rows <- list()
+for (tr in names(trait_modules)) {
+  m <- trait_modules[[tr]]$module
+  if (!m %in% colnames(kME)) next                 # grey was dropped above
+  gene_ids <- colnames(datExpr)[moduleColors == m]
+  kme_vec  <- kME[gene_ids, m]
+  gs_vec   <- if (is.numeric(trait_matrix[, tr])) {
+    drop(cor(datExpr[, gene_ids, drop = FALSE], trait_matrix[, tr], use = "p"))
+  } else {
+    rep(NA_real_, length(gene_ids))
+  }
+  ord <- order(abs(kme_vec), decreasing = TRUE)
+  for (i in head(ord, hub_top_n)) {
+    if (abs(kme_vec[i]) < kme_min) next
+    hub_rows[[length(hub_rows) + 1L]] <- data.frame(
+      trait                 = tr,
+      module                = m,
+      gene_id               = gene_ids[i],
+      module_membership_kME = kme_vec[i],
+      gene_significance     = gs_vec[i],
+      module_trait_cor      = trait_modules[[tr]]$cor,
+      module_trait_pval     = trait_modules[[tr]]$pval,
+      stringsAsFactors      = FALSE
+    )
+  }
+}
+hub_tbl <- if (length(hub_rows) > 0) {
+  do.call(rbind, hub_rows)
+} else {
+  data.frame(trait = character(), module = character(), gene_id = character(),
+             module_membership_kME = numeric(), gene_significance = numeric(),
+             module_trait_cor = numeric(), module_trait_pval = numeric(),
+             stringsAsFactors = FALSE)
+}
+
+# Attach human-readable symbols from the genes.tsv emitted by script 01.
+genes_path <- file.path(dirname(cfg$paths$raw_counts), "genes.tsv")
+if (file.exists(genes_path)) {
+  genes <- read.table(genes_path, header = TRUE, sep = "\t",
+                      stringsAsFactors = FALSE)
+  hub_tbl$gene_symbol <- genes$gene_name[match(hub_tbl$gene_id, genes$gene_id)]
+  hub_tbl <- hub_tbl[, c("trait", "module", "gene_id", "gene_symbol",
+                         "module_membership_kME", "gene_significance",
+                         "module_trait_cor", "module_trait_pval")]
+}
+write.table(hub_tbl, file = cfg$paths$hub_genes_csv,
+            sep = "\t", quote = FALSE, row.names = FALSE, na = "")
+message("Wrote ", nrow(hub_tbl), " hub gene row(s) -> ", cfg$paths$hub_genes_csv)
+
+# ---- GS vs MM scatter per (trait, module) (PDF §3) --------------------------
+# Hubs sit in the top-right: high module membership AND high gene significance.
+# This visual is the difference between "topologically central" (kME) and
+# "biologically relevant" (GS) -- both have to be true to call a gene a hub.
+
+scatter_dir <- file.path(cfg$paths$figures_dir, "gs_mm")
+dir.create(scatter_dir, recursive = TRUE, showWarnings = FALSE)
+for (tr in names(trait_modules)) {
+  if (!is.numeric(trait_matrix[, tr])) next
+  m <- trait_modules[[tr]]$module
+  if (!m %in% colnames(kME)) next
+  in_module <- moduleColors == m
+  GS <- abs(drop(cor(datExpr, trait_matrix[, tr], use = "p")))
+  MM <- abs(kME[, m])
+  png(file.path(scatter_dir,
+                paste0("gs_mm_", make.names(tr), "_", m, ".png")),
+      width = 7, height = 7, units = "in", res = 150)
+  par(mar = c(5, 5, 4, 2))
+  WGCNA::verboseScatterplot(
+    MM[in_module], GS[in_module],
+    xlab = paste0("|kME| in module ", m),
+    ylab = paste0("|cor(gene, ", tr, ")|"),
+    main = paste0("GS vs MM -- ", m, " / ", tr),
+    cex.main = 1.0, cex.lab = 1.1, cex.axis = 1.0,
+    col = m, pch = 20, abline = TRUE
+  )
+  dev.off()
+}
+
 # ---- Deliverables -----------------------------------------------------------
 
 module_tbl <- data.frame(

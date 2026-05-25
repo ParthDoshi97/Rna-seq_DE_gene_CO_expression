@@ -286,4 +286,81 @@ write.table(gsea_go_tbl,   file = gsea_go_path,
 write.table(gsea_kegg_tbl, file = gsea_kegg_path,
             sep = "\t", quote = FALSE, row.names = FALSE, na = "")
 
+# ---- Per-module GO BP enrichment (PDF §3) ----------------------------------
+# WGCNA modules are just colours until you can say what biology each one
+# represents. Run GO BP on the gene list of every non-grey module so the
+# report can label them ("turquoise = cell cycle", "blue = ECM", etc.).
+# Universe = all genes that survived prefilter + WGCNA's variance cut, not
+# the whole genome, so over-representation is measured against the right
+# background.
+
+run_per_module <- isTRUE(cfg$enrichment$per_module %||% TRUE) &&
+                  file.exists(cfg$paths$wgcna_rds)
+
+if (run_per_module) {
+  message("Running per-module GO BP enrichment...")
+  wgcna <- readRDS(cfg$paths$wgcna_rds)
+  module_min_size <- cfg$enrichment$per_module_min_size %||% 30
+
+  ensembl_to_entrez <- function(ensembl_ids) {
+    mapIds(org.Hs.eg.db, keys = sub("\\..*$", "", ensembl_ids),
+           column = "ENTREZID", keytype = "ENSEMBL", multiVals = "first")
+  }
+  module_universe <- unique(na.omit(ensembl_to_entrez(colnames(wgcna$datExpr))))
+
+  modules        <- setdiff(unique(wgcna$moduleColors), "grey")
+  per_module_dir <- file.path(cfg$paths$figures_dir, "modules")
+  dir.create(per_module_dir, recursive = TRUE, showWarnings = FALSE)
+
+  per_module_parts <- list()
+  for (m in modules) {
+    gene_ids <- colnames(wgcna$datExpr)[wgcna$moduleColors == m]
+    if (length(gene_ids) < module_min_size) {
+      message("  skipping module '", m, "' (",
+              length(gene_ids), " < min_module_size=", module_min_size, ")")
+      next
+    }
+    entrez <- unique(na.omit(ensembl_to_entrez(gene_ids)))
+    if (length(entrez) < min_input) {
+      message("  skipping module '", m, "' (",
+              length(entrez), " mapped < min_input=", min_input, ")")
+      next
+    }
+    message("  module '", m, "': ", length(entrez), " gene(s)")
+    res_m <- tryCatch(
+      enrichGO(gene = entrez, universe = module_universe,
+               OrgDb = cfg$enrichment$org_db,
+               keyType = "ENTREZID", ont = "BP",
+               pvalueCutoff = cfg$enrichment$pvalue_cutoff,
+               qvalueCutoff = cfg$enrichment$qvalue_cutoff,
+               minGSSize = cfg$enrichment$min_gs_size,
+               maxGSSize = cfg$enrichment$max_gs_size,
+               readable = TRUE),
+      error = function(e) {
+        message("    enrichGO failed for '", m, "': ", conditionMessage(e))
+        NULL
+      }
+    )
+    if (is.null(res_m) || nrow(as.data.frame(res_m)) == 0) {
+      message("    no enriched GO BP terms for module '", m, "'")
+      next
+    }
+    save_dotplot(res_m,
+                 file.path(per_module_dir, paste0("go_bp_", m, ".png")),
+                 paste0("GO BP — module ", m))
+    per_module_parts[[m]] <- cbind(module = m, as.data.frame(res_m))
+  }
+
+  per_module_tbl <- bind_rows_safe(per_module_parts)
+  per_module_path <- cfg$paths$enrichment_per_module_csv %||%
+                     file.path(cfg$paths$tables_dir, "enrichment_per_module.tsv")
+  write.table(per_module_tbl, file = per_module_path,
+              sep = "\t", quote = FALSE, row.names = FALSE, na = "")
+  message("Wrote per-module enrichment (",
+          nrow(per_module_tbl), " row(s)) -> ", per_module_path)
+} else {
+  message("Per-module enrichment skipped ",
+          "(enrichment.per_module=FALSE or wgcna.rds not found)")
+}
+
 message("Done.")

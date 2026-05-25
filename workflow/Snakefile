@@ -67,10 +67,11 @@ rule differential_expression:
         counts  = P["raw_counts"],
         samples = P["sample_metadata"],
     output:
-        dds = P["dds_rds"],
-        vsd = P["vsd_rds"],
-        de  = P["de_results_rds"],
-        csv = P["de_results_csv"],
+        dds        = P["dds_rds"],
+        vsd        = P["vsd_rds"],
+        de         = P["de_results_rds"],
+        csv        = P["de_results_csv"],
+        de_summary = os.path.join(P["tables_dir"], "de_summary.tsv"),
     log:
         os.path.join(LOG_DIR, "02_differential_expression.log"),
     shell:
@@ -98,10 +99,15 @@ rule wgcna:
 # -----------------------------------------------------------------------------
 rule enrichment:
     input:
-        de = P["de_results_rds"],
+        de    = P["de_results_rds"],
+        wgcna = P["wgcna_rds"],          # per-module enrichment reads module assignments
     output:
-        go   = P["enrichment_go_csv"],
-        kegg = P["enrichment_kegg_csv"],
+        go         = P["enrichment_go_csv"],
+        kegg       = P["enrichment_kegg_csv"],
+        gsea_go    = P.get("gsea_go_csv",   os.path.join(P["tables_dir"], "gsea_go.tsv")),
+        gsea_kegg  = P.get("gsea_kegg_csv", os.path.join(P["tables_dir"], "gsea_kegg.tsv")),
+        per_module = P.get("enrichment_per_module_csv",
+                           os.path.join(P["tables_dir"], "enrichment_per_module.tsv")),
     log:
         os.path.join(LOG_DIR, "04_enrichment.log"),
     shell:
