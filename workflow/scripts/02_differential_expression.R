@@ -5,8 +5,6 @@
 suppressPackageStartupMessages({
   library(yaml)
   library(DESeq2)
-  library(AnnotationDbi)
-  library(org.Hs.eg.db)
   library(ggplot2)
   library(pheatmap)
   library(EnhancedVolcano)
@@ -30,7 +28,10 @@ counts <- as.matrix(counts_df[, -1, drop = FALSE])
 
 samples <- read.table(cfg$paths$sample_metadata, header = TRUE, sep = "\t",
                       stringsAsFactors = FALSE)
-stopifnot(all(samples$sample_id == colnames(counts)))
+# Don't trust on-disk row order to match counts column order — reorder + verify.
+samples <- samples[match(colnames(counts), samples$sample_id), , drop = FALSE]
+stopifnot(!anyNA(samples$sample_id),
+          identical(samples$sample_id, colnames(counts)))
 
 samples$condition <- factor(
   samples$condition,
@@ -50,17 +51,30 @@ res <- results(
   alpha = cfg$deseq2$padj_threshold,
   independentFiltering = cfg$deseq2$independent_filtering
 )
-res <- lfcShrink(dds,
-                 coef = paste0("condition_", cfg$dataset$treatment_level,
-                               "_vs_", cfg$dataset$reference_level),
-                 res = res, type = cfg$deseq2$shrink_method)
+# apeglm requires `coef` to exist verbatim in resultsNames(dds). DESeq2 mangles
+# level names (spaces, punctuation) when it builds coefficient names, so verify
+# rather than trust string interpolation.
+coef_name <- paste0("condition_", cfg$dataset$treatment_level,
+                    "_vs_", cfg$dataset$reference_level)
+if (!coef_name %in% resultsNames(dds)) {
+  stop("lfcShrink coef '", coef_name, "' not found in resultsNames(dds): ",
+       paste(resultsNames(dds), collapse = ", "))
+}
+res <- lfcShrink(dds, coef = coef_name, res = res,
+                 type = cfg$deseq2$shrink_method)
 res <- res[order(res$padj), ]
 
-# Map gene IDs → symbols. recount3 IDs are ENSEMBL (versioned).
-ensembl_ids <- sub("\\..*$", "", rownames(res))
-res$gene_symbol <- mapIds(org.Hs.eg.db, keys = ensembl_ids,
-                          column = "SYMBOL", keytype = "ENSEMBL",
-                          multiVals = "first")
+# Attach gene symbols from genes.tsv (written by 01) instead of re-querying
+# org.Hs.eg.db — recount3's rowData already carries authoritative GENCODE
+# gene_name values keyed on the same versioned ENSEMBL IDs.
+genes_path <- file.path(dirname(cfg$paths$raw_counts), "genes.tsv")
+if (file.exists(genes_path)) {
+  genes <- read.table(genes_path, header = TRUE, sep = "\t",
+                      stringsAsFactors = FALSE)
+  res$gene_symbol <- genes$gene_name[match(rownames(res), genes$gene_id)]
+} else {
+  res$gene_symbol <- NA_character_
+}
 
 # Save dds + vsd + res for downstream
 vsd <- vst(dds, blind = FALSE)
@@ -127,6 +141,7 @@ pheatmap(
   annotation_col = data.frame(condition = samples$condition,
                               row.names = samples$sample_id),
   show_rownames = TRUE, show_colnames = FALSE,
+  breaks = seq(-3, 3, length.out = 101),   # clip extremes so a few cells don't wash out the palette
   main = paste0("Top ", cfg$deseq2$top_n_heatmap,
                 " DE genes — ", cfg$project$cancer_short),
   filename = file.path(cfg$paths$figures_dir, "heatmap_top_de.png"),
