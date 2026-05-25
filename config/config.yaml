@@ -61,6 +61,8 @@ paths:
   hub_genes_csv: "results/tables/hub_genes.tsv"
   enrichment_go_csv: "results/tables/enrichment_go.tsv"
   enrichment_kegg_csv: "results/tables/enrichment_kegg.tsv"
+  gsea_go_csv: "results/tables/gsea_go.tsv"
+  gsea_kegg_csv: "results/tables/gsea_kegg.tsv"
 
   # Figures
   figures_dir: "results/figures"
@@ -70,11 +72,21 @@ paths:
   report_html: "docs/index.html"
 
 # -----------------------------------------------------------------------------
-# Pre-filtering — drop genes with very low counts before DESeq2 / WGCNA
+# Pre-filtering — gene-level filters applied in 01_load_and_qc.R
 # -----------------------------------------------------------------------------
 prefilter:
-  min_count: 10                 # keep gene if it has >= min_count
+  protein_coding_only: true     # keep only gene_type == "protein_coding"
+                                # (drops snoRNA / lncRNA / pseudogenes / RNU* etc.)
+  min_cpm: 1                    # keep gene if CPM >= min_cpm
   min_samples: 3                # in >= min_samples samples
+
+# -----------------------------------------------------------------------------
+# Sample-level QC — applied in 01_load_and_qc.R
+# -----------------------------------------------------------------------------
+qc:
+  min_library_size: 5000000     # samples below this get lib_size_low=TRUE in samples.tsv
+  metastatic: "drop"            # TCGA Metastatic handling: drop | tumor | separate
+  dedupe_aliquots: true         # keep one aliquot per (patient_id, condition)
 
 # -----------------------------------------------------------------------------
 # Differential expression (DESeq2)
@@ -93,30 +105,70 @@ deseq2:
 # Defaults match WGCNA tutorial best practice for a tumor-vs-normal RNA-seq
 # study; revisit soft_power after inspecting the scale-free topology fit plot.
 wgcna:
-  variance_quantile: 0.75       # keep genes above this variance percentile
-  soft_power: 8                 # soft-thresholding power; 6 typical for unsigned, 12 for signed
+  tumor_only: true              # build the network on treatment-level samples only;
+                                # otherwise modules just recapitulate tumor-vs-normal
+  sample_cut_height: null       # numeric cutoff for sample-tree outlier removal;
+                                # null = skip cut, just emit wgcna_sample_tree.png
+                                # for inspection. Tune per dataset, then set.
+  n_top_genes: 5000             # keep the top-N genes by variance (deterministic
+                                # regardless of input size). Tutorial range 3-5k;
+                                # higher values inflate the grey/unassigned bin.
+  soft_power: 6                 # soft-thresholding power; null = use pickSoftThreshold's
+                                # powerEstimate. 6 typical for unsigned, 12 for signed.
+  scale_free_r2_min: 0.80       # warn loudly if scale-free fit R^2 at the chosen power
+                                # falls below this — network is likely noise-dominated
   network_type: "unsigned"      # unsigned | signed | signed hybrid
-  tom_type: "unsigned"
+  tom_type: "unsigned"          # must start with "signed" if network_type is signed
   min_module_size: 30           # minimum genes per module
   merge_cut_height: 0.25        # modules with eigengene correlation > (1 - this) are merged
   deep_split: 2                 # 0-4; higher = more, smaller modules
   pam_respects_dendro: false
+  exclude_grey_in_hub: true     # grey is the unassigned bin — exclude from hub nomination
   hub_gene_top_n: 10            # number of hub genes reported per trait-correlated module
   kme_threshold: 0.8            # module membership cutoff for "hub" candidacy
+
+# -----------------------------------------------------------------------------
+# Clinical traits — pulled from recount3 colData in 01_load_and_qc.R, used as
+# the module-trait design in 03_wgcna.R (replaces the tumor/normal axis once
+# wgcna.tumor_only is on).
+# -----------------------------------------------------------------------------
+traits:
+  # short_name (column written to samples.tsv) -> recount3 colData column
+  recount3_columns:
+    ER_status:             "tcga.xml_breast_carcinoma_estrogen_receptor_status"
+    PR_status:             "tcga.xml_breast_carcinoma_progesterone_receptor_status"
+    HER2_status:           "tcga.xml_lab_proc_her2_neu_immunohistochemistry_receptor_status"
+    stage:                 "tcga.cgc_case_pathologic_stage"
+    age_at_diagnosis:      "tcga.cgc_case_age_at_diagnosis"
+    vital_status:          "tcga.xml_vital_status"
+    days_to_death:         "tcga.cgc_case_days_to_death"
+    days_to_last_followup: "tcga.cgc_case_days_to_last_followup"
+  # Subset of the above used in the WGCNA module-trait heatmap. Add any
+  # numeric/categorical samples.tsv column here; multi-level categoricals are
+  # one-hot expanded automatically.
+  module_trait_columns:
+    - ER_status
+    - PR_status
+    - HER2_status
+    - stage
+    - age_at_diagnosis
+    - lib_size
 
 # -----------------------------------------------------------------------------
 # Enrichment (clusterProfiler)
 # -----------------------------------------------------------------------------
 enrichment:
   org_db: "org.Hs.eg.db"
-  keytype: "ENTREZID"
-  go_ontology: "BP"             # BP | MF | CC | ALL
+  keytype: "ENTREZID"            # must be ENTREZID — script asserts this
+  go_ontology: "BP"              # BP | MF | CC | ALL (ALL runs all three)
   kegg_organism: "hsa"
   pvalue_cutoff: 0.05
   qvalue_cutoff: 0.10
-  min_gs_size: 10
+  min_gs_size: 10                # gene-set member-count floor (clusterProfiler param)
   max_gs_size: 500
-  top_n_dotplot: 15             # categories to plot per dotplot
+  min_input_genes: 10            # skip a run if the input gene list is smaller than this
+                                 # (conceptually distinct from min_gs_size)
+  top_n_dotplot: 15              # categories to plot per dotplot
 
 # -----------------------------------------------------------------------------
 # Runtime

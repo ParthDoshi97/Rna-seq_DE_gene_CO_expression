@@ -1,0 +1,1208 @@
+sample_id	barcode	patient_id	condition	sample_type	ER_status	PR_status	HER2_status	stage	age_at_diagnosis	vital_status	days_to_death	lib_size	lib_size_low
+1cbcd09f-2824-4e99-b657-f9565e9c9372	TCGA-3C-AAAU-01A-11R-A41B-07	TCGA-3C-AAAU	tumor	Primary Tumor	Positive	Positive	Negative	Stage X	55	Alive	NA	38343655	FALSE
+58fb7633-df82-406f-b4cb-277be8de003d	TCGA-3C-AALI-01A-11R-A41B-07	TCGA-3C-AALI	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	50	Alive	NA	38423324	FALSE
+f7b0d141-4d33-4a6e-8e05-08f7cf325459	TCGA-3C-AALJ-01A-31R-A41B-07	TCGA-3C-AALJ	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIB	62	Alive	NA	38476250	FALSE
+22cb86f1-88b4-405a-b20f-a29694950367	TCGA-3C-AALK-01A-11R-A41B-07	TCGA-3C-AALK	tumor	Primary Tumor	Positive	Positive	Positive	Stage IA	52	Alive	NA	39414941	FALSE
+71f8a28d-077a-4a91-b56e-b035e4861e9c	TCGA-4H-AAAK-01A-12R-A41B-07	TCGA-4H-AAAK	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	50	Alive	NA	39582180	FALSE
+cbf5849b-94ea-495e-9247-3012baa96267	TCGA-5L-AAT0-01A-12R-A41B-07	TCGA-5L-AAT0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	42	Alive	NA	39759790	FALSE
+8ff6b0ab-c03c-4a06-a851-ebb4b0ffb769	TCGA-5L-AAT1-01A-12R-A41B-07	TCGA-5L-AAT1	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IV	63	Alive	NA	40232627	FALSE
+cfe5897c-b243-45e6-8b2a-1722edcde416	TCGA-5T-A9QA-01A-11R-A41B-07	TCGA-5T-A9QA	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	52	Alive	NA	40174256	FALSE
+da98a67c-f11f-41d3-8223-1161ebff8b58	TCGA-A1-A0SB-01A-11R-A144-07	TCGA-A1-A0SB	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	70	Alive	NA	39171568	FALSE
+5f3c1dfc-da3d-4194-93b9-fc3349d606ee	TCGA-A1-A0SD-01A-11R-A115-07	TCGA-A1-A0SD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	59	Alive	NA	39309860	FALSE
+f05c2816-d1c7-42a1-9ad4-ad787b256d78	TCGA-A1-A0SE-01A-11R-A084-07	TCGA-A1-A0SE	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	56	Alive	NA	39748762	FALSE
+524bbb0c-e6af-47a6-b274-f58bb1dd4c76	TCGA-A1-A0SF-01A-11R-A144-07	TCGA-A1-A0SF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	54	Alive	NA	39831122	FALSE
+e286f56a-1719-409f-823c-da63da424f68	TCGA-A1-A0SG-01A-11R-A144-07	TCGA-A1-A0SG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	61	Alive	NA	39808878	FALSE
+972a70ec-e428-4609-893d-6128a4d62811	TCGA-A1-A0SH-01A-11R-A084-07	TCGA-A1-A0SH	tumor	Primary Tumor	Negative	Positive	Equivocal	Stage IIA	39	Alive	NA	40191282	FALSE
+b6d0686c-6f0b-4337-b7d6-e43443a6652e	TCGA-A1-A0SI-01A-11R-A144-07	TCGA-A1-A0SI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	52	Alive	NA	39783014	FALSE
+208eb3f1-6bc7-401c-a8d8-3ab793b39d34	TCGA-A1-A0SJ-01A-11R-A084-07	TCGA-A1-A0SJ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	39	Alive	NA	40217362	FALSE
+57dabe72-0950-4301-be03-262f3916dbb1	TCGA-A1-A0SK-01A-12R-A084-07	TCGA-A1-A0SK	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	54	Dead	967	39764929	FALSE
+8b948ed4-41e9-4441-9609-adaf4d3a102e	TCGA-A1-A0SM-01A-11R-A084-07	TCGA-A1-A0SM	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	77	Alive	NA	40096500	FALSE
+db138158-49e4-46b2-8ba6-4a72ff418216	TCGA-A1-A0SN-01A-11R-A144-07	TCGA-A1-A0SN	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	50	Alive	NA	40391164	FALSE
+0a60e43d-2bdb-4dc1-b9f3-336c89c2272f	TCGA-A1-A0SO-01A-22R-A084-07	TCGA-A1-A0SO	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIB	67	Alive	NA	39701238	FALSE
+1d94d213-147d-478a-8e66-767d5c5b044d	TCGA-A1-A0SP-01A-11R-A084-07	TCGA-A1-A0SP	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	40	Alive	NA	40027138	FALSE
+1324d8a4-b51a-49aa-b376-e70ce72fc0d3	TCGA-A1-A0SQ-01A-21R-A144-07	TCGA-A1-A0SQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	45	Alive	NA	39919120	FALSE
+ae5e85d4-0b93-44cc-b846-7e893ca67b21	TCGA-A2-A04N-01A-11R-A115-07	TCGA-A2-A04N	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	66	Alive	NA	38853631	FALSE
+d06d5373-6a1b-474c-9279-10fcb29f59ba	TCGA-A2-A04P-01A-31R-A034-07	TCGA-A2-A04P	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIC	36	Dead	548	38795218	FALSE
+2d82baf3-62a1-4b94-a806-f044b8595db6	TCGA-A2-A04Q-01A-21R-A034-07	TCGA-A2-A04Q	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	48	Alive	NA	39744916	FALSE
+ebcf23a5-5f34-4434-9619-a4c864ece28b	TCGA-A2-A04R-01A-41R-A109-07	TCGA-A2-A04R	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	36	Alive	NA	39471242	FALSE
+aaa54a0c-f437-4e0e-ae39-977bebd517bf	TCGA-A2-A04T-01A-21R-A034-07	TCGA-A2-A04T	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	62	Alive	NA	39626560	FALSE
+1e3b860b-e8bc-4f88-9c52-c982add3b2db	TCGA-A2-A04U-01A-11R-A115-07	TCGA-A2-A04U	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	47	Alive	NA	39230100	FALSE
+788e4f7f-7641-461a-b6d5-65f76c2fa4dc	TCGA-A2-A04V-01A-21R-A034-07	TCGA-A2-A04V	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	39	Dead	1920	39157207	FALSE
+06ccfd0f-7fb8-471e-b823-c7876582d6fc	TCGA-A2-A04W-01A-31R-A115-07	TCGA-A2-A04W	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	50	Alive	NA	39798027	FALSE
+d63ffcfc-a31f-4281-ad8d-2fee7439abe4	TCGA-A2-A04X-01A-21R-A034-07	TCGA-A2-A04X	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	34	Alive	NA	39927329	FALSE
+94dfd2c1-d707-4ecc-a108-e8da83fa15de	TCGA-A2-A04Y-01A-21R-A034-07	TCGA-A2-A04Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	53	Alive	NA	37653143	FALSE
+01f79f80-1d82-4b0f-9ad6-c0b611f04b73	TCGA-A2-A0CK-01A-11R-A22K-07	TCGA-A2-A0CK	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	60	Alive	NA	39746890	FALSE
+33f20f2d-51a4-4038-b1c2-d5be14bab1cb	TCGA-A2-A0CL-01A-11R-A115-07	TCGA-A2-A0CL	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	37	Alive	NA	38774326	FALSE
+64d0958d-ef53-43ec-8167-390d957485c4	TCGA-A2-A0CM-01A-31R-A034-07	TCGA-A2-A0CM	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	40	Dead	754	39206079	FALSE
+4e232d58-ed36-4f53-b5be-a9a7ad3b26f6	TCGA-A2-A0CO-01A-13R-A22K-07	TCGA-A2-A0CO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	85	Alive	NA	38604218	FALSE
+e65d0b66-b1d6-40e2-916e-990522ad7e7b	TCGA-A2-A0CP-01A-11R-A034-07	TCGA-A2-A0CP	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	60	Alive	NA	39526996	FALSE
+0bd2d9be-9c78-4d37-9684-c912bb10379a	TCGA-A2-A0CQ-01A-21R-A034-07	TCGA-A2-A0CQ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	62	Alive	NA	38729244	FALSE
+dc41e93d-7e9e-415f-9de7-349931d6dea3	TCGA-A2-A0CR-01A-11R-A22K-07	TCGA-A2-A0CR	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	40608361	FALSE
+fdbd24ed-a293-4f84-a418-8ab531750e9a	TCGA-A2-A0CS-01A-11R-A115-07	TCGA-A2-A0CS	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IV	73	Alive	NA	40498725	FALSE
+d47ce687-5215-4251-8df9-f4223f588de8	TCGA-A2-A0CT-01A-31R-A056-07	TCGA-A2-A0CT	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	71	Alive	NA	40033375	FALSE
+310f99cb-0837-4869-8b48-28d4b543be3b	TCGA-A2-A0CU-01A-12R-A034-07	TCGA-A2-A0CU	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	73	Dead	158	39352923	FALSE
+90f71a59-d80a-4b73-9466-4a5fd6717845	TCGA-A2-A0CV-01A-31R-A115-07	TCGA-A2-A0CV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	41	Alive	NA	39990535	FALSE
+18c5bb3b-fc3b-472c-be3e-4348704befa4	TCGA-A2-A0CW-01A-21R-A115-07	TCGA-A2-A0CW	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	67	Alive	NA	39898614	FALSE
+ffea5a94-3ff5-435d-a24f-ebf0b3674683	TCGA-A2-A0CX-01A-21R-A00Z-07	TCGA-A2-A0CX	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	52	Alive	NA	40046601	FALSE
+20eaa6bd-ad88-4b32-915c-efd54c7ac0de	TCGA-A2-A0CY-01A-12R-A034-07	TCGA-A2-A0CY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	63	Alive	NA	39253453	FALSE
+9076f647-71dc-4845-a893-e6628de65e68	TCGA-A2-A0CZ-01A-11R-A034-07	TCGA-A2-A0CZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	46	Alive	NA	40222885	FALSE
+3e751a3d-573e-42e1-a361-6303669fb7eb	TCGA-A2-A0D0-01A-11R-A00Z-07	TCGA-A2-A0D0	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	60	Alive	NA	40259388	FALSE
+a79dd5b2-f97a-4b24-b762-fea1cd5238fe	TCGA-A2-A0D1-01A-11R-A034-07	TCGA-A2-A0D1	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	76	Alive	NA	39406459	FALSE
+004e0c7a-a9f7-43ad-acac-52fb44f567fc	TCGA-A2-A0D2-01A-21R-A034-07	TCGA-A2-A0D2	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	45	Alive	NA	40387761	FALSE
+c6e86718-2005-4b9a-af82-0dcbf74ada85	TCGA-A2-A0D3-01A-11R-A115-07	TCGA-A2-A0D3	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	42	Alive	NA	39137973	FALSE
+71b6caef-331d-4331-a42b-4f83dca777d5	TCGA-A2-A0D4-01A-11R-A00Z-07	TCGA-A2-A0D4	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	37	Alive	NA	39774487	FALSE
+1e347c7a-fbe8-408d-8014-ee33869116e0	TCGA-A2-A0EM-01A-11R-A034-07	TCGA-A2-A0EM	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	73	Alive	NA	39757294	FALSE
+cabbce72-a7cf-452e-9dc3-eb48ed23df82	TCGA-A2-A0EN-01A-13R-A084-07	TCGA-A2-A0EN	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	70	Alive	NA	39525563	FALSE
+c79a9902-060a-4d3c-9441-529fcbe19afe	TCGA-A2-A0EO-01A-11R-A034-07	TCGA-A2-A0EO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	54	Alive	NA	39855423	FALSE
+9e9d512c-c175-4e94-bdd7-9df6fef2fb5d	TCGA-A2-A0EP-01A-52R-A22U-07	TCGA-A2-A0EP	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	56	Alive	NA	39429879	FALSE
+6d438075-1443-4b04-88f4-a492ac5054c3	TCGA-A2-A0EQ-01A-11R-A034-07	TCGA-A2-A0EQ	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	64	Alive	NA	39424325	FALSE
+6923944c-7d5f-4c86-9eee-070ac00fe369	TCGA-A2-A0ER-01A-21R-A034-07	TCGA-A2-A0ER	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IB	63	Alive	NA	39821358	FALSE
+19fed966-01a5-412e-82a0-f72f4d42cd53	TCGA-A2-A0ES-01A-11R-A115-07	TCGA-A2-A0ES	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	52	Alive	NA	38857579	FALSE
+1a75a0b1-79a3-4343-87ce-15d7aeda5f89	TCGA-A2-A0ET-01A-31R-A034-07	TCGA-A2-A0ET	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	58	Alive	NA	39284464	FALSE
+2cc9fd5e-76c0-4241-8b75-0d8c037b969b	TCGA-A2-A0EU-01A-22R-A056-07	TCGA-A2-A0EU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	79	Alive	NA	39371673	FALSE
+c63b843a-e3b3-4714-a0a2-ab93da5a4c67	TCGA-A2-A0EV-01A-11R-A034-07	TCGA-A2-A0EV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	80	Alive	NA	39960166	FALSE
+f0d0e2f8-7c5e-4042-a505-8f17313689c4	TCGA-A2-A0EW-01A-21R-A115-07	TCGA-A2-A0EW	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	53	Alive	NA	39038826	FALSE
+f8571dd8-db9d-448a-aa30-01d56ee892ef	TCGA-A2-A0EX-01A-21R-A034-07	TCGA-A2-A0EX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	46	Alive	NA	40228446	FALSE
+3387cf11-ce22-4151-869d-47dd9166fcd3	TCGA-A2-A0EY-01A-11R-A034-07	TCGA-A2-A0EY	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIB	62	Alive	NA	38653483	FALSE
+118d1959-5b7b-4d2c-9e9f-970613f0e133	TCGA-A2-A0ST-01A-12R-A084-07	TCGA-A2-A0ST	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	62	Alive	NA	39378942	FALSE
+818b0b25-5543-4d05-9205-1899ec64d733	TCGA-A2-A0SU-01A-11R-A084-07	TCGA-A2-A0SU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	40439845	FALSE
+0a858ad7-1c4a-41a0-9747-97c108cb074e	TCGA-A2-A0SV-01A-11R-A084-07	TCGA-A2-A0SV	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IV	63	Dead	825	40156663	FALSE
+7ad22869-92c5-43d5-b334-9781a311cb2e	TCGA-A2-A0SW-01A-11R-A084-07	TCGA-A2-A0SW	tumor	Primary Tumor	Positive	Negative	NA	Stage IV	82	Dead	1365	39360373	FALSE
+4c49ee0b-5040-47b2-8e78-28abfa0969cd	TCGA-A2-A0SX-01A-12R-A084-07	TCGA-A2-A0SX	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	48	Alive	NA	39080100	FALSE
+efa7715f-aa27-4c5c-88b2-0c6b838de496	TCGA-A2-A0SY-01A-31R-A084-07	TCGA-A2-A0SY	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	62	Alive	NA	40070155	FALSE
+56719fb4-48e8-4dc4-b3f0-6aade70276ab	TCGA-A2-A0T0-01A-22R-A084-07	TCGA-A2-A0T0	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	59	Alive	NA	40236113	FALSE
+a59040e1-6d0b-49f1-b4b3-bd96b0e98536	TCGA-A2-A0T1-01A-21R-A084-07	TCGA-A2-A0T1	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIC	55	Alive	NA	39886863	FALSE
+e08283ca-68e0-4171-b8b9-51aee0b1e0ef	TCGA-A2-A0T2-01A-11R-A084-07	TCGA-A2-A0T2	tumor	Primary Tumor	Negative	Negative	Negative	Stage IV	66	Dead	255	40218387	FALSE
+ec9dd1b9-15aa-441d-8d80-d32f663b3a5c	TCGA-A2-A0T3-01A-21R-A115-07	TCGA-A2-A0T3	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IB	37	Alive	NA	39279452	FALSE
+4a24493b-b019-4c20-ab5f-9ddb9739ff87	TCGA-A2-A0T4-01A-31R-A084-07	TCGA-A2-A0T4	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	62	Alive	NA	39870903	FALSE
+ee24dcb8-2927-42d4-ad8c-588ea01a64c7	TCGA-A2-A0T5-01A-21R-A084-07	TCGA-A2-A0T5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	39	Alive	NA	39989475	FALSE
+4e92867a-7834-45df-aae7-a680ef37cd1d	TCGA-A2-A0T6-01A-11R-A084-07	TCGA-A2-A0T6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	50	Alive	NA	39096895	FALSE
+acb911bf-1ca0-4d19-b05b-0e6cee15b974	TCGA-A2-A0T7-01A-21R-A084-07	TCGA-A2-A0T7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	51	Alive	NA	39965066	FALSE
+0bfb942b-b137-463c-82f2-fb5737f0e4ec	TCGA-A2-A0YC-01A-11R-A109-07	TCGA-A2-A0YC	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	59	Alive	NA	39059996	FALSE
+a52cc981-4203-4027-b978-383bfbeb5f75	TCGA-A2-A0YD-01A-11R-A109-07	TCGA-A2-A0YD	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	63	Alive	NA	39316751	FALSE
+06ec98c4-892c-48b3-9421-a24c33c51c70	TCGA-A2-A0YE-01A-11R-A109-07	TCGA-A2-A0YE	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	48	Alive	NA	39895023	FALSE
+981123de-d55e-41d1-8850-1a41376f1ded	TCGA-A2-A0YF-01A-21R-A109-07	TCGA-A2-A0YF	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	67	Alive	NA	39498376	FALSE
+03ccc0be-5e48-4577-a4b3-4cd754c917e2	TCGA-A2-A0YG-01A-21R-A109-07	TCGA-A2-A0YG	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	63	Alive	NA	39448431	FALSE
+0aba5a33-4257-4bad-9f28-db606d81e2af	TCGA-A2-A0YH-01A-11R-A109-07	TCGA-A2-A0YH	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	53	Alive	NA	40092120	FALSE
+0783ff5e-f78d-49ac-8f8e-fc27c3673f81	TCGA-A2-A0YI-01A-31R-A10J-07	TCGA-A2-A0YI	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	62	Alive	NA	38719141	FALSE
+d9284565-a153-49d8-8e01-a90eca817db7	TCGA-A2-A0YJ-01A-11R-A109-07	TCGA-A2-A0YJ	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	39	Alive	NA	34413085	FALSE
+452e1409-8d75-4cfa-af87-706edf3e8732	TCGA-A2-A0YK-01A-22R-A109-07	TCGA-A2-A0YK	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	61	Alive	NA	38672339	FALSE
+2b35585d-b48f-4b09-aab7-d1130afab763	TCGA-A2-A0YL-01A-21R-A109-07	TCGA-A2-A0YL	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	48	Alive	NA	39513368	FALSE
+06a9d232-2bb6-4191-a664-5b8afbda25ef	TCGA-A2-A0YM-01A-11R-A109-07	TCGA-A2-A0YM	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	67	Alive	NA	39757877	FALSE
+d61f0d8d-c549-42d6-bc35-5488cf231d7a	TCGA-A2-A0YT-01A-11R-A109-07	TCGA-A2-A0YT	tumor	Primary Tumor	Positive	Negative	NA	Stage IIIB	56	Dead	723	40137568	FALSE
+62317c69-f03b-4622-b4bd-a99b88d3f665	TCGA-A2-A1FV-01A-11R-A13Q-07	TCGA-A2-A1FV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	74	Alive	NA	36929574	FALSE
+4adca409-be37-4ebf-a9b0-c80f587e2088	TCGA-A2-A1FW-01A-11R-A13Q-07	TCGA-A2-A1FW	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	62	Alive	NA	38506730	FALSE
+dfcd07c7-f409-4e6f-9773-e048355999cf	TCGA-A2-A1FX-01A-11R-A13Q-07	TCGA-A2-A1FX	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	61	Alive	NA	39043078	FALSE
+e2ab2cad-67a8-47de-a775-8dd9461f1f41	TCGA-A2-A1FZ-01A-51R-A14D-07	TCGA-A2-A1FZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	63	Alive	NA	39211246	FALSE
+90efd0b1-6cba-4860-92db-6cd6f04c8422	TCGA-A2-A1G0-01A-11R-A13Q-07	TCGA-A2-A1G0	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	49	Alive	NA	38611020	FALSE
+59705c6b-02f5-4e49-ae4c-f2510112fe67	TCGA-A2-A1G1-01A-21R-A13Q-07	TCGA-A2-A1G1	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIB	85	Alive	NA	39347601	FALSE
+564d1bf5-f530-4f68-a8d3-23ba2f637d24	TCGA-A2-A1G4-01A-11R-A13Q-07	TCGA-A2-A1G4	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	71	Alive	NA	38703458	FALSE
+8b3b9337-038a-4385-af58-d285a3706234	TCGA-A2-A1G6-01A-11R-A13Q-07	TCGA-A2-A1G6	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	50	Alive	NA	38978969	FALSE
+117a3e8a-4568-44a6-baee-9a5ab002042d	TCGA-A2-A259-01A-11R-A16F-07	TCGA-A2-A259	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	70	Alive	NA	39030805	FALSE
+1ba70680-0a89-4ee5-9a45-32eee0b36abc	TCGA-A2-A25A-01A-12R-A16F-07	TCGA-A2-A25A	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	44	Alive	NA	38741749	FALSE
+62a348d2-e7fd-48d0-9622-8b485da5e327	TCGA-A2-A25B-01A-11R-A169-07	TCGA-A2-A25B	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	39	Alive	NA	39005034	FALSE
+1874e6bb-c86a-4eca-b16d-58dd5dbdb82c	TCGA-A2-A25C-01A-11R-A169-07	TCGA-A2-A25C	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	50	Alive	NA	39005169	FALSE
+d59ae55d-eb0f-40a8-ac23-5f14d3bb3df9	TCGA-A2-A25D-01A-12R-A16F-07	TCGA-A2-A25D	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIC	90	Alive	NA	39124262	FALSE
+708eafa6-a04c-4799-b9c2-add56c030c2f	TCGA-A2-A25E-01A-11R-A169-07	TCGA-A2-A25E	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	34	Alive	NA	38313496	FALSE
+0b9ee479-22f0-4f0e-8db6-ae5a9927dbcb	TCGA-A2-A25F-01A-11R-A169-07	TCGA-A2-A25F	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIA	66	Alive	NA	39519570	FALSE
+a0a07f44-c51b-420c-92e8-65f464db0442	TCGA-A2-A3KC-01A-11R-A213-07	TCGA-A2-A3KC	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	55	Alive	NA	38781051	FALSE
+a4967738-7fc2-4270-a149-56e459edb875	TCGA-A2-A3KD-01A-12R-A213-07	TCGA-A2-A3KD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	47	Alive	NA	39881728	FALSE
+aa87e619-e232-4a3a-926a-4ea8f862dee1	TCGA-A2-A3XS-01A-11R-A22U-07	TCGA-A2-A3XS	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIA	62	Dead	1032	39735681	FALSE
+7a532ab7-001d-4b99-9d30-dc67b7d847db	TCGA-A2-A3XT-01A-11R-A22U-07	TCGA-A2-A3XT	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	45	Alive	NA	39319174	FALSE
+902392b1-7533-4751-a3b1-58955b3eef91	TCGA-A2-A3XU-01A-12R-A22U-07	TCGA-A2-A3XU	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	35	Dead	912	40969416	FALSE
+6203b63e-6d3f-4399-b524-9573a9bd1e11	TCGA-A2-A3XV-01A-21R-A239-07	TCGA-A2-A3XV	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	46	Alive	NA	40885890	FALSE
+aa01abcb-555e-4ad6-9346-8f76bb8e00de	TCGA-A2-A3XW-01A-11R-A239-07	TCGA-A2-A3XW	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	42	Alive	NA	40805109	FALSE
+8d6e5037-8602-4a3f-a580-3f319aeeec8b	TCGA-A2-A3XX-01A-21R-A239-07	TCGA-A2-A3XX	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	49	Alive	NA	40161641	FALSE
+4ce2bb39-0f4f-4cc8-b3b0-5cba38ba6afc	TCGA-A2-A3XY-01A-11R-A239-07	TCGA-A2-A3XY	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	49	Alive	NA	39921858	FALSE
+1542ed64-4a8c-44d2-aa6b-712b4145a1fd	TCGA-A2-A3XZ-01A-42R-A239-07	TCGA-A2-A3XZ	tumor	Primary Tumor	Negative	Negative	Positive	Stage I	46	Alive	NA	39727555	FALSE
+46c4652a-ac2b-41db-a17d-02625822027f	TCGA-A2-A3Y0-01A-11R-A239-07	TCGA-A2-A3Y0	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	57	Alive	NA	40548294	FALSE
+0a4b2a06-3603-42f6-9e6d-e5595e86d1ea	TCGA-A2-A4RW-01A-21R-A266-07	TCGA-A2-A4RW	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	49	Alive	NA	38616318	FALSE
+15c85716-4be3-43a8-9f61-2929c600c828	TCGA-A2-A4RX-01A-11R-A266-07	TCGA-A2-A4RX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	67	Alive	NA	38659162	FALSE
+a31dd727-f50a-4077-81e7-7b8d0cad7310	TCGA-A2-A4RY-01A-31R-A266-07	TCGA-A2-A4RY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	46	Alive	NA	37724834	FALSE
+42dca292-7292-4162-994f-ffbc0102c55e	TCGA-A2-A4S0-01A-21R-A266-07	TCGA-A2-A4S0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	77	Alive	NA	38790230	FALSE
+fbb65b75-a831-4616-8d6b-adba825a228d	TCGA-A2-A4S1-01A-21R-A266-07	TCGA-A2-A4S1	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	66	Alive	NA	40587112	FALSE
+cea92c52-97dd-46d2-bae8-b3dc4505f1db	TCGA-A2-A4S2-01A-12R-A266-07	TCGA-A2-A4S2	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	62	Alive	NA	38287310	FALSE
+27c0eebe-589f-41d9-8bf7-c7da0ed87a3b	TCGA-A2-A4S3-01A-21R-A266-07	TCGA-A2-A4S3	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	39426516	FALSE
+ce80ac41-e93c-4aeb-a3fe-ae7c7806b545	TCGA-A7-A0CD-01A-11R-A00Z-07	TCGA-A7-A0CD	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	66	Alive	NA	39560127	FALSE
+76376038-5810-476b-831f-9bb938941243	TCGA-A7-A0CE-01A-11R-A00Z-07	TCGA-A7-A0CE	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	57	Alive	NA	39931994	FALSE
+4660aecb-f160-4ddc-ae42-0d458a7bd52c	TCGA-A7-A0CE-11A-21R-A089-07	TCGA-A7-A0CE	normal	Solid Tissue Normal	Negative	Negative	Equivocal	Stage IIA	57	Alive	NA	39881208	FALSE
+87c9f796-21d9-4b51-a129-0dddc39a06a3	TCGA-A7-A0CG-01A-12R-A056-07	TCGA-A7-A0CG	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	78	Alive	NA	39581171	FALSE
+8f349f98-4d93-4f97-ac6b-50d2bf072b0c	TCGA-A7-A0CH-01A-21R-A00Z-07	TCGA-A7-A0CH	tumor	Primary Tumor	NA	NA	NA	Stage IIA	79	Alive	NA	37322442	FALSE
+ad2aa331-f367-4a4d-9c8f-5b0a0d69d773	TCGA-A7-A0CH-11A-32R-A089-07	TCGA-A7-A0CH	normal	Solid Tissue Normal	NA	NA	NA	Stage IIA	79	Alive	NA	39891716	FALSE
+9a4eaf94-a637-4054-9792-6ca42294bc7b	TCGA-A7-A0CJ-01A-21R-A00Z-07	TCGA-A7-A0CJ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	57	Alive	NA	39688441	FALSE
+eb1f9845-ff0c-49d3-a981-94a634e8ced7	TCGA-A7-A0D9-01A-31R-A056-07	TCGA-A7-A0D9	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	37	Alive	NA	38497942	FALSE
+c5d8fdca-cdc3-4ae6-aca3-2ac51c67a9f7	TCGA-A7-A0D9-11A-53R-A089-07	TCGA-A7-A0D9	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage IIA	37	Alive	NA	39816667	FALSE
+10d5bc48-f79a-4487-b5d0-2d6c98a9f4dd	TCGA-A7-A0DA-01A-31R-A115-07	TCGA-A7-A0DA	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	62	Alive	NA	39150544	FALSE
+9807dfab-fccb-437c-8ec1-f3a670b24947	TCGA-A7-A0DB-01A-11R-A00Z-07	TCGA-A7-A0DB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	56	Alive	NA	39458869	FALSE
+89d22c35-ae69-4596-99ba-3b33cf66846f	TCGA-A7-A0DB-11A-33R-A089-07	TCGA-A7-A0DB	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	56	Alive	NA	39723574	FALSE
+bc7b5d4c-4668-4fba-99ab-88ce5ef041b7	TCGA-A7-A0DC-01A-11R-A00Z-07	TCGA-A7-A0DC	tumor	NA	NA	NA	NA	NA	NA	NA	NA	38567966	FALSE
+3df0cb8f-4559-40ce-bcf4-4b038929fb4e	TCGA-A7-A13D-01A-13R-A12P-07	TCGA-A7-A13D	tumor	Primary Tumor	Negative	Positive	Equivocal	Stage IIA	46	Alive	NA	40009253	FALSE
+cf72af48-13ad-4e0b-9e98-4029498878fb	TCGA-A7-A13E-01A-11R-A12P-07	TCGA-A7-A13E	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIB	62	Alive	NA	39555160	FALSE
+bb2d30e9-f169-4579-9512-c1853e6b1290	TCGA-A7-A13E-11A-61R-A12P-07	TCGA-A7-A13E	normal	Solid Tissue Normal	Positive	Negative	Equivocal	Stage IIB	62	Alive	NA	39805163	FALSE
+6f929eae-6569-4e77-b3be-761606370171	TCGA-A7-A13F-01A-11R-A12P-07	TCGA-A7-A13F	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	44	Alive	NA	40278015	FALSE
+fb9e698b-87b9-44d6-adc0-4b4b7d21ab41	TCGA-A7-A13F-11A-42R-A12P-07	TCGA-A7-A13F	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIIA	44	Alive	NA	39270322	FALSE
+bd9f2a8c-9e65-4aa9-88c9-70dfddedd82e	TCGA-A7-A13G-01A-11R-A13Q-07	TCGA-A7-A13G	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	79	Alive	NA	36505903	FALSE
+a8099400-b1dc-471c-8c6a-95ceadb6869a	TCGA-A7-A13G-11A-51R-A13Q-07	TCGA-A7-A13G	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	79	Alive	NA	39025737	FALSE
+a6218c31-3caa-4327-acc2-e22344031427	TCGA-A7-A13H-01A-11R-A22K-07	TCGA-A7-A13H	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	61	Alive	NA	39128481	FALSE
+85380a2d-9951-4d4b-a2a4-6f5f2afc54e3	TCGA-A7-A26E-01A-11R-A169-07	TCGA-A7-A26E	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	71	Alive	NA	37939783	FALSE
+a907f2d1-92ad-4a1b-b439-20e5a7347d5b	TCGA-A7-A26F-01A-21R-A169-07	TCGA-A7-A26F	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	55	Alive	NA	39378415	FALSE
+5643f725-6510-4fb3-9faa-44b3124a9ad6	TCGA-A7-A26G-01A-21R-A169-07	TCGA-A7-A26G	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	50	Alive	NA	39186910	FALSE
+9d241e1b-2375-486a-ae6c-fba936cf5734	TCGA-A7-A26H-01A-11R-A169-07	TCGA-A7-A26H	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	72	Alive	NA	38917056	FALSE
+d7d72329-a22b-459f-a617-e1c72b8f4c02	TCGA-A7-A26I-01A-11R-A169-07	TCGA-A7-A26I	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	65	Alive	NA	40609495	FALSE
+727911b5-45aa-42a6-8d32-4d131c8b0824	TCGA-A7-A26J-01A-11R-A169-07	TCGA-A7-A26J	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	49	Alive	NA	38595371	FALSE
+3ddaa477-d3c0-4df0-8c22-99c41e0b3d53	TCGA-A7-A2KD-01A-31R-A21T-07	TCGA-A7-A2KD	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	53	Alive	NA	38671927	FALSE
+dc75c731-6dba-4dca-b8b2-af97db11ceac	TCGA-A7-A3IY-01A-21R-A21T-07	TCGA-A7-A3IY	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	71	Alive	NA	32491279	FALSE
+1e2b2f45-6629-41b3-8498-321a2e726698	TCGA-A7-A3IZ-01A-11R-A213-07	TCGA-A7-A3IZ	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	62	Alive	NA	38288762	FALSE
+223d08aa-7572-486f-aa1d-38f1919d0630	TCGA-A7-A3J0-01A-11R-A213-07	TCGA-A7-A3J0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39866686	FALSE
+1d6b448c-1d01-4a8c-8417-b094ec2d562e	TCGA-A7-A3J1-01A-11R-A213-07	TCGA-A7-A3J1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	63	Alive	NA	37948801	FALSE
+4664a702-f6fc-4f46-96a9-c23c87f507d6	TCGA-A7-A3RF-01A-11R-A22K-07	TCGA-A7-A3RF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	79	Alive	NA	40147281	FALSE
+b013fb96-a517-46ec-8877-4ae84c01ae27	TCGA-A7-A425-01A-11R-A24H-07	TCGA-A7-A425	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIC	70	Alive	NA	39683718	FALSE
+f582b945-aea1-44dd-b29c-5b9bfd625b1d	TCGA-A7-A426-01A-22R-A24H-07	TCGA-A7-A426	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	50	Alive	NA	38889506	FALSE
+b42e31da-9804-498f-8b1a-6a550ac9b897	TCGA-A7-A4SA-01A-11R-A266-07	TCGA-A7-A4SA	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	40	Alive	NA	38706935	FALSE
+3d669a28-e601-4579-a05d-8c58b76587a6	TCGA-A7-A4SB-01A-21R-A266-07	TCGA-A7-A4SB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	56	Alive	NA	37487874	FALSE
+458922b4-db70-459b-8696-f8dd7b373a77	TCGA-A7-A4SC-01A-12R-A266-07	TCGA-A7-A4SC	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIB	62	Alive	NA	38088007	FALSE
+611393af-bc85-47f5-b66b-e3ef9941fc73	TCGA-A7-A4SD-01A-11R-A266-07	TCGA-A7-A4SD	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	52	Alive	NA	39161359	FALSE
+4ab84b93-4fb0-438f-aeed-5cec81e6589b	TCGA-A7-A4SE-01A-11R-A266-07	TCGA-A7-A4SE	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	54	Alive	NA	39233613	FALSE
+de5343a8-53d5-4fb9-b54d-bbe144cf2be5	TCGA-A7-A4SF-01A-11R-A266-07	TCGA-A7-A4SF	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	54	Alive	NA	39550501	FALSE
+8d0796cc-648d-4264-ada1-fd4e9dfb8c02	TCGA-A7-A56D-01A-11R-A27Q-07	TCGA-A7-A56D	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	84	Alive	NA	40909165	FALSE
+e2cfc7b2-7c64-4776-bfb8-9682f745078b	TCGA-A7-A5ZV-01A-11R-A28M-07	TCGA-A7-A5ZV	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	62	Alive	NA	36564454	FALSE
+00f5f2e4-2971-46e4-ae00-35fe31af4e59	TCGA-A7-A5ZW-01A-12R-A29R-07	TCGA-A7-A5ZW	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	47	Alive	NA	39989685	FALSE
+023cb548-c867-4c61-882d-df26e12dc73b	TCGA-A7-A5ZX-01A-12R-A29R-07	TCGA-A7-A5ZX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	48	Alive	NA	39317972	FALSE
+a9237a7a-3c6c-44e7-b2a9-b2e4b1a45b07	TCGA-A7-A6VV-01A-22R-A33J-07	TCGA-A7-A6VV	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	51	Alive	NA	39723854	FALSE
+abde491b-056f-45c0-b53d-d21f7f12ab72	TCGA-A7-A6VW-01A-21R-A33J-07	TCGA-A7-A6VW	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	48	Alive	NA	41066069	FALSE
+88b6f48a-95d0-4ea7-86ef-52efcf82ded6	TCGA-A7-A6VX-01A-12R-A33J-07	TCGA-A7-A6VX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	68	Alive	NA	39156277	FALSE
+9065dbef-8bea-4e06-a4e5-f4c422b47a56	TCGA-A7-A6VY-01A-12R-A33J-07	TCGA-A7-A6VY	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	48	Alive	NA	40447201	FALSE
+d330b86e-5373-49b2-87c6-dc5ed2021b45	TCGA-A8-A06N-01A-11R-A00Z-07	TCGA-A8-A06N	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIB	66	Alive	NA	38500175	FALSE
+c72d4050-73cc-440e-b86a-170afd3e6977	TCGA-A8-A06O-01A-11R-A00Z-07	TCGA-A8-A06O	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	60	Alive	NA	38359377	FALSE
+5c1bc8ce-63bc-4151-a9c7-7929d399eabe	TCGA-A8-A06P-01A-11R-A00Z-07	TCGA-A8-A06P	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	63	Alive	NA	39522180	FALSE
+9b91cd27-5869-46ab-ab80-9eb52ee29e1a	TCGA-A8-A06Q-01A-11R-A034-07	TCGA-A8-A06Q	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	63	Alive	NA	39222307	FALSE
+b83fd35b-e997-4a3c-828b-3c90248b23f0	TCGA-A8-A06R-01A-11R-A00Z-07	TCGA-A8-A06R	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIB	69	Alive	NA	38416779	FALSE
+0776889f-4558-45a5-ae1c-3d8f23cf4b91	TCGA-A8-A06T-01A-11R-A00Z-07	TCGA-A8-A06T	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	75	Alive	NA	39119472	FALSE
+d671e954-4cac-4449-8eb1-163e478fe052	TCGA-A8-A06U-01A-11R-A00Z-07	TCGA-A8-A06U	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	80	Dead	883	39605134	FALSE
+a9da8022-ce84-4c1f-a483-c2ef6f085505	TCGA-A8-A06X-01A-21R-A00Z-07	TCGA-A8-A06X	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIB	77	Dead	943	40041334	FALSE
+ddda0800-c911-4d1c-b10b-7df641b31c4a	TCGA-A8-A06Y-01A-21R-A00Z-07	TCGA-A8-A06Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	39592421	FALSE
+bd879832-e177-4fca-b1ea-d1553518e700	TCGA-A8-A06Z-01A-11R-A00Z-07	TCGA-A8-A06Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	84	Alive	NA	39711561	FALSE
+305bf2f6-8d2a-47af-8bc3-17460178a66c	TCGA-A8-A075-01A-11R-A084-07	TCGA-A8-A075	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	42	Alive	NA	39807082	FALSE
+775e9758-cba2-4b87-844a-120e56fe2141	TCGA-A8-A076-01A-21R-A00Z-07	TCGA-A8-A076	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	66	Alive	NA	39393318	FALSE
+e9e6b5eb-d474-465d-ba5d-3fda6f7179de	TCGA-A8-A079-01A-21R-A00Z-07	TCGA-A8-A079	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	69	Alive	NA	39710952	FALSE
+905f2f5b-4bf9-449c-a070-5d2cce702e29	TCGA-A8-A07B-01A-11R-A00Z-07	TCGA-A8-A07B	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	69	Alive	NA	38007607	FALSE
+eae06b7b-48b0-47d6-9263-0f92eda3652c	TCGA-A8-A07C-01A-11R-A034-07	TCGA-A8-A07C	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	57	Alive	NA	39129386	FALSE
+6e3cc012-2192-48b5-bd38-92ccda12a0bc	TCGA-A8-A07E-01A-11R-A034-07	TCGA-A8-A07E	tumor	Primary Tumor	Positive	Positive	Negative	Stage X	81	Alive	NA	39707069	FALSE
+9d854730-923d-46c5-9fc4-4d6610ae9d01	TCGA-A8-A07F-01A-11R-A00Z-07	TCGA-A8-A07F	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	65	Alive	NA	37984892	FALSE
+f5aecb18-93e7-4385-bede-2dc3756961ca	TCGA-A8-A07G-01A-11R-A034-07	TCGA-A8-A07G	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	65	Alive	NA	39586049	FALSE
+f9e194a1-e5c1-4a1a-840b-4e0246640d09	TCGA-A8-A07I-01A-11R-A00Z-07	TCGA-A8-A07I	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIIA	69	Alive	NA	39433156	FALSE
+3738df37-7bd7-4b3b-a4bb-4aca77a4573a	TCGA-A8-A07J-01A-11R-A00Z-07	TCGA-A8-A07J	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	35	Alive	NA	40077846	FALSE
+14b4bcfa-5b10-4aed-ab47-edf73b252d0b	TCGA-A8-A07L-01A-11R-A00Z-07	TCGA-A8-A07L	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	58	Alive	NA	39825964	FALSE
+0a71c7b0-ef68-466e-b294-b2f52ed79c14	TCGA-A8-A07O-01A-11R-A00Z-07	TCGA-A8-A07O	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	51	Alive	NA	39907080	FALSE
+0a7b187d-80f4-4cc7-ad85-f365d455df6b	TCGA-A8-A07P-01A-11R-A00Z-07	TCGA-A8-A07P	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	68	Alive	NA	40247015	FALSE
+2b231d54-66bc-4f57-bd7d-944f5460cb48	TCGA-A8-A07R-01A-21R-A034-07	TCGA-A8-A07R	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIC	80	Alive	NA	40625543	FALSE
+b79c0636-2e0f-4639-9084-b6ecbc64414a	TCGA-A8-A07S-01A-11R-A034-07	TCGA-A8-A07S	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	73	Alive	NA	39611402	FALSE
+76af5aba-5a99-4c9b-8ac0-19f902fd887d	TCGA-A8-A07U-01A-11R-A034-07	TCGA-A8-A07U	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIIA	66	Alive	NA	39567162	FALSE
+f53a9c63-1af7-4cbc-b8b7-4aa7aaed3364	TCGA-A8-A07W-01A-11R-A00Z-07	TCGA-A8-A07W	tumor	Primary Tumor	Positive	Positive	Negative	Stage IV	76	Alive	NA	39979313	FALSE
+14bebdf5-7509-4c8b-a944-aed580dffc93	TCGA-A8-A07Z-01A-11R-A00Z-07	TCGA-A8-A07Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	85	Alive	NA	40734230	FALSE
+afb1af04-c647-45b0-aa67-81d5a71b32e6	TCGA-A8-A081-01A-11R-A00Z-07	TCGA-A8-A081	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	80	Alive	NA	38641824	FALSE
+e15d9e11-5529-4b5e-996d-cd2973bc53dd	TCGA-A8-A082-01A-11R-A00Z-07	TCGA-A8-A082	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	58	Alive	NA	39386255	FALSE
+118b6525-67d8-4bf1-9b6b-6d22d52e06b6	TCGA-A8-A083-01A-21R-A00Z-07	TCGA-A8-A083	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	67	Alive	NA	39333304	FALSE
+0273b169-68db-41f4-907b-bdb54f064a0c	TCGA-A8-A084-01A-21R-A00Z-07	TCGA-A8-A084	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	81	Alive	NA	38964948	FALSE
+47761280-913e-4826-b400-f04f85b17476	TCGA-A8-A085-01A-11R-A00Z-07	TCGA-A8-A085	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	44	Alive	NA	38951666	FALSE
+271fdf23-1cd0-4659-bd24-51e170445ae9	TCGA-A8-A086-01A-11R-A00Z-07	TCGA-A8-A086	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	59	Alive	NA	39656730	FALSE
+992a7083-28ce-4857-898e-9d4b4fbf2fa1	TCGA-A8-A08A-01A-11R-A32Y-07	TCGA-A8-A08A	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	89	Alive	NA	39704763	FALSE
+eae50af0-a23b-46c5-a5ae-a4068dda16d9	TCGA-A8-A08B-01A-11R-A00Z-07	TCGA-A8-A08B	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	52	Alive	NA	38215428	FALSE
+1835a17a-8710-47c8-b5b3-986cfd50c8b8	TCGA-A8-A08C-01A-11R-A00Z-07	TCGA-A8-A08C	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	65	Alive	NA	38637768	FALSE
+3cc6581c-57dc-431b-a699-a479a3fa3823	TCGA-A8-A08F-01A-11R-A00Z-07	TCGA-A8-A08F	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	59	Alive	NA	39617751	FALSE
+9e781a09-cbb2-496a-b3f6-b1b8b514836f	TCGA-A8-A08G-01A-11R-A00Z-07	TCGA-A8-A08G	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	41	Alive	NA	38582827	FALSE
+cf1267f2-a3e9-446a-ae7f-9c8b9fd67ca5	TCGA-A8-A08H-01A-21R-A00Z-07	TCGA-A8-A08H	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	66	Alive	NA	40388118	FALSE
+4a60add4-3637-4b52-9357-aa2fdfe81ff6	TCGA-A8-A08I-01A-11R-A00Z-07	TCGA-A8-A08I	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	53	Alive	NA	38869365	FALSE
+199a14f5-6ff1-4d6e-b043-06061511915f	TCGA-A8-A08J-01A-11R-A00Z-07	TCGA-A8-A08J	tumor	Primary Tumor	Positive	Negative	Negative	Stage IV	52	Dead	1127	39884812	FALSE
+ae15cbbe-2658-4d9a-ace3-4609df63f512	TCGA-A8-A08L-01A-11R-A00Z-07	TCGA-A8-A08L	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	89	Dead	304	39399490	FALSE
+b178a8cb-b28c-4fed-a8ae-d4e37ae39261	TCGA-A8-A08O-01A-21R-A056-07	TCGA-A8-A08O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IV	45	Alive	NA	38960172	FALSE
+0d957b8d-6ba2-45c9-ad9c-5756e79f685d	TCGA-A8-A08P-01A-11R-A00Z-07	TCGA-A8-A08P	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	70	Alive	NA	39930111	FALSE
+f26e9388-145f-4c86-bf5b-5dfefae6f43d	TCGA-A8-A08R-01A-11R-A034-07	TCGA-A8-A08R	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	52	Alive	NA	39142245	FALSE
+91a45dff-d6c6-4a30-b79d-475dad0a609e	TCGA-A8-A08S-01A-11R-A034-07	TCGA-A8-A08S	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	71	Alive	NA	39422060	FALSE
+1f1c74d9-86f3-49ea-bb26-2c09efecc4a2	TCGA-A8-A08T-01A-21R-A00Z-07	TCGA-A8-A08T	tumor	Primary Tumor	Positive	Positive	Positive	Stage IV	64	Alive	NA	38333624	FALSE
+c4ebe992-1682-4f4c-b05c-5a47d2c673e3	TCGA-A8-A08X-01A-21R-A00Z-07	TCGA-A8-A08X	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIC	43	Alive	NA	39960236	FALSE
+e898dc9e-5ca7-4092-b6c2-4c541c4b767c	TCGA-A8-A08Z-01A-21R-A00Z-07	TCGA-A8-A08Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	76	Alive	NA	39093557	FALSE
+3092736f-4661-4e1f-94d5-666e795017db	TCGA-A8-A090-01A-11R-A00Z-07	TCGA-A8-A090	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	74	Alive	NA	39498342	FALSE
+a442a0ee-153d-4033-af62-86955f3055ac	TCGA-A8-A091-01A-11R-A00Z-07	TCGA-A8-A091	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	61	Alive	NA	38098009	FALSE
+1109f6d7-0ed1-4be3-aa63-71e7da82d57e	TCGA-A8-A092-01A-11R-A00Z-07	TCGA-A8-A092	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	48	Alive	NA	39660507	FALSE
+cbcb8c2d-0613-45da-975e-1a0196d38764	TCGA-A8-A093-01A-11R-A00Z-07	TCGA-A8-A093	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	61	Alive	NA	39252655	FALSE
+12fd30ff-4d3a-4920-bf80-f44132824017	TCGA-A8-A094-01A-11R-A00Z-07	TCGA-A8-A094	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	75	Alive	NA	39885558	FALSE
+fa5bca6c-a84e-4baa-9af4-3304f6364440	TCGA-A8-A095-01A-11R-A00Z-07	TCGA-A8-A095	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	45	Alive	NA	38362960	FALSE
+155e54f9-9791-42e7-9d6a-26c1d09e3948	TCGA-A8-A096-01A-11R-A00Z-07	TCGA-A8-A096	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	73	Alive	NA	39744218	FALSE
+9bd17808-afdf-4d32-91e7-21e3c5ba3ab7	TCGA-A8-A097-01A-11R-A034-07	TCGA-A8-A097	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	65	Alive	NA	39008055	FALSE
+1bfa2c76-884b-4bd0-b800-4e4e0918f183	TCGA-A8-A099-01A-11R-A00Z-07	TCGA-A8-A099	tumor	Primary Tumor	Positive	Positive	Positive	Stage X	76	Alive	NA	39685154	FALSE
+fd2f2372-cfc0-4918-a03f-a53974cbfc07	TCGA-A8-A09A-01A-11R-A00Z-07	TCGA-A8-A09A	tumor	Primary Tumor	Positive	Positive	Negative	Stage X	40	Alive	NA	39329041	FALSE
+65821138-c294-4af7-b2eb-f671b3f3ba19	TCGA-A8-A09B-01A-11R-A00Z-07	TCGA-A8-A09B	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	58	Alive	NA	38595247	FALSE
+2f420c49-bc14-4b1a-a8d7-3f0f27c0bcd3	TCGA-A8-A09C-01A-11R-A00Z-07	TCGA-A8-A09C	tumor	Primary Tumor	Positive	Positive	Negative	Stage X	69	Alive	NA	38232438	FALSE
+d2a8a061-6190-42ae-92eb-a145d319edd4	TCGA-A8-A09D-01A-11R-A00Z-07	TCGA-A8-A09D	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	47	Alive	NA	39569406	FALSE
+4cad9ca3-d09d-4576-b41c-24144db97385	TCGA-A8-A09E-01A-11R-A00Z-07	TCGA-A8-A09E	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIB	73	Alive	NA	40340987	FALSE
+de7b88c3-e78d-42d2-97ba-1fa023e46539	TCGA-A8-A09G-01A-21R-A00Z-07	TCGA-A8-A09G	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIIC	79	Alive	NA	39137524	FALSE
+d08b9d87-7327-4d2c-8b10-8a3973b99209	TCGA-A8-A09I-01A-22R-A034-07	TCGA-A8-A09I	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	84	Alive	NA	40044804	FALSE
+21499138-ef9c-4909-92e0-ecb1dff67431	TCGA-A8-A09K-01A-11R-A00Z-07	TCGA-A8-A09K	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	68	Alive	NA	38238054	FALSE
+0c5e4c8f-6156-4d6c-9125-e944e4568ed4	TCGA-A8-A09M-01A-11R-A00Z-07	TCGA-A8-A09M	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	75	Alive	NA	39491693	FALSE
+b749ab2f-23d0-4d79-b35e-f17daa62091e	TCGA-A8-A09N-01A-11R-A00Z-07	TCGA-A8-A09N	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	57	Alive	NA	39781348	FALSE
+09aa29e2-8d91-48de-832a-859e76bd82f6	TCGA-A8-A09Q-01A-11R-A00Z-07	TCGA-A8-A09Q	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	83	Alive	NA	38996115	FALSE
+bc922f18-a6a9-4f1c-b3c9-c7628ad04a04	TCGA-A8-A09R-01A-11R-A00Z-07	TCGA-A8-A09R	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	82	Alive	NA	39599616	FALSE
+bc2b278c-8924-41fe-8641-d5e39e5795aa	TCGA-A8-A09T-01A-11R-A00Z-07	TCGA-A8-A09T	tumor	Primary Tumor	Positive	Positive	Negative	Stage X	68	Alive	NA	39597386	FALSE
+fa17e3dc-118f-4cd8-a79b-236a3776cca5	TCGA-A8-A09V-01A-11R-A034-07	TCGA-A8-A09V	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	51	Alive	NA	36379213	FALSE
+37121acd-04e3-4d85-a472-bd3638720004	TCGA-A8-A09W-01A-11R-A00Z-07	TCGA-A8-A09W	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	70	Alive	NA	40674258	FALSE
+04a48065-ea14-4c82-82df-b7784d70193a	TCGA-A8-A09X-01A-11R-A00Z-07	TCGA-A8-A09X	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIC	62	Dead	426	39593275	FALSE
+ff2a805f-4acd-49fa-b264-1c7d61ad16ca	TCGA-A8-A09Z-01A-11R-A00Z-07	TCGA-A8-A09Z	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	83	Alive	NA	40211572	FALSE
+714144ba-cb6d-4f15-91a7-e0873ee4dd18	TCGA-A8-A0A1-01A-11R-A00Z-07	TCGA-A8-A0A1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	84	Alive	NA	38876038	FALSE
+e1ffc76b-1f86-4776-a6de-a488c5a1261d	TCGA-A8-A0A2-01A-11R-A034-07	TCGA-A8-A0A2	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	37134553	FALSE
+7b27cb5e-2f49-49e7-af4d-59918800eb3b	TCGA-A8-A0A4-01A-11R-A00Z-07	TCGA-A8-A0A4	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	73	Alive	NA	38085879	FALSE
+c5c2fe8f-7e9a-40e5-b1e0-61bb0f25b63c	TCGA-A8-A0A6-01A-12R-A056-07	TCGA-A8-A0A6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	64	Alive	NA	39082492	FALSE
+3aef20b4-1c89-49c5-9920-e6fd0bf60665	TCGA-A8-A0A7-01A-11R-A00Z-07	TCGA-A8-A0A7	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	57	Alive	NA	40054605	FALSE
+b3ef58b8-6ab1-4101-9157-84b61953d5c7	TCGA-A8-A0A9-01A-11R-A00Z-07	TCGA-A8-A0A9	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	80	Alive	NA	39256605	FALSE
+726c25f1-9651-4d3b-8117-737225b449ef	TCGA-A8-A0AB-01A-11R-A034-07	TCGA-A8-A0AB	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	54	Alive	NA	38120700	FALSE
+879f6c9b-b821-47d8-85f0-3965c0b16289	TCGA-A8-A0AD-01A-11R-A056-07	TCGA-A8-A0AD	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	83	Alive	NA	38909365	FALSE
+ce615155-9b3e-4d17-865d-edc5eea65acd	TCGA-AC-A23C-01A-12R-A169-07	TCGA-AC-A23C	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	62	Alive	NA	38272817	FALSE
+2ef74f93-5da2-454c-aca2-d86c289eacb8	TCGA-AC-A23E-01A-11R-A157-07	TCGA-AC-A23E	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	50	Alive	NA	40294268	FALSE
+30f32969-5278-4066-bb82-7400cdce8807	TCGA-AC-A23G-01A-11R-A213-07	TCGA-AC-A23G	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	76	Alive	NA	40197112	FALSE
+a664b550-4b77-4b1e-bd11-62c4f73073df	TCGA-AC-A23H-01A-11R-A157-07	TCGA-AC-A23H	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	90	Alive	NA	39659012	FALSE
+831c6a51-7f33-4d9d-9897-cbbec52505cc	TCGA-AC-A23H-11A-12R-A157-07	TCGA-AC-A23H	normal	Solid Tissue Normal	Positive	Negative	Positive	Stage IIA	90	Alive	NA	38570987	FALSE
+dcd932d2-b708-487a-93c1-8485fbe9048a	TCGA-AC-A2B8-01A-11R-A17B-07	TCGA-AC-A2B8	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	84	Alive	NA	38763687	FALSE
+52bc932e-fe9b-49ff-8584-2f92e61d5871	TCGA-AC-A2BK-01A-11R-A21T-07	TCGA-AC-A2BK	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	78	Alive	NA	39627120	FALSE
+54e008d9-5e13-4969-b03c-6655b570ed77	TCGA-AC-A2BM-01A-11R-A21T-07	TCGA-AC-A2BM	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	41	Alive	NA	38287319	FALSE
+f5303c4b-7008-44af-8d22-0ba38750dea2	TCGA-AC-A2FB-01A-11R-A17B-07	TCGA-AC-A2FB	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	65	Alive	NA	39191310	FALSE
+2e63b18e-fdc1-414c-9291-492d3d380232	TCGA-AC-A2FB-11A-13R-A17B-07	TCGA-AC-A2FB	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIA	65	Alive	NA	39609421	FALSE
+e26e2897-1b92-47a7-959c-53d6bfdd16ff	TCGA-AC-A2FE-01A-11R-A19W-07	TCGA-AC-A2FE	tumor	Primary Tumor	Positive	Positive	NA	NA	NA	Alive	NA	40176247	FALSE
+ae483bd4-01d6-4cdb-bb2c-1763a5101ab7	TCGA-AC-A2FF-01A-11R-A17B-07	TCGA-AC-A2FF	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	40	Alive	NA	39291273	FALSE
+fcc4e4b1-7594-4558-bdfc-2802443b61e2	TCGA-AC-A2FF-11A-13R-A17B-07	TCGA-AC-A2FF	normal	Solid Tissue Normal	Positive	Positive	NA	Stage IIB	40	Alive	NA	39172309	FALSE
+a68dd961-6d02-4e6c-a5c1-5a9f45ca4668	TCGA-AC-A2FG-01A-11R-A17B-07	TCGA-AC-A2FG	tumor	Primary Tumor	Positive	Negative	NA	Stage IIB	79	Alive	NA	38975693	FALSE
+37cc38b2-2c87-4add-b8c7-a0d2343448ad	TCGA-AC-A2FK-01A-12R-A180-07	TCGA-AC-A2FK	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	45	Alive	NA	38485211	FALSE
+9b8afaed-70d4-4e61-85b3-bbced05ecfa9	TCGA-AC-A2FM-01A-11R-A19W-07	TCGA-AC-A2FM	tumor	Primary Tumor	NA	NA	NA	Stage IIB	87	Dead	792	39534705	FALSE
+e6aafce7-b2cf-4d73-9796-152051122a1a	TCGA-AC-A2FM-11B-32R-A19W-07	TCGA-AC-A2FM	normal	Solid Tissue Normal	NA	NA	NA	Stage IIB	87	Dead	792	40573763	FALSE
+02580b63-8da8-4a9d-99b7-5747008ab42a	TCGA-AC-A2FO-01A-11R-A180-07	TCGA-AC-A2FO	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	65	Alive	NA	39541815	FALSE
+0fa547f8-cedf-46ac-9d8f-5498dfb6ea06	TCGA-AC-A2QH-01A-11R-A18M-07	TCGA-AC-A2QH	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	58	Alive	NA	39609875	FALSE
+0034ecfd-ca94-4615-94d2-e950a2b240ed	TCGA-AC-A2QI-01A-12R-A19W-07	TCGA-AC-A2QI	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	76	Alive	NA	39863135	FALSE
+d182d919-c57f-4004-93db-fb1723a82072	TCGA-AC-A2QJ-01A-12R-A19W-07	TCGA-AC-A2QJ	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIB	48	Alive	NA	41813202	FALSE
+d556467d-bac2-4ece-b906-14f542987d90	TCGA-AC-A3BB-01A-21R-A19W-07	TCGA-AC-A3BB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	46	Alive	NA	40148396	FALSE
+8bb1342a-2fed-4cba-ad61-5290a05ab615	TCGA-AC-A3EH-01A-22R-A22K-07	TCGA-AC-A3EH	tumor	Primary Tumor	Positive	Negative	Negative	NA	NA	Alive	NA	40413568	FALSE
+8379f24e-3bff-4c1b-bd4b-1e8bec4199b0	TCGA-AC-A3HN-01A-11R-A213-07	TCGA-AC-A3HN	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	87	Alive	NA	39297050	FALSE
+0a0d3a64-66c9-43e2-a9a2-2c20f5337fb1	TCGA-AC-A3OD-01A-11R-A21T-07	TCGA-AC-A3OD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	68	Alive	NA	38577074	FALSE
+7f03386b-190b-46f9-9f96-9b867bee9c7a	TCGA-AC-A3QP-01A-11R-A22U-07	TCGA-AC-A3QP	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	79	Alive	NA	40400883	FALSE
+f265488f-7ebf-4be3-90fb-178543d05a28	TCGA-AC-A3QQ-01A-11R-A22K-07	TCGA-AC-A3QQ	tumor	Primary Tumor	Positive	Positive	Positive	NA	NA	Alive	NA	40787534	FALSE
+98b23744-92f7-43f1-9c6d-328adf4108f8	TCGA-AC-A3TM-01A-11R-A22K-07	TCGA-AC-A3TM	tumor	Primary Tumor	Positive	Positive	Equivocal	NA	NA	Alive	NA	40077881	FALSE
+6985560f-33fe-435f-83e0-cbd9e0c20413	TCGA-AC-A3TN-01A-11R-A22K-07	TCGA-AC-A3TN	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	75	Alive	NA	39860299	FALSE
+e9e3ef52-f293-4fd4-bb8d-c80b8d580e90	TCGA-AC-A3W5-01A-11R-A22K-07	TCGA-AC-A3W5	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	65	Alive	NA	39876047	FALSE
+6e6f790e-7b1d-4dc7-aa70-84c0680020b8	TCGA-AC-A3W6-01A-12R-A22K-07	TCGA-AC-A3W6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	90	Alive	NA	39721377	FALSE
+c66d011f-8a84-4240-aab4-0c10719f5bdb	TCGA-AC-A3W7-01A-11R-A22K-07	TCGA-AC-A3W7	tumor	Primary Tumor	Positive	Negative	Negative	NA	NA	Alive	NA	38537009	FALSE
+d0027a32-a9e2-41df-9b47-76bc9fbcdb7c	TCGA-AC-A3YI-01A-21R-A239-07	TCGA-AC-A3YI	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	74	Alive	NA	39017716	FALSE
+80b4e7d6-c931-426f-810e-b6059d2c6f15	TCGA-AC-A3YJ-01A-11R-A22U-07	TCGA-AC-A3YJ	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	66	Alive	NA	40020940	FALSE
+8751d026-849b-44ed-933b-fd9b80de329e	TCGA-AC-A4ZE-01A-11R-A41B-07	TCGA-AC-A4ZE	tumor	Primary Tumor	Positive	Positive	Positive	NA	NA	Alive	NA	38009225	FALSE
+2e3250b0-d754-475f-be22-9ac2d0c5558d	TCGA-AC-A5EH-01A-11R-A28M-07	TCGA-AC-A5EH	tumor	Primary Tumor	Positive	Negative	Negative	NA	NA	Alive	NA	40449070	FALSE
+d45da461-94d9-4dd3-b363-5a7bde0f31d5	TCGA-AC-A5XS-01A-11R-A29R-07	TCGA-AC-A5XS	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	74	Alive	NA	40549191	FALSE
+0f36cdef-61e7-4627-aaf6-59a7cb2d16bf	TCGA-AC-A5XU-01A-11R-A28M-07	TCGA-AC-A5XU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	74	Alive	NA	40009989	FALSE
+6f54f9c0-5687-4a07-bf75-b506752b4a52	TCGA-AC-A62V-01A-11R-A31O-07	TCGA-AC-A62V	tumor	Primary Tumor	Positive	Positive	NA	Stage IV	58	Alive	NA	41175569	FALSE
+7f67565b-180e-4491-9b8f-8184dc4e53f2	TCGA-AC-A62X-01A-11R-A29R-07	TCGA-AC-A62X	tumor	Primary Tumor	Positive	Negative	NA	Stage IIA	72	Alive	NA	40624755	FALSE
+b33d0b10-4c33-4001-93ff-a5ffa2aa353c	TCGA-AC-A62Y-01A-11R-A29R-07	TCGA-AC-A62Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	79	Alive	NA	39761598	FALSE
+4073d568-6777-45fe-97cd-22d8518fe991	TCGA-AC-A6IV-01A-12R-A33J-07	TCGA-AC-A6IV	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	47	Alive	NA	38748093	FALSE
+3f2d803b-fed0-4eb7-9058-d67d10cb3532	TCGA-AC-A6IW-01A-12R-A33J-07	TCGA-AC-A6IW	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	73	Alive	NA	40074044	FALSE
+c9f99b05-b169-47e5-94cd-545644fe78ad	TCGA-AC-A6IX-01A-12R-A32P-07	TCGA-AC-A6IX	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	49	Alive	NA	39407225	FALSE
+617f05ae-0af2-48c2-b093-090b3bf51cdb	TCGA-AC-A6NO-01A-12R-A33J-07	TCGA-AC-A6NO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	43	Alive	NA	38256128	FALSE
+3c73d820-4cb0-4c21-9a79-aad1bf406706	TCGA-AC-A7VB-01A-11R-A352-07	TCGA-AC-A7VB	tumor	Primary Tumor	Positive	Negative	NA	Stage IIA	51	Alive	NA	38490294	FALSE
+05cd67df-cfb3-40d8-a787-3d09886291ea	TCGA-AC-A7VC-01A-11R-A352-07	TCGA-AC-A7VC	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	56	Alive	NA	40219630	FALSE
+b9f42e36-78e1-4bb8-93a8-18264a48e8e2	TCGA-AC-A8OP-01A-11R-A36F-07	TCGA-AC-A8OP	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IA	72	Alive	NA	37875343	FALSE
+90a48928-0338-4887-bded-6674011f9881	TCGA-AC-A8OQ-01A-11R-A41B-07	TCGA-AC-A8OQ	tumor	Primary Tumor	Negative	Negative	Indeterminate	Stage IIB	72	Alive	NA	39035889	FALSE
+be4c9ae8-0b45-410a-bb06-746b10cdaaec	TCGA-AC-A8OR-01A-21R-A41B-07	TCGA-AC-A8OR	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	75	Alive	NA	40357661	FALSE
+77345d95-a2e7-4057-932a-281718d42a29	TCGA-AC-A8OS-01A-12R-A41B-07	TCGA-AC-A8OS	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	71	Alive	NA	37707512	FALSE
+627ceeec-42c0-4104-a134-a6e4a7738bf8	TCGA-AN-A03X-01A-21R-A00Z-07	TCGA-AN-A03X	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	74	Alive	NA	40422316	FALSE
+c3e23136-7190-4d08-991c-93afacc48e8d	TCGA-AN-A03Y-01A-21R-A00Z-07	TCGA-AN-A03Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	39408867	FALSE
+673dc7c6-2d80-49fc-b6c3-531e7e045aec	TCGA-AN-A041-01A-11R-A034-07	TCGA-AN-A041	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIB	29	Alive	NA	38986377	FALSE
+79a8f606-9a9b-45f4-99e2-61b8498ab4bd	TCGA-AN-A046-01A-21R-A034-07	TCGA-AN-A046	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	68	Alive	NA	39306307	FALSE
+4864018c-b8fd-426f-80e9-14f4adf29557	TCGA-AN-A049-01A-21R-A00Z-07	TCGA-AN-A049	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	40467733	FALSE
+6418884f-19d9-4101-a35c-6f1f43a4690a	TCGA-AN-A04A-01A-21R-A034-07	TCGA-AN-A04A	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	36	Alive	NA	40607812	FALSE
+b506ab36-78b0-4b0e-b6e4-e241bba4961d	TCGA-AN-A04C-01A-21R-A034-07	TCGA-AN-A04C	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	51	Alive	NA	39684585	FALSE
+5d84f068-72eb-44aa-ad9d-6f8eaa4a8a32	TCGA-AN-A04D-01A-21R-A034-07	TCGA-AN-A04D	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	58	Alive	NA	39755156	FALSE
+3b0f668b-236f-43f5-a2ff-1898b9687604	TCGA-AN-A0AJ-01A-11R-A00Z-07	TCGA-AN-A0AJ	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	79	Alive	NA	39333798	FALSE
+cc47585f-e1f7-43c0-bd9a-af83fe879e6e	TCGA-AN-A0AK-01A-21R-A00Z-07	TCGA-AN-A0AK	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	76	Alive	NA	40932055	FALSE
+483beb1b-6edd-4954-8324-ba2e7cb8a9e8	TCGA-AN-A0AL-01A-11R-A00Z-07	TCGA-AN-A0AL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIB	41	Alive	NA	41014244	FALSE
+a33b2f42-6ec6-4fb2-8be5-542407a0382e	TCGA-AN-A0AM-01A-11R-A034-07	TCGA-AN-A0AM	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	56	Alive	NA	40304523	FALSE
+9f992be8-400e-4230-ac42-e5483b4a5f7f	TCGA-AN-A0AR-01A-11R-A00Z-07	TCGA-AN-A0AR	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	55	Alive	NA	39960253	FALSE
+e5635af5-62de-4c8a-9da7-93832ee14564	TCGA-AN-A0AS-01A-11R-A00Z-07	TCGA-AN-A0AS	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	70	Alive	NA	39273507	FALSE
+c392b91b-1f08-4e33-9ab7-42ec0fce3b92	TCGA-AN-A0AT-01A-11R-A034-07	TCGA-AN-A0AT	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	62	Alive	NA	40280914	FALSE
+ca3879fc-3b0e-457b-ba06-9a3efcfef6b4	TCGA-AN-A0FD-01A-11R-A034-07	TCGA-AN-A0FD	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	71	Alive	NA	40391733	FALSE
+65a2464f-07e0-4cf4-a1b3-3dda2889ad81	TCGA-AN-A0FF-01A-11R-A034-07	TCGA-AN-A0FF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	32	Alive	NA	39264411	FALSE
+2a9ed6f1-3f93-43cf-9e47-6690781e1009	TCGA-AN-A0FJ-01A-11R-A00Z-07	TCGA-AN-A0FJ	tumor	Primary Tumor	Positive	Negative	Positive	Stage IV	59	Alive	NA	29911433	FALSE
+5bd57419-1f9b-4535-9fe6-e155d2d8228d	TCGA-AN-A0FK-01A-11R-A034-07	TCGA-AN-A0FK	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIB	88	Alive	NA	40381141	FALSE
+79a4ea16-b871-4932-b1f4-169004233cba	TCGA-AN-A0FL-01A-11R-A034-07	TCGA-AN-A0FL	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	62	Alive	NA	40519013	FALSE
+81148a24-a1bf-45ae-a0bb-709cccd728fd	TCGA-AN-A0FN-01A-11R-A034-07	TCGA-AN-A0FN	tumor	Primary Tumor	Positive	Positive	Positive	Stage IA	61	Alive	NA	39817496	FALSE
+42a0ffc5-0804-4b82-9c18-50df23f21cf9	TCGA-AN-A0FS-01A-11R-A034-07	TCGA-AN-A0FS	tumor	Primary Tumor	Positive	Negative	Positive	Stage IA	55	Alive	NA	39726311	FALSE
+dbfa1780-4558-436a-a434-05dafd0f675a	TCGA-AN-A0FT-01A-11R-A034-07	TCGA-AN-A0FT	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	63	Alive	NA	40058119	FALSE
+bf0969ab-4a2e-4890-a215-3a636e6e7731	TCGA-AN-A0FV-01A-11R-A00Z-07	TCGA-AN-A0FV	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	58	Alive	NA	39607982	FALSE
+c6fb2026-b740-459e-9831-93279bbf354e	TCGA-AN-A0FW-01A-11R-A034-07	TCGA-AN-A0FW	tumor	Primary Tumor	Positive	Indeterminate	Negative	Stage IIIA	67	Alive	NA	39800079	FALSE
+997b8112-5484-49ca-bf3d-7aa6cd2fb8bc	TCGA-AN-A0FX-01A-11R-A034-07	TCGA-AN-A0FX	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	52	Alive	NA	39580510	FALSE
+8c3b9672-d44c-4df4-9912-47f93f0a5c58	TCGA-AN-A0FY-01A-11R-A034-07	TCGA-AN-A0FY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	55	Alive	NA	38923366	FALSE
+775d6b64-4d07-4afb-b227-38ffbd154b4f	TCGA-AN-A0FZ-01A-11R-A034-07	TCGA-AN-A0FZ	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIIA	45	Alive	NA	39203134	FALSE
+8782807a-e8ee-4469-afee-966224f6fdd4	TCGA-AN-A0G0-01A-11R-A034-07	TCGA-AN-A0G0	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	56	Alive	NA	40462874	FALSE
+e6056c84-d3db-491c-aae0-291991c1619f	TCGA-AN-A0XL-01A-11R-A10J-07	TCGA-AN-A0XL	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	61	Alive	NA	39132526	FALSE
+8f055354-92f2-4d3e-b47b-d17aac07f93a	TCGA-AN-A0XN-01A-21R-A109-07	TCGA-AN-A0XN	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIIA	68	Alive	NA	39699801	FALSE
+2ac38cda-108e-4553-893f-f36211922bb6	TCGA-AN-A0XO-01A-11R-A109-07	TCGA-AN-A0XO	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	59	Alive	NA	39759263	FALSE
+d0213ff6-3b56-440a-8d5d-53f6e6c70f11	TCGA-AN-A0XP-01A-11R-A109-07	TCGA-AN-A0XP	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	69	Alive	NA	39071681	FALSE
+5324e01d-69f5-4979-903b-7644f3236ee0	TCGA-AN-A0XR-01A-11R-A109-07	TCGA-AN-A0XR	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	55	Alive	NA	39043283	FALSE
+a1b022cb-ca4a-4122-9668-92740016e10c	TCGA-AN-A0XS-01A-22R-A109-07	TCGA-AN-A0XS	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIIA	63	Alive	NA	39310580	FALSE
+3508f4b0-1ada-4937-b924-424ac2596341	TCGA-AN-A0XT-01A-11R-A109-07	TCGA-AN-A0XT	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	54	Alive	NA	38220681	FALSE
+cdb76c1d-da1b-4c52-871f-9c7f5833179c	TCGA-AN-A0XU-01A-11R-A109-07	TCGA-AN-A0XU	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	54	Alive	NA	39328609	FALSE
+1ec51eab-f7e7-44f2-a90e-f0d5b073833d	TCGA-AN-A0XV-01A-11R-A109-07	TCGA-AN-A0XV	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	67	Alive	NA	38865137	FALSE
+70a09d9b-84fb-46ac-9e22-8d48eb7f76cc	TCGA-AN-A0XW-01A-11R-A109-07	TCGA-AN-A0XW	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	36	Alive	NA	39770522	FALSE
+108e4f62-aa05-4297-9bc2-2fb82d687349	TCGA-AO-A03L-01A-41R-A056-07	TCGA-AO-A03L	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	34	Alive	NA	40304830	FALSE
+e4673254-c59f-4c2d-bf1d-de6f7464a287	TCGA-AO-A03M-01B-11R-A10J-07	TCGA-AO-A03M	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	29	Alive	NA	40410667	FALSE
+67d1ea12-766f-4eb9-af7e-4545975b076c	TCGA-AO-A03N-01B-11R-A10J-07	TCGA-AO-A03N	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	38799264	FALSE
+5b046939-1d30-44cb-998e-5c95716a70d8	TCGA-AO-A03O-01A-11R-A00Z-07	TCGA-AO-A03O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	69	Dead	2483	39947982	FALSE
+c559d965-1125-4cf6-8205-4286ab6aa3b9	TCGA-AO-A03P-01A-11R-A00Z-07	TCGA-AO-A03P	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	39804249	FALSE
+d44498fc-61f6-493a-aa1b-8ce9424c2b2e	TCGA-AO-A03R-01A-21R-A034-07	TCGA-AO-A03R	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	57	Alive	NA	39546180	FALSE
+2a2d30f5-0b31-40b5-8dc5-30c659052fd3	TCGA-AO-A03T-01A-21R-A034-07	TCGA-AO-A03T	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	42	Alive	NA	39792686	FALSE
+a451ca06-e1bf-478b-9a50-a0d8c3d4a2ac	TCGA-AO-A03U-01B-21R-A10J-07	TCGA-AO-A03U	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	31	Dead	1793	40353443	FALSE
+b4f7d4bc-bcdd-42ad-8955-644f2accbee4	TCGA-AO-A03V-01A-11R-A115-07	TCGA-AO-A03V	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	41	Alive	NA	39666316	FALSE
+a1f8a4ca-7598-498b-9bc4-95a1b6111ace	TCGA-AO-A0J2-01A-11R-A034-07	TCGA-AO-A0J2	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	41	Alive	NA	40561110	FALSE
+c91ab826-2d2d-492c-9b19-bdb8c8cf85e3	TCGA-AO-A0J3-01A-11R-A034-07	TCGA-AO-A0J3	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	67	Alive	NA	39755934	FALSE
+cc684aee-6d8a-4074-8474-1c4a48dbc8c7	TCGA-AO-A0J4-01A-11R-A034-07	TCGA-AO-A0J4	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	41	Alive	NA	40057781	FALSE
+dc2086bf-e50b-49fb-b31e-93b4fdc540fb	TCGA-AO-A0J5-01A-11R-A034-07	TCGA-AO-A0J5	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IV	48	Alive	NA	39773623	FALSE
+8a082588-a4f5-4cf4-8a61-fb1a13582026	TCGA-AO-A0J6-01A-11R-A034-07	TCGA-AO-A0J6	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	61	Alive	NA	40760964	FALSE
+7dc36399-268a-4388-ada7-4a56ea3f0712	TCGA-AO-A0J7-01A-11R-A034-07	TCGA-AO-A0J7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	71	Alive	NA	40136977	FALSE
+2356b998-0930-403f-9b04-57a18a150955	TCGA-AO-A0J8-01A-21R-A034-07	TCGA-AO-A0J8	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	61	Alive	NA	40146995	FALSE
+38fd8c2f-fa63-4e3f-b803-651c7fc4844c	TCGA-AO-A0J9-01A-11R-A034-07	TCGA-AO-A0J9	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	61	Alive	NA	39393995	FALSE
+9bf496e6-38cf-4bd1-99d0-9c85b306847b	TCGA-AO-A0JA-01A-11R-A056-07	TCGA-AO-A0JA	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	36	Alive	NA	39831865	FALSE
+c55e5045-85c6-4061-836b-5e5068b94990	TCGA-AO-A0JB-01A-11R-A32Y-07	TCGA-AO-A0JB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	50	Alive	NA	35021558	FALSE
+533cfa6a-c250-4f52-8637-0a77c398c78a	TCGA-AO-A0JC-01A-11R-A056-07	TCGA-AO-A0JC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	64	Alive	NA	37651339	FALSE
+4378b8bb-c513-4cc2-b06e-8270fed24576	TCGA-AO-A0JD-01A-11R-A056-07	TCGA-AO-A0JD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	59	Alive	NA	40246292	FALSE
+cd966e85-84d2-4c3c-9a61-3afc65d4f8df	TCGA-AO-A0JE-01A-11R-A056-07	TCGA-AO-A0JE	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIA	53	Alive	NA	40339700	FALSE
+4348dbe3-3fef-462e-9e08-160c39e5c0d3	TCGA-AO-A0JF-01A-11R-A056-07	TCGA-AO-A0JF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	68	Alive	NA	39148223	FALSE
+bca58686-d36a-4625-968b-e837e1f2629b	TCGA-AO-A0JG-01A-31R-A084-07	TCGA-AO-A0JG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	49	Alive	NA	39345973	FALSE
+7b7dbea3-df47-4051-8a58-548705a21035	TCGA-AO-A0JI-01A-21R-A056-07	TCGA-AO-A0JI	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	56	Alive	NA	39323063	FALSE
+826a2901-1c17-44a4-84a5-bc6f54d10a3f	TCGA-AO-A0JJ-01A-11R-A056-07	TCGA-AO-A0JJ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	39816219	FALSE
+f4a7b03f-d692-4f5f-8401-400b430b17cd	TCGA-AO-A0JL-01A-11R-A056-07	TCGA-AO-A0JL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	59	Alive	NA	38545480	FALSE
+ef9c0189-9d4c-425c-8c21-7739fac91ee9	TCGA-AO-A0JM-01A-21R-A056-07	TCGA-AO-A0JM	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	40	Alive	NA	40609059	FALSE
+1463039d-7953-4216-9e8b-97f681332eff	TCGA-AO-A124-01A-11R-A10J-07	TCGA-AO-A124	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	38	Alive	NA	39678808	FALSE
+967618f8-de63-4c4a-bcaf-1d14da44d778	TCGA-AO-A125-01A-11R-A10J-07	TCGA-AO-A125	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	72	Alive	NA	36529536	FALSE
+42c6e250-318f-4b76-825f-886a54e923ea	TCGA-AO-A126-01A-11R-A10J-07	TCGA-AO-A126	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	39	Alive	NA	39331712	FALSE
+079eaca1-0319-4b54-b20b-673f4576c69d	TCGA-AO-A128-01A-11R-A10J-07	TCGA-AO-A128	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	61	Alive	NA	39488615	FALSE
+9c3a3cb7-dd86-48c6-ade1-f37455601984	TCGA-AO-A129-01A-21R-A10J-07	TCGA-AO-A129	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	29	Alive	NA	39947484	FALSE
+0a2fa7c7-0810-4d65-b16c-4a1792714802	TCGA-AO-A12A-01A-21R-A115-07	TCGA-AO-A12A	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	47	Alive	NA	38939406	FALSE
+bdf8a5c4-e7fe-49e5-91a9-6af6f8070adc	TCGA-AO-A12B-01A-11R-A10J-07	TCGA-AO-A12B	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	63	Alive	NA	40811031	FALSE
+0e23c7f9-d54f-4a6b-b1da-f28e09c9ab55	TCGA-AO-A12C-01A-11R-A10J-07	TCGA-AO-A12C	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	42	Alive	NA	39289343	FALSE
+62da0a5e-df20-4422-b54a-53b41d9c3aab	TCGA-AO-A12D-01A-11R-A115-07	TCGA-AO-A12D	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	43	Alive	NA	39168715	FALSE
+41396ec8-55b6-4a3d-b5c4-ca6bea83b75d	TCGA-AO-A12E-01A-11R-A10J-07	TCGA-AO-A12E	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	51	Alive	NA	39568123	FALSE
+62fbf3ae-bfca-4bac-9051-717e7844e272	TCGA-AO-A12F-01A-11R-A115-07	TCGA-AO-A12F	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	36	Alive	NA	38641926	FALSE
+9e8b9fc7-ff0e-4e2e-aa8b-697a995a7317	TCGA-AO-A12G-01A-11R-A10J-07	TCGA-AO-A12G	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	75	Alive	NA	40486888	FALSE
+5e2d5c52-596f-49bc-967c-42129abbacbf	TCGA-AO-A12H-01A-11R-A115-07	TCGA-AO-A12H	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	69	Alive	NA	39261217	FALSE
+6749b9dd-8ffb-4b09-978b-2599ebe654a5	TCGA-AO-A1KO-01A-31R-A13Q-07	TCGA-AO-A1KO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	46	Alive	NA	38411626	FALSE
+ef51ed0e-46ed-4ab0-9504-9f3b8fcd36f2	TCGA-AO-A1KP-01A-11R-A13Q-07	TCGA-AO-A1KP	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	77	Alive	NA	37022489	FALSE
+f694d119-bf58-4449-a811-cb7a2165d8c0	TCGA-AO-A1KQ-01A-11R-A13Q-07	TCGA-AO-A1KQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	84	Alive	NA	39533356	FALSE
+827f1f4b-1468-4079-abe1-f07a511f98e1	TCGA-AO-A1KR-01A-12R-A144-07	TCGA-AO-A1KR	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	51	Alive	NA	39454921	FALSE
+534b9e41-b731-4461-abea-30096148a493	TCGA-AO-A1KS-01A-11R-A13Q-07	TCGA-AO-A1KS	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	69	Alive	NA	38043916	FALSE
+b614cf54-cecf-44c1-813e-6b036b071d41	TCGA-AO-A1KT-01A-11R-A13Q-07	TCGA-AO-A1KT	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	78	Alive	NA	39946749	FALSE
+fd1bc717-18d7-47af-820d-7a8c6fdd4ed5	TCGA-AQ-A04H-01B-11R-A10J-07	TCGA-AQ-A04H	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIA	61	Alive	NA	39231272	FALSE
+0eecc108-eaa0-4723-8342-ddc7f91710f9	TCGA-AQ-A04J-01A-02R-A034-07	TCGA-AQ-A04J	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	45	Alive	NA	38866854	FALSE
+d040ba3e-165d-49fa-89be-1668d24b7294	TCGA-AQ-A04L-01B-21R-A10J-07	TCGA-AQ-A04L	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	48	Alive	NA	39019051	FALSE
+709ef230-dda1-444d-8864-a4ebca19497b	TCGA-AQ-A0Y5-01A-11R-A14M-07	TCGA-AQ-A0Y5	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	70	Dead	172	39941939	FALSE
+26c483c5-c691-4756-87cd-30108ff3e90f	TCGA-AQ-A1H2-01A-11R-A13Q-07	TCGA-AQ-A1H2	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIA	84	Alive	NA	40508230	FALSE
+d526808b-7bb7-4e14-b5e2-91605bcea3ac	TCGA-AQ-A1H3-01A-31R-A13Q-07	TCGA-AQ-A1H3	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	49	Alive	NA	39423581	FALSE
+f158d317-0800-492a-b47b-5b8e2052b3b6	TCGA-AQ-A54N-01A-11R-A266-07	TCGA-AQ-A54N	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	51	Alive	NA	38918555	FALSE
+49e91d8f-37a3-4b7b-8062-d3ca8f561d01	TCGA-AQ-A54O-01A-11R-A266-07	TCGA-AQ-A54O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	51	Alive	NA	39164769	FALSE
+2f5b0acb-4bb5-41c8-862f-6ceed8f498a0	TCGA-AQ-A7U7-01A-22R-A352-07	TCGA-AQ-A7U7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	55	Alive	NA	38177868	FALSE
+671507db-3949-4a41-9682-644ce8fed3d3	TCGA-AR-A0TP-01A-11R-A084-07	TCGA-AR-A0TP	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	43	Alive	NA	38908857	FALSE
+cf2e531c-2848-4ba7-8bae-3ff6d4dd5be8	TCGA-AR-A0TQ-01A-11R-A084-07	TCGA-AR-A0TQ	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIA	27	Alive	NA	39788338	FALSE
+9ddfb5a1-dbd3-43f2-9fdb-fe64bf3e3c07	TCGA-AR-A0TR-01A-11R-A084-07	TCGA-AR-A0TR	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	68	Dead	160	38509896	FALSE
+fa07c86d-47ca-4a00-9306-41f51eb0c698	TCGA-AR-A0TS-01A-11R-A115-07	TCGA-AR-A0TS	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	46	Alive	NA	38846417	FALSE
+3de60b02-74ea-4682-82df-ee3ef9aaea6f	TCGA-AR-A0TT-01A-31R-A084-07	TCGA-AR-A0TT	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	53	Alive	NA	39283261	FALSE
+7804f23a-10f9-4ac1-a0fa-b1370fc68c09	TCGA-AR-A0TU-01A-31R-A109-07	TCGA-AR-A0TU	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	35	Alive	NA	40208527	FALSE
+4a47b575-d714-42de-991a-e4841da0bf67	TCGA-AR-A0TV-01A-21R-A084-07	TCGA-AR-A0TV	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	66	Alive	NA	39877147	FALSE
+286cbf20-c36a-434d-b491-17a1515c132e	TCGA-AR-A0TW-01A-11R-A084-07	TCGA-AR-A0TW	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	50	Alive	NA	40590627	FALSE
+f5a438d5-ca2b-4d44-8768-97f59f5f27b4	TCGA-AR-A0TX-01A-11R-A084-07	TCGA-AR-A0TX	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	64	Alive	NA	39718770	FALSE
+9b9c0eed-dc7d-45a4-8eb4-430aaf16fbb6	TCGA-AR-A0TY-01A-12R-A115-07	TCGA-AR-A0TY	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	54	Dead	1699	39922673	FALSE
+f39ff3e3-0636-4949-a0a1-9b6163158bc6	TCGA-AR-A0TZ-01A-12R-A084-07	TCGA-AR-A0TZ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	43	Alive	NA	38765105	FALSE
+826328ef-7687-4480-bda5-6d49f72223c2	TCGA-AR-A0U0-01A-11R-A109-07	TCGA-AR-A0U0	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	73	Alive	NA	40321527	FALSE
+8fff7fb0-88c8-4b49-a0cd-a7c0756090e8	TCGA-AR-A0U2-01A-11R-A109-07	TCGA-AR-A0U2	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	47	Dead	2551	38671551	FALSE
+7ded1dfa-7de2-4ee0-9dc7-3518d98addf2	TCGA-AR-A0U3-01A-11R-A109-07	TCGA-AR-A0U3	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	39471258	FALSE
+82cd07ff-7566-4360-8210-eb17ecb7591a	TCGA-AR-A0U4-01A-11R-A109-07	TCGA-AR-A0U4	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	54	Alive	NA	40032325	FALSE
+a745888d-3960-494d-9bbb-296f515aec54	TCGA-AR-A1AH-01A-11R-A12D-07	TCGA-AR-A1AH	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	51	Alive	NA	38958288	FALSE
+732decd2-bfaf-409d-ae30-efc76c195e08	TCGA-AR-A1AI-01A-11R-A12P-07	TCGA-AR-A1AI	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	47	Alive	NA	39816374	FALSE
+2f879a27-186a-4134-8f08-cc885134564b	TCGA-AR-A1AJ-01A-21R-A12P-07	TCGA-AR-A1AJ	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	83	Alive	NA	39569033	FALSE
+27cf9f15-9e74-462c-b999-980740829e18	TCGA-AR-A1AK-01A-21R-A12P-07	TCGA-AR-A1AK	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	70	Alive	NA	39198218	FALSE
+f7a29451-3212-44ff-96ff-6203ce7e7593	TCGA-AR-A1AL-01A-21R-A12P-07	TCGA-AR-A1AL	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	60	Alive	NA	38422795	FALSE
+f339e949-a5a1-41d0-907a-d254bac5e0fe	TCGA-AR-A1AM-01A-41R-A22K-07	TCGA-AR-A1AM	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	52	Alive	NA	39163388	FALSE
+b11edd8f-c129-455e-ad2d-491f80f36a60	TCGA-AR-A1AN-01A-11R-A12P-07	TCGA-AR-A1AN	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	46	Alive	NA	40369445	FALSE
+0ca6b5a8-0b1b-4615-adb7-dcedbb3db9c5	TCGA-AR-A1AO-01A-11R-A12P-07	TCGA-AR-A1AO	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	47	Alive	NA	40327637	FALSE
+42df9529-b684-4aed-ad7b-83bfedec0751	TCGA-AR-A1AP-01A-11R-A12P-07	TCGA-AR-A1AP	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	80	Alive	NA	40186843	FALSE
+0f8369f0-a35f-4327-8f7e-cc089c899fc8	TCGA-AR-A1AQ-01A-11R-A12P-07	TCGA-AR-A1AQ	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	49	Alive	NA	40044695	FALSE
+ae0e8653-30eb-447a-ade5-17020d50b0a6	TCGA-AR-A1AR-01A-31R-A137-07	TCGA-AR-A1AR	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	50	Dead	524	39037072	FALSE
+a7ef5e97-c61f-42bc-a611-926d9ee862a2	TCGA-AR-A1AS-01A-11R-A12P-07	TCGA-AR-A1AS	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	40354914	FALSE
+bfeea30b-9df7-46bc-bc83-3bf1ede95eb2	TCGA-AR-A1AT-01A-11R-A12P-07	TCGA-AR-A1AT	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	62	Dead	1272	40612806	FALSE
+66a84dcb-3211-4a15-84d6-ba0d59faf4e8	TCGA-AR-A1AU-01A-11R-A12P-07	TCGA-AR-A1AU	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	39	Alive	NA	39409767	FALSE
+a993b87b-f1f6-4703-ad34-2739e93f0573	TCGA-AR-A1AV-01A-21R-A12P-07	TCGA-AR-A1AV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	68	Alive	NA	39116797	FALSE
+8b76dba5-6848-499e-9fb3-611dff72123c	TCGA-AR-A1AW-01A-21R-A12P-07	TCGA-AR-A1AW	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	65	Alive	NA	38681954	FALSE
+444a731f-500e-4c09-8765-d961b0062662	TCGA-AR-A1AX-01A-11R-A12P-07	TCGA-AR-A1AX	tumor	Primary Tumor	Positive	Positive	Positive	Stage I	64	Alive	NA	38986047	FALSE
+95598eda-ba98-4c1d-951b-131e149989e1	TCGA-AR-A1AY-01A-21R-A12P-07	TCGA-AR-A1AY	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	65	Alive	NA	39265007	FALSE
+dc8f9745-b45d-4fc7-9bb8-9733a33de41f	TCGA-AR-A24H-01A-11R-A169-07	TCGA-AR-A24H	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	65	Alive	NA	38758661	FALSE
+c90561af-452d-47ca-bc9b-3a0e1eca417b	TCGA-AR-A24K-01A-11R-A169-07	TCGA-AR-A24K	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	46	Alive	NA	37789129	FALSE
+cc7ddd96-a901-4a85-8869-0c7be002ae5d	TCGA-AR-A24L-01A-11R-A169-07	TCGA-AR-A24L	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	26	Alive	NA	39143979	FALSE
+50802536-2841-42cf-afd6-4c90151b7e60	TCGA-AR-A24M-01A-11R-A169-07	TCGA-AR-A24M	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	38	Alive	NA	39618040	FALSE
+6a927416-1e12-42e1-8f9d-16a570f34d73	TCGA-AR-A24N-01A-11R-A169-07	TCGA-AR-A24N	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	54	Alive	NA	38920226	FALSE
+04d86cf5-1b75-440b-9dc1-9b5bb2471c4c	TCGA-AR-A24O-01A-11R-A169-07	TCGA-AR-A24O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	43	Alive	NA	38347290	FALSE
+f6287cd9-00db-4b70-aa67-fe581d36306a	TCGA-AR-A24P-01A-11R-A169-07	TCGA-AR-A24P	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	47	Alive	NA	38840593	FALSE
+1bc37328-9c24-40d3-bb7b-000e0f562cb5	TCGA-AR-A24Q-01A-12R-A169-07	TCGA-AR-A24Q	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	49	Alive	NA	39863054	FALSE
+4bb7a412-9471-41b0-8974-140d5a2c1750	TCGA-AR-A24R-01A-11R-A169-07	TCGA-AR-A24R	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	45	Alive	NA	39179143	FALSE
+b8042e2c-b5c3-42bc-9149-e56e952e5a56	TCGA-AR-A24S-01A-11R-A169-07	TCGA-AR-A24S	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	61	Alive	NA	38651723	FALSE
+1ed844b9-60e2-4e6b-aec1-6b9489147a54	TCGA-AR-A24T-01A-11R-A169-07	TCGA-AR-A24T	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIC	46	Alive	NA	38993610	FALSE
+e313975f-f2d2-4abd-a5ae-09e85f2e9cdf	TCGA-AR-A24U-01A-11R-A169-07	TCGA-AR-A24U	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	47	Alive	NA	38824060	FALSE
+bbe71e31-d998-4559-8bd3-06943c89f492	TCGA-AR-A24V-01A-21R-A169-07	TCGA-AR-A24V	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	52	Alive	NA	39291155	FALSE
+9d614398-19ae-40b1-99b6-c1099af43915	TCGA-AR-A24W-01A-11R-A169-07	TCGA-AR-A24W	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	55	Alive	NA	38229956	FALSE
+f454329b-0b6c-49a4-8336-8d6dc0e2d95f	TCGA-AR-A24X-01A-11R-A169-07	TCGA-AR-A24X	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	52	Alive	NA	39631742	FALSE
+44047435-3e87-473a-9231-b61fb0d5045b	TCGA-AR-A24Z-01A-11R-A169-07	TCGA-AR-A24Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	57	Alive	NA	38871592	FALSE
+c296b101-6634-49c2-90b0-39e5d86d1fd2	TCGA-AR-A250-01A-31R-A169-07	TCGA-AR-A250	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	58	Alive	NA	39107503	FALSE
+5f2b9f6e-a2da-46b5-870b-667885226996	TCGA-AR-A251-01A-12R-A169-07	TCGA-AR-A251	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIA	51	Alive	NA	38721167	FALSE
+e6c48482-0ad8-4b4c-9fb9-c3594e198024	TCGA-AR-A252-01A-11R-A169-07	TCGA-AR-A252	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	50	Alive	NA	38457729	FALSE
+bb329d2f-c41d-4147-92d9-c7b971cad0dc	TCGA-AR-A254-01A-21R-A169-07	TCGA-AR-A254	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	50	Alive	NA	39271466	FALSE
+ef446e5f-0f26-4719-bd24-f30167794ba2	TCGA-AR-A255-01A-11R-A169-07	TCGA-AR-A255	tumor	Primary Tumor	Positive	Positive	Positive	Stage I	62	Alive	NA	38544784	FALSE
+9decb422-2c34-4d7a-bb06-9f7ecfc893e1	TCGA-AR-A256-01A-11R-A169-07	TCGA-AR-A256	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	45	Dead	2854	39306191	FALSE
+2944109a-96b6-4607-8d09-291aa680a16d	TCGA-AR-A2LE-01A-11R-A180-07	TCGA-AR-A2LE	tumor	Primary Tumor	Positive	Negative	NA	Stage I	69	Alive	NA	38422564	FALSE
+7fae9ebb-0821-4077-abbc-bcfe3b139c9d	TCGA-AR-A2LH-01A-31R-A18M-07	TCGA-AR-A2LH	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage III	55	Dead	616	40219733	FALSE
+4c16b3ef-a6a7-4189-a709-d6af737dfd6a	TCGA-AR-A2LJ-01A-12R-A19W-07	TCGA-AR-A2LJ	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	40	Alive	NA	40941569	FALSE
+382d9830-4cd6-4c06-9c87-9a83dd01e25c	TCGA-AR-A2LK-01A-11R-A180-07	TCGA-AR-A2LK	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage III	62	Alive	NA	39500049	FALSE
+6c837ca9-9e6e-4417-a540-99cd3740c5b9	TCGA-AR-A2LL-01A-11R-A180-07	TCGA-AR-A2LL	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	70	Alive	NA	38994281	FALSE
+a3099c9a-ed73-44f5-ad88-14ae01373ad6	TCGA-AR-A2LM-01A-11R-A180-07	TCGA-AR-A2LM	tumor	Primary Tumor	Positive	Positive	NA	Stage II	49	Alive	NA	38430758	FALSE
+32275981-2069-4fbc-b0f5-8b879dd13efd	TCGA-AR-A2LN-01A-21R-A18M-07	TCGA-AR-A2LN	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	65	Alive	NA	37909812	FALSE
+38068475-9399-4769-ba5b-9372a6a810d0	TCGA-AR-A2LO-01A-31R-A18M-07	TCGA-AR-A2LO	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	46	Alive	NA	38632263	FALSE
+1b04b428-7c0d-49a2-b08a-072fa715ad1b	TCGA-AR-A2LQ-01A-22R-A18M-07	TCGA-AR-A2LQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	39513120	FALSE
+190129a6-ba80-4728-9638-9e2e1bb7b422	TCGA-AR-A2LR-01A-12R-A18M-07	TCGA-AR-A2LR	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	49	Alive	NA	38989382	FALSE
+a685febf-4cb8-4eaa-8fc8-859f97fb7f2d	TCGA-AR-A5QM-01A-11R-A27Q-07	TCGA-AR-A5QM	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	62	Alive	NA	39966078	FALSE
+6b131704-d54c-4e0e-9d01-bfee2c59be88	TCGA-AR-A5QN-01A-12R-A28M-07	TCGA-AR-A5QN	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	68	Alive	NA	39872373	FALSE
+74707daa-fe40-4d28-ad49-0d1c5465c253	TCGA-AR-A5QP-01A-11R-A28M-07	TCGA-AR-A5QP	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	54	Alive	NA	39973349	FALSE
+afa6298b-7dd3-4504-9251-b16d58c7ff96	TCGA-AR-A5QQ-01A-11R-A28M-07	TCGA-AR-A5QQ	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	68	Dead	322	40785513	FALSE
+44daefc1-eb50-4fad-98db-7724c1e2c201	TCGA-B6-A0I1-01A-11R-A21T-07	TCGA-B6-A0I1	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	73	Dead	2361	39383309	FALSE
+b90714c7-3c6e-4a8d-b869-87e2f66ba8d2	TCGA-B6-A0I2-01A-11R-A034-07	TCGA-B6-A0I2	tumor	Primary Tumor	NA	NA	NA	Stage IA	45	Alive	NA	39816723	FALSE
+555ed952-dc2b-4c08-8afb-40c386aa5cc7	TCGA-B6-A0I5-01A-11R-A034-07	TCGA-B6-A0I5	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	49	Alive	NA	40330574	FALSE
+0375efb7-6afa-416e-96fa-c9a69ad7e95d	TCGA-B6-A0I6-01A-11R-A034-07	TCGA-B6-A0I6	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	49	Dead	991	39510676	FALSE
+0027045b-9ed6-45af-a68e-f55037b5184c	TCGA-B6-A0I8-01A-11R-A034-07	TCGA-B6-A0I8	tumor	Primary Tumor	NA	NA	NA	Stage X	46	Dead	749	39274974	FALSE
+1ef1159e-ddaa-4673-8115-d8f356e51ff8	TCGA-B6-A0I9-01A-11R-A034-07	TCGA-B6-A0I9	tumor	Primary Tumor	Indeterminate	Positive	NA	Stage IV	62	Dead	369	39149786	FALSE
+b5d1e2fc-ad5b-4bcc-aa60-0cb94fb09fca	TCGA-B6-A0IA-01A-11R-A034-07	TCGA-B6-A0IA	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	51	Alive	NA	40465312	FALSE
+e959e8bd-d13c-43c2-840b-8e19211eb643	TCGA-B6-A0IB-01A-11R-A034-07	TCGA-B6-A0IB	tumor	Primary Tumor	Positive	Positive	NA	Stage IV	64	Dead	3941	40106965	FALSE
+91382c7f-7fec-4369-b1a4-60911a47c56a	TCGA-B6-A0IC-01A-11R-A034-07	TCGA-B6-A0IC	tumor	Primary Tumor	Positive	Positive	NA	Stage X	90	Dead	1542	39116395	FALSE
+59e0deb0-c771-4fb9-a823-6fb7b5cba876	TCGA-B6-A0IE-01A-11R-A034-07	TCGA-B6-A0IE	tumor	Primary Tumor	Negative	Negative	NA	Stage Tis	38	Dead	1999	40240534	FALSE
+4913ff90-e563-48e0-a632-a6cff90d810f	TCGA-B6-A0IG-01A-11R-A034-07	TCGA-B6-A0IG	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	50	Dead	4456	39997809	FALSE
+6a5431ea-bda1-495d-8e85-1bc09b6ce4ad	TCGA-B6-A0IH-01A-11R-A115-07	TCGA-B6-A0IH	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	81	Dead	3418	38536733	FALSE
+4d112bd8-1a35-43cb-896a-16f48147811b	TCGA-B6-A0IJ-01A-11R-A034-07	TCGA-B6-A0IJ	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	42	Alive	NA	40371408	FALSE
+37b9f568-aaf0-44b4-92bf-6e257ee6f06b	TCGA-B6-A0IK-01A-12R-A056-07	TCGA-B6-A0IK	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIB	63	Dead	571	39738922	FALSE
+9a3c1068-d9e1-44d9-a659-4289ecc96ad4	TCGA-B6-A0IM-01A-11R-A034-07	TCGA-B6-A0IM	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	75	Alive	NA	39488955	FALSE
+97765ed1-5e02-49d3-a96b-a20c8cca3bee	TCGA-B6-A0IN-01A-11R-A034-07	TCGA-B6-A0IN	tumor	Primary Tumor	Positive	Negative	NA	Stage X	45	Dead	2573	39788436	FALSE
+9e8f1f6e-8115-49a7-a208-3a6308cfd2b2	TCGA-B6-A0IO-01A-11R-A034-07	TCGA-B6-A0IO	tumor	Primary Tumor	Positive	Indeterminate	NA	Stage IIA	66	Alive	NA	39191953	FALSE
+add7449b-340c-46fd-841c-414f967825eb	TCGA-B6-A0IP-01A-11R-A034-07	TCGA-B6-A0IP	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	74	Alive	NA	39059224	FALSE
+8a9c0b95-4830-45c3-a596-75c2f22cfa14	TCGA-B6-A0IQ-01A-11R-A034-07	TCGA-B6-A0IQ	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIA	40	Alive	NA	39123915	FALSE
+2bb0e784-10fc-4978-b5f3-bfc197438175	TCGA-B6-A0RE-01A-11R-A056-07	TCGA-B6-A0RE	tumor	Primary Tumor	Negative	Negative	NA	Stage X	61	Alive	NA	40144141	FALSE
+0299b03e-af72-49d9-ba5e-4620e69f6bcc	TCGA-B6-A0RG-01A-11R-A056-07	TCGA-B6-A0RG	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	26	Alive	NA	39710168	FALSE
+1b8dfe86-a00f-48ae-8956-377f5812ff35	TCGA-B6-A0RH-01A-21R-A115-07	TCGA-B6-A0RH	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	51	Alive	NA	40708252	FALSE
+00f24662-71c8-4939-aa6e-0427038545d9	TCGA-B6-A0RI-01A-11R-A056-07	TCGA-B6-A0RI	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIB	44	Alive	NA	39765298	FALSE
+89b17c49-bf29-4ccb-a4f0-be994beb4265	TCGA-B6-A0RL-01A-11R-A084-07	TCGA-B6-A0RL	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	60	Dead	2469	37692249	FALSE
+b3382514-ecef-4a68-90e6-0e224ef11f01	TCGA-B6-A0RM-01A-11R-A084-07	TCGA-B6-A0RM	tumor	Primary Tumor	Positive	Positive	NA	Stage X	57	Dead	2373	39030853	FALSE
+2f86d512-9177-45ac-b724-bbc31d83cdb7	TCGA-B6-A0RN-01A-12R-A084-07	TCGA-B6-A0RN	tumor	Primary Tumor	Negative	Negative	NA	Stage IA	60	Alive	NA	39355437	FALSE
+08231a66-dd8e-40b0-9aec-850ad057735b	TCGA-B6-A0RO-01A-22R-A084-07	TCGA-B6-A0RO	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIB	71	Alive	NA	41126523	FALSE
+7725ecef-ce7a-47c3-8f39-4a9582175497	TCGA-B6-A0RP-01A-21R-A084-07	TCGA-B6-A0RP	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIB	73	Dead	3126	39095861	FALSE
+39ceff6e-a829-49b2-a5a0-895cac8be530	TCGA-B6-A0RQ-01A-11R-A115-07	TCGA-B6-A0RQ	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	68	Dead	4273	39180543	FALSE
+56338cf6-8216-4cec-9a81-bf01d543591d	TCGA-B6-A0RS-01A-11R-A084-07	TCGA-B6-A0RS	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	38	Dead	3063	39948201	FALSE
+020873c7-93d7-4eea-b25f-60663417d9bb	TCGA-B6-A0RT-01A-21R-A084-07	TCGA-B6-A0RT	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIA	39	Alive	NA	38869520	FALSE
+7b6863e0-1ad2-48d8-afd6-57e636fae26e	TCGA-B6-A0RU-01A-11R-A084-07	TCGA-B6-A0RU	tumor	Primary Tumor	Negative	Negative	NA	Stage IA	40	Alive	NA	40258547	FALSE
+60c90f17-b6c5-4a39-b4ec-a74c669b484b	TCGA-B6-A0RV-01A-11R-A084-07	TCGA-B6-A0RV	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	42	Alive	NA	39794663	FALSE
+a11f6487-644d-42a2-9f68-e773e71e58d1	TCGA-B6-A0WS-01A-11R-A115-07	TCGA-B6-A0WS	tumor	Primary Tumor	Positive	Positive	NA	Stage X	58	Dead	2965	39575852	FALSE
+9af9e9cf-2d77-455e-8d47-10537badd98f	TCGA-B6-A0WT-01A-11R-A109-07	TCGA-B6-A0WT	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	61	Alive	NA	37862804	FALSE
+8f2023a0-1ee1-436d-a2ba-f2f9a61ccf52	TCGA-B6-A0WV-01A-11R-A109-07	TCGA-B6-A0WV	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	67	Dead	2422	39181309	FALSE
+9e21a804-3f57-453f-8117-4b5262bf8b81	TCGA-B6-A0WW-01A-11R-A109-07	TCGA-B6-A0WW	tumor	Primary Tumor	Positive	Positive	NA	Stage X	58	Dead	558	39738703	FALSE
+55fee8d3-acd5-4366-ac30-c66225debe4d	TCGA-B6-A0WX-01A-11R-A109-07	TCGA-B6-A0WX	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIA	40	Dead	653	39176658	FALSE
+19b24dc2-5881-4d7f-9cea-c85237ba80db	TCGA-B6-A0WY-01A-11R-A109-07	TCGA-B6-A0WY	tumor	Primary Tumor	Positive	Negative	NA	Stage IIIA	40	Dead	3461	39719501	FALSE
+4a052df5-38bb-4e2f-87bb-bbde3c959304	TCGA-B6-A0WZ-01A-11R-A109-07	TCGA-B6-A0WZ	tumor	Primary Tumor	Positive	Positive	NA	Stage II	50	Alive	NA	39403146	FALSE
+dcd49265-d7bb-482f-b1da-d5d4098e9f1a	TCGA-B6-A0X0-01A-21R-A115-07	TCGA-B6-A0X0	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	54	Dead	3945	40237185	FALSE
+a7589115-6759-41f5-acda-185369ae599e	TCGA-B6-A0X1-01A-11R-A109-07	TCGA-B6-A0X1	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	48	Alive	NA	40086567	FALSE
+b8e6b405-7d74-4fb8-be43-73af4abe105b	TCGA-B6-A0X4-01A-11R-A109-07	TCGA-B6-A0X4	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	62	Dead	860	38533656	FALSE
+e2a25905-7c92-4e43-81c0-d09268014334	TCGA-B6-A0X5-01A-21R-A109-07	TCGA-B6-A0X5	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	61	Dead	2097	39640695	FALSE
+a4318da0-6021-4931-a583-1087bd2bc837	TCGA-B6-A0X7-01A-11R-A10J-07	TCGA-B6-A0X7	tumor	Primary Tumor	Positive	Positive	NA	Stage X	62	Dead	1791	37967150	FALSE
+596736fb-5fb7-446a-b8ca-53f0129f41cf	TCGA-B6-A1KC-01B-11R-A157-07	TCGA-B6-A1KC	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	67	Alive	NA	38663556	FALSE
+e6281a02-850b-405e-af4d-e79967552f0a	TCGA-B6-A1KF-01A-11R-A13Q-07	TCGA-B6-A1KF	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIB	68	Alive	NA	39509711	FALSE
+072bac5f-4e09-4831-9c32-f42b94c4b30d	TCGA-B6-A1KI-01A-11R-A14M-07	TCGA-B6-A1KI	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	63	Alive	NA	39369210	FALSE
+59c375b4-60fb-4598-a146-5b175c2b8079	TCGA-B6-A1KN-01A-11R-A13Q-07	TCGA-B6-A1KN	tumor	Primary Tumor	Negative	Negative	NA	Stage IIIB	57	Alive	NA	38654145	FALSE
+08ef1297-be9e-4f71-b565-0552389144f0	TCGA-B6-A2IU-01A-32R-A18M-07	TCGA-B6-A2IU	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	62	Alive	NA	38891146	FALSE
+f69372c0-9da5-469c-ba81-e5b3da5e605c	TCGA-B6-A3ZX-01A-11R-A239-07	TCGA-B6-A3ZX	tumor	Primary Tumor	Negative	Negative	Negative	Stage IV	50	Alive	NA	39335057	FALSE
+30774cd0-6f55-4e04-ae96-dbd729702499	TCGA-B6-A400-01A-11R-A239-07	TCGA-B6-A400	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	43	Alive	NA	39636085	FALSE
+681da261-2611-42bd-927d-9cdbb72baad6	TCGA-B6-A401-01A-11R-A239-07	TCGA-B6-A401	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	47	Alive	NA	38547513	FALSE
+a426ab8d-d15c-42b9-bf81-a3ca7dbae8c1	TCGA-B6-A402-01A-11R-A239-07	TCGA-B6-A402	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	47	Alive	NA	38670010	FALSE
+0e6ae036-64ed-4489-ae40-55f77089a890	TCGA-B6-A408-01A-12R-A24H-07	TCGA-B6-A408	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIC	55	Alive	NA	39030309	FALSE
+734f18ad-2dd7-4d08-896a-d7558806c46a	TCGA-B6-A409-01A-11R-A24H-07	TCGA-B6-A409	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIIA	44	Dead	573	40585051	FALSE
+cac793ee-a0fc-4fad-88b4-593205694ec0	TCGA-B6-A40B-01A-11R-A239-07	TCGA-B6-A40B	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	76	Alive	NA	39962044	FALSE
+049dd36f-6e0f-4693-a8fa-5f4042156612	TCGA-B6-A40C-01A-11R-A239-07	TCGA-B6-A40C	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	51	Alive	NA	39335957	FALSE
+bea15d17-963a-413e-80ed-828edb735550	TCGA-BH-A0AU-01A-11R-A12P-07	TCGA-BH-A0AU	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	45	Alive	NA	39406344	FALSE
+8c8bab17-707f-41b0-aca0-d6bfd43a947a	TCGA-BH-A0AU-11A-11R-A12P-07	TCGA-BH-A0AU	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIA	45	Alive	NA	37880187	FALSE
+a39ba4b3-40c6-479c-9407-01616194b057	TCGA-BH-A0AV-01A-31R-A115-07	TCGA-BH-A0AV	tumor	Primary Tumor	Negative	Negative	NA	Stage I	52	Alive	NA	40248195	FALSE
+03b92f89-07b6-4306-954e-a4a52d4a113a	TCGA-BH-A0AW-01A-11R-A056-07	TCGA-BH-A0AW	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	56	Alive	NA	41012405	FALSE
+f59c167d-5cbe-490c-8320-20f900c3dcb5	TCGA-BH-A0AY-01A-21R-A00Z-07	TCGA-BH-A0AY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39893861	FALSE
+37807910-f63b-45a9-9113-78fd3b7ee864	TCGA-BH-A0AY-11A-23R-A089-07	TCGA-BH-A0AY	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39282912	FALSE
+054b5cea-03f3-4747-90bc-12cfbb359393	TCGA-BH-A0AZ-01A-21R-A12P-07	TCGA-BH-A0AZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	47	Alive	NA	39975115	FALSE
+5c6ea2e2-6f44-4c30-9a7e-95c04efea308	TCGA-BH-A0AZ-11A-22R-A12P-07	TCGA-BH-A0AZ	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	47	Alive	NA	37552877	FALSE
+a86d241d-fe25-40b7-a61c-b919d30fa545	TCGA-BH-A0B0-01A-21R-A115-07	TCGA-BH-A0B0	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	56	Alive	NA	39496355	FALSE
+84314004-2ee2-4aa9-b9de-b6ef7db3fe82	TCGA-BH-A0B1-01A-12R-A056-07	TCGA-BH-A0B1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	66	Alive	NA	39993752	FALSE
+3e37647e-5916-42a1-9278-8fa0464e0267	TCGA-BH-A0B2-01A-11R-A10J-07	TCGA-BH-A0B2	tumor	NA	NA	NA	NA	NA	NA	NA	NA	39976476	FALSE
+6588314e-69e9-44dc-b7d0-0966c1833608	TCGA-BH-A0B3-01A-11R-A056-07	TCGA-BH-A0B3	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	53	Alive	NA	40457147	FALSE
+6b960a87-c9e2-4f37-bbb8-116a776fd26a	TCGA-BH-A0B3-11B-21R-A089-07	TCGA-BH-A0B3	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIB	53	Alive	NA	38392406	FALSE
+599b0d4c-62d4-48cd-a93c-1dd1fe85abfa	TCGA-BH-A0B4-01A-11R-A00Z-07	TCGA-BH-A0B4	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	65	Alive	NA	40014561	FALSE
+591c6233-6e43-4a7c-8468-6fcd1ce0d5cd	TCGA-BH-A0B5-01A-11R-A12P-07	TCGA-BH-A0B5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	40	Alive	NA	38649472	FALSE
+ae8d8d83-d457-4164-861e-9329db223561	TCGA-BH-A0B5-11A-23R-A12P-07	TCGA-BH-A0B5	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	40	Alive	NA	40063376	FALSE
+182f11ac-134d-4eb1-a19d-dad086d6dd2c	TCGA-BH-A0B6-01A-11R-A19W-07	TCGA-BH-A0B6	tumor	Primary Tumor	Positive	Positive	Positive	Stage I	47	Alive	NA	41356328	FALSE
+26d52822-b295-4864-a6ac-0ebf1c368cc4	TCGA-BH-A0B7-01A-12R-A115-07	TCGA-BH-A0B7	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	42	Alive	NA	39941125	FALSE
+ec24a121-d2ce-4cc3-8d70-033b9af36efc	TCGA-BH-A0B7-11A-34R-A115-07	TCGA-BH-A0B7	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIB	42	Alive	NA	37904049	FALSE
+29d55f13-d78d-45f1-8fdf-65733c69f1bc	TCGA-BH-A0B8-01A-21R-A056-07	TCGA-BH-A0B8	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	64	Alive	NA	39960954	FALSE
+850ffb90-c9a5-425e-9937-d085be40a946	TCGA-BH-A0B8-11A-41R-A089-07	TCGA-BH-A0B8	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage I	64	Alive	NA	39267008	FALSE
+54f8f899-df83-42dd-bbf4-51d7583e5652	TCGA-BH-A0B9-01A-11R-A056-07	TCGA-BH-A0B9	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	44	Alive	NA	40050974	FALSE
+e0f3fe37-09bd-4be1-8ca9-ea1870f6f1b0	TCGA-BH-A0BA-01A-11R-A056-07	TCGA-BH-A0BA	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	51	Alive	NA	38761468	FALSE
+8c5725f4-969a-49de-b2ca-66c5fc2d7d05	TCGA-BH-A0BA-11A-22R-A19E-07	TCGA-BH-A0BA	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIC	51	Alive	NA	38459893	FALSE
+eb3aa089-6c7a-4e61-8de3-2a59bca43cc4	TCGA-BH-A0BC-01A-22R-A084-07	TCGA-BH-A0BC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	60	Alive	NA	40340676	FALSE
+bc393980-3f0c-40d0-b6d3-fc257b93ec4d	TCGA-BH-A0BC-11A-22R-A089-07	TCGA-BH-A0BC	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIC	60	Alive	NA	39504806	FALSE
+cdc7df8c-4e6c-4f00-ae33-f3eab6f1d08f	TCGA-BH-A0BD-01A-11R-A034-07	TCGA-BH-A0BD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	47	Alive	NA	40196623	FALSE
+d79925a7-9171-4fb1-a898-9598ca0b58d4	TCGA-BH-A0BF-01A-21R-A12P-07	TCGA-BH-A0BF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	56	Alive	NA	39070677	FALSE
+8a397cf1-08c5-4772-9dd6-9c4b6fdece1c	TCGA-BH-A0BG-01A-11R-A115-07	TCGA-BH-A0BG	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	73	Alive	NA	39794730	FALSE
+f2b501a8-2cc2-47ad-995e-4627ae10b398	TCGA-BH-A0BJ-01A-11R-A056-07	TCGA-BH-A0BJ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	41	Alive	NA	40133512	FALSE
+c75977e1-8019-4762-beb4-490db88490f5	TCGA-BH-A0BJ-11A-23R-A089-07	TCGA-BH-A0BJ	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	41	Alive	NA	39431336	FALSE
+eb667236-8f51-40a0-98e4-e27fa32b8999	TCGA-BH-A0BL-01A-11R-A115-07	TCGA-BH-A0BL	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	35	Alive	NA	38906559	FALSE
+eacf171d-5259-45ca-ba5b-137a47da4c71	TCGA-BH-A0BM-01A-11R-A056-07	TCGA-BH-A0BM	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	54	Alive	NA	39041303	FALSE
+09d2439a-2fbc-454f-b493-48b19cd506f5	TCGA-BH-A0BM-11A-12R-A089-07	TCGA-BH-A0BM	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage IIB	54	Alive	NA	39492737	FALSE
+6f0df420-9ba6-48d7-91a0-7aa2cc5b5e80	TCGA-BH-A0BO-01A-23R-A12D-07	TCGA-BH-A0BO	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	54	Alive	NA	39421510	FALSE
+5cdfaf15-5227-4917-a66c-2447cf9bc70e	TCGA-BH-A0BP-01A-11R-A115-07	TCGA-BH-A0BP	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	76	Alive	NA	39170098	FALSE
+cec3c875-a8e8-434f-8de4-7c0627d1b074	TCGA-BH-A0BQ-01A-21R-A115-07	TCGA-BH-A0BQ	tumor	Primary Tumor	Positive	Positive	Positive	Stage I	39	Alive	NA	40596657	FALSE
+4cf862d2-b9c5-4993-b2d0-cbfb61a4ed62	TCGA-BH-A0BQ-11A-33R-A115-07	TCGA-BH-A0BQ	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage I	39	Alive	NA	37655769	FALSE
+8731f05e-b6af-4930-97dd-6c933dc91361	TCGA-BH-A0BR-01A-21R-A115-07	TCGA-BH-A0BR	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	59	Alive	NA	40263434	FALSE
+fa6ce09a-c597-4223-83b6-39dc39ac828f	TCGA-BH-A0BS-01A-11R-A12P-07	TCGA-BH-A0BS	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	55	Alive	NA	40330717	FALSE
+f79245c7-064d-4c8a-87f2-6db02585c395	TCGA-BH-A0BS-11A-11R-A12P-07	TCGA-BH-A0BS	normal	Solid Tissue Normal	Positive	Positive	NA	Stage IIIA	55	Alive	NA	39489681	FALSE
+10986c8d-d75f-4a89-8d0f-9842ba9d1263	TCGA-BH-A0BT-01A-11R-A12P-07	TCGA-BH-A0BT	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	56	Alive	NA	39849982	FALSE
+cfe85bad-4d09-410a-9b96-183083eab289	TCGA-BH-A0BT-11A-21R-A12P-07	TCGA-BH-A0BT	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	56	Alive	NA	39042262	FALSE
+f5f7b591-062d-4ff0-ab68-73d678574318	TCGA-BH-A0BV-01A-11R-A00Z-07	TCGA-BH-A0BV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	78	Alive	NA	40002098	FALSE
+d925cac2-bbc5-4160-9dc7-898c3fb28be3	TCGA-BH-A0BV-11A-31R-A089-07	TCGA-BH-A0BV	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	78	Alive	NA	38607541	FALSE
+d4e6dc5c-510c-4431-935a-62105b691699	TCGA-BH-A0BW-01A-11R-A115-07	TCGA-BH-A0BW	tumor	Primary Tumor	Negative	Negative	NA	Stage I	71	Alive	NA	38953361	FALSE
+9a69fe57-a71f-4206-aad4-83925b546d3d	TCGA-BH-A0BW-11A-12R-A115-07	TCGA-BH-A0BW	normal	Solid Tissue Normal	Negative	Negative	NA	Stage I	71	Alive	NA	38018705	FALSE
+cc668ff4-1dc9-44bb-8858-1417e8809502	TCGA-BH-A0BZ-01A-31R-A12P-07	TCGA-BH-A0BZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	59	Alive	NA	40588121	FALSE
+15cfef50-1a71-40d0-a75e-2c8b5ae5ea10	TCGA-BH-A0BZ-11A-61R-A12P-07	TCGA-BH-A0BZ	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	59	Alive	NA	39033906	FALSE
+3676ff64-9f37-4ee8-84fd-84131dae04a2	TCGA-BH-A0C0-01A-21R-A056-07	TCGA-BH-A0C0	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	62	Alive	NA	40100203	FALSE
+348c6da2-7afb-4fe1-9afc-5839111bd0a3	TCGA-BH-A0C0-11A-21R-A089-07	TCGA-BH-A0C0	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIA	62	Alive	NA	38445263	FALSE
+43d0f325-fe4f-4f1e-81d8-1489b48f7ae6	TCGA-BH-A0C1-01B-11R-A12D-07	TCGA-BH-A0C1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	61	Alive	NA	39660903	FALSE
+eb9fcac4-2937-46bc-a560-e506412f8966	TCGA-BH-A0C3-01A-21R-A12P-07	TCGA-BH-A0C3	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	47	Alive	NA	39382840	FALSE
+0d7a2162-7647-4023-a53c-ae4e6ee3e73a	TCGA-BH-A0C3-11A-23R-A12P-07	TCGA-BH-A0C3	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage I	47	Alive	NA	38145314	FALSE
+b66df40b-0b1f-4852-983f-a497fc14852f	TCGA-BH-A0C7-01B-11R-A115-07	TCGA-BH-A0C7	tumor	Primary Tumor	Positive	Negative	NA	Stage IIB	48	Alive	NA	39167196	FALSE
+fef6e287-8f0d-455b-ba19-7c48c2c583d2	TCGA-BH-A0DD-01A-31R-A12P-07	TCGA-BH-A0DD	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	58	Alive	NA	38949811	FALSE
+b1cbc674-f3c1-453d-9cd1-8f4db32286ae	TCGA-BH-A0DD-11A-23R-A12P-07	TCGA-BH-A0DD	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIB	58	Alive	NA	39632698	FALSE
+90db18fe-20cc-4241-b66a-eaa3d5391d4a	TCGA-BH-A0DE-01A-11R-A115-07	TCGA-BH-A0DE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39083018	FALSE
+29f2019d-5a69-497e-a7ff-73dd35fcaa01	TCGA-BH-A0DG-01A-21R-A12P-07	TCGA-BH-A0DG	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	30	Alive	NA	39646110	FALSE
+5cc8ac1b-c01c-4ad0-940a-5864f1229180	TCGA-BH-A0DG-11A-43R-A12P-07	TCGA-BH-A0DG	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage IIA	30	Alive	NA	37979675	FALSE
+70939556-123f-45c0-b55f-4843adad8811	TCGA-BH-A0DH-01A-11R-A084-07	TCGA-BH-A0DH	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	63	Alive	NA	41034872	FALSE
+af0426b7-7a31-4943-973a-05114783db32	TCGA-BH-A0DH-11A-31R-A089-07	TCGA-BH-A0DH	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	63	Alive	NA	39960116	FALSE
+5537e19f-1361-447e-b207-329363f9f777	TCGA-BH-A0DI-01A-21R-A12P-07	TCGA-BH-A0DI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	63	Alive	NA	40124042	FALSE
+2f42c2ad-bda3-4f1a-b8e5-2d15df2a2dd9	TCGA-BH-A0DK-01A-21R-A056-07	TCGA-BH-A0DK	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	49	Alive	NA	40281272	FALSE
+a9c13940-c140-413a-b9c6-30fe012fc38e	TCGA-BH-A0DK-11A-13R-A089-07	TCGA-BH-A0DK	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	49	Alive	NA	39386505	FALSE
+8cf5a2c0-93cb-40bb-8b7c-d07dcd830a20	TCGA-BH-A0DL-01A-11R-A115-07	TCGA-BH-A0DL	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	64	Alive	NA	39480310	FALSE
+6a73b561-cf9c-49dd-8b8b-09036538caa4	TCGA-BH-A0DL-11A-13R-A115-07	TCGA-BH-A0DL	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage IIA	64	Alive	NA	38204696	FALSE
+80a10e2c-6e0b-4b9e-b3b4-086a7cda9a46	TCGA-BH-A0DO-01B-11R-A12D-07	TCGA-BH-A0DO	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	78	Alive	NA	39012645	FALSE
+f0912de2-2b34-4e4b-89c8-bdc2d051f144	TCGA-BH-A0DO-11A-22R-A12D-07	TCGA-BH-A0DO	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	78	Alive	NA	38546342	FALSE
+47129fda-ac0c-422f-b7e3-f293cd1c5443	TCGA-BH-A0DP-01A-21R-A056-07	TCGA-BH-A0DP	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	60	Alive	NA	39597715	FALSE
+6751836c-0b02-4c38-a5f4-006e15050a9b	TCGA-BH-A0DP-11A-12R-A089-07	TCGA-BH-A0DP	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	60	Alive	NA	39139078	FALSE
+c771527f-a09e-4173-8eb9-8dce3882476a	TCGA-BH-A0DQ-01A-11R-A084-07	TCGA-BH-A0DQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	42	Alive	NA	39732567	FALSE
+217cc90e-771c-4136-9f6e-bf1da0555a15	TCGA-BH-A0DQ-11A-12R-A089-07	TCGA-BH-A0DQ	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	42	Alive	NA	38692063	FALSE
+8157c85f-d313-4102-b682-d9c38713bf07	TCGA-BH-A0DS-01A-11R-A056-07	TCGA-BH-A0DS	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	71	Alive	NA	39821232	FALSE
+9030ac3f-19d2-4173-9025-87726923621d	TCGA-BH-A0DT-01A-21R-A12D-07	TCGA-BH-A0DT	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	41	Alive	NA	39580761	FALSE
+5311bb33-72c7-4287-8d56-998477d7e3fb	TCGA-BH-A0DT-11A-12R-A12D-07	TCGA-BH-A0DT	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	41	Alive	NA	38532647	FALSE
+4885697c-841e-4839-956f-cc050578f453	TCGA-BH-A0DV-01A-21R-A12P-07	TCGA-BH-A0DV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	54	Alive	NA	40534225	FALSE
+b2c2d63c-4cfe-427d-a0a6-d1e35a1f8e89	TCGA-BH-A0DV-11A-22R-A12P-07	TCGA-BH-A0DV	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	54	Alive	NA	38556358	FALSE
+ceb674a6-b8ae-4245-af6e-83030d514b84	TCGA-BH-A0DX-01A-11R-A115-07	TCGA-BH-A0DX	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	62	Alive	NA	39494856	FALSE
+f15d5710-3511-4133-b307-43c0e5877498	TCGA-BH-A0DZ-01A-11R-A00Z-07	TCGA-BH-A0DZ	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	43	Alive	NA	40141714	FALSE
+3db28a6f-c3b3-4e71-bdcb-8f19f1599695	TCGA-BH-A0DZ-11A-22R-A089-07	TCGA-BH-A0DZ	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIB	43	Alive	NA	40385550	FALSE
+417cb3fa-2125-42ce-a638-51952c81dc2b	TCGA-BH-A0E0-01A-11R-A056-07	TCGA-BH-A0E0	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIC	38	Alive	NA	40044425	FALSE
+85de736f-757e-453d-af94-ae6b11e155dc	TCGA-BH-A0E0-11A-13R-A089-07	TCGA-BH-A0E0	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIIC	38	Alive	NA	39845391	FALSE
+6199b19a-7766-4a3a-8697-5d90799034f8	TCGA-BH-A0E1-01A-11R-A056-07	TCGA-BH-A0E1	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	52	Alive	NA	40695514	FALSE
+d2996de7-e6d1-493b-bbcb-479901279162	TCGA-BH-A0E1-11A-13R-A089-07	TCGA-BH-A0E1	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIB	52	Alive	NA	39963586	FALSE
+bdb30060-c2cf-4c66-ab80-3da009a1161f	TCGA-BH-A0E2-01A-11R-A056-07	TCGA-BH-A0E2	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	49	Alive	NA	40201471	FALSE
+1f5ef98f-2bf9-4c93-8d68-72d9ca67480a	TCGA-BH-A0E6-01A-11R-A034-07	TCGA-BH-A0E6	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	69	Alive	NA	40071752	FALSE
+a65773c1-18d0-4f48-85e1-380338b66c7d	TCGA-BH-A0E7-01A-11R-A034-07	TCGA-BH-A0E7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	79	Alive	NA	39152652	FALSE
+ef1c5f5b-ee6e-41a3-b6ce-5b0321d7d742	TCGA-BH-A0E9-01B-11R-A115-07	TCGA-BH-A0E9	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	53	Alive	NA	38681056	FALSE
+6070db25-079c-4bfa-889d-e4e447ceea70	TCGA-BH-A0EA-01A-11R-A115-07	TCGA-BH-A0EA	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	72	Dead	991	39100685	FALSE
+a6e7a318-eaa0-4ac3-8cdd-54efbcc59113	TCGA-BH-A0EB-01A-11R-A034-07	TCGA-BH-A0EB	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	69	Alive	NA	39182746	FALSE
+cb6fc77b-63da-4372-869b-8e46c263a3d5	TCGA-BH-A0EE-01A-11R-A034-07	TCGA-BH-A0EE	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	68	Alive	NA	39618356	FALSE
+03737fb6-a59c-4618-a4e5-5fc657e42900	TCGA-BH-A0EI-01A-11R-A115-07	TCGA-BH-A0EI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	51	Alive	NA	39265814	FALSE
+ee4e1acf-6b66-474b-8f0a-120068b7557f	TCGA-BH-A0GY-01A-11R-A056-07	TCGA-BH-A0GY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	67	Alive	NA	40076842	FALSE
+29c63350-f03b-4c65-979c-53ae84e20042	TCGA-BH-A0GZ-01A-11R-A056-07	TCGA-BH-A0GZ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	62	Alive	NA	39805401	FALSE
+6fd76033-7c26-440c-beca-144bd18f7d58	TCGA-BH-A0H0-01A-11R-A056-07	TCGA-BH-A0H0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	69	Alive	NA	38637387	FALSE
+d8e7120b-a46c-4581-a4d5-b8c25857bd37	TCGA-BH-A0H3-01A-11R-A12P-07	TCGA-BH-A0H3	tumor	Primary Tumor	Positive	Positive	NA	Stage I	46	Alive	NA	39359197	FALSE
+8aaa142f-ee1b-4124-9327-2f6b968fb183	TCGA-BH-A0H5-01A-21R-A115-07	TCGA-BH-A0H5	tumor	Primary Tumor	Positive	Positive	NA	Stage I	45	Alive	NA	39928129	FALSE
+bbfef368-7fc6-47dd-8ddc-f1554238acdb	TCGA-BH-A0H5-11A-62R-A115-07	TCGA-BH-A0H5	normal	Solid Tissue Normal	Positive	Positive	NA	Stage I	45	Alive	NA	37449759	FALSE
+fa75cad0-cab6-464d-8fee-147706c3b6e9	TCGA-BH-A0H6-01A-21R-A056-07	TCGA-BH-A0H6	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	82	Alive	NA	38954979	FALSE
+0b10c68d-9ac5-4c64-9233-2eb9c4a8a942	TCGA-BH-A0H7-01A-13R-A056-07	TCGA-BH-A0H7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	65	Alive	NA	40364551	FALSE
+b201ffe7-95e3-4cfe-af18-e96a9c2270e4	TCGA-BH-A0H7-11A-13R-A089-07	TCGA-BH-A0H7	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	65	Alive	NA	39862786	FALSE
+f3fd3dee-dd68-4e91-8c94-4593c582cba0	TCGA-BH-A0H9-01A-11R-A056-07	TCGA-BH-A0H9	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	69	Alive	NA	40336506	FALSE
+835fa52a-5d99-452a-96ba-500be953b086	TCGA-BH-A0H9-11A-22R-A466-07	TCGA-BH-A0H9	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIA	69	Alive	NA	39453114	FALSE
+b2ab1b82-6ee3-4c66-a6a6-6c64cfc6012f	TCGA-BH-A0HA-01A-11R-A12P-07	TCGA-BH-A0HA	tumor	Primary Tumor	Positive	Positive	NA	Stage I	31	Alive	NA	39790510	FALSE
+f6b4457a-6a38-430f-a6ff-47ece00a560d	TCGA-BH-A0HA-11A-31R-A12P-07	TCGA-BH-A0HA	normal	Solid Tissue Normal	Positive	Positive	NA	Stage I	31	Alive	NA	37799923	FALSE
+86bcff5a-f4d4-43d3-810b-1b32832e541f	TCGA-BH-A0HB-01A-11R-A056-07	TCGA-BH-A0HB	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	55	Alive	NA	40497429	FALSE
+ec9f355e-90fa-42de-a35e-ec6a2d5ea1be	TCGA-BH-A0HF-01A-11R-A056-07	TCGA-BH-A0HF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	77	Alive	NA	39879933	FALSE
+b8757a4b-548e-41bd-b0b0-f7a8658aafe6	TCGA-BH-A0HI-01A-11R-A084-07	TCGA-BH-A0HI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	78	Alive	NA	40290461	FALSE
+aebcf532-fd91-450f-a48e-d6387f2754d0	TCGA-BH-A0HK-01A-11R-A056-07	TCGA-BH-A0HK	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	81	Alive	NA	39592398	FALSE
+75a8e6a0-98a9-438d-ac26-17125162bb94	TCGA-BH-A0HK-11A-11R-A089-07	TCGA-BH-A0HK	normal	Solid Tissue Normal	Positive	Negative	Negative	Stage IIB	81	Alive	NA	40345682	FALSE
+da35f73e-1856-41b6-994e-76919556c971	TCGA-BH-A0HL-01A-11R-A10U-07	TCGA-BH-A0HL	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	56	Alive	NA	39327281	FALSE
+e0435ff5-5847-48f4-9f7b-40da5ab52e3e	TCGA-BH-A0HN-01A-11R-A10U-07	TCGA-BH-A0HN	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	67	Alive	NA	38659991	FALSE
+b715c1bf-c3e1-43b5-8480-462f38692e59	TCGA-BH-A0HO-01A-11R-A034-07	TCGA-BH-A0HO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	48	Alive	NA	40235245	FALSE
+ca308e28-e476-4e9d-8e0d-7eba884c4693	TCGA-BH-A0HP-01A-12R-A084-07	TCGA-BH-A0HP	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	65	Alive	NA	39604591	FALSE
+a8d8311c-73c4-4806-a8ca-d275905fc1ae	TCGA-BH-A0HQ-01A-11R-A034-07	TCGA-BH-A0HQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	56	Alive	NA	39613224	FALSE
+039d56da-2740-4fae-bee7-ab7f5bba8a20	TCGA-BH-A0HU-01A-11R-A034-07	TCGA-BH-A0HU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	52	Alive	NA	39906806	FALSE
+b350ce03-64ac-44f5-8438-b7b8dc3a962f	TCGA-BH-A0HW-01A-11R-A034-07	TCGA-BH-A0HW	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IA	62	Alive	NA	38901680	FALSE
+322d301a-93cd-426c-b0f8-c235752c41ef	TCGA-BH-A0HX-01A-21R-A056-07	TCGA-BH-A0HX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	39953583	FALSE
+5b565b8a-68a0-42da-9010-a7f00b638f7d	TCGA-BH-A0HY-01A-11R-A056-07	TCGA-BH-A0HY	tumor	Primary Tumor	Positive	Negative	Positive	Stage I	60	Alive	NA	39855072	FALSE
+48943dd7-03cb-4136-a6e6-d84a382260e3	TCGA-BH-A0RX-01A-21R-A084-07	TCGA-BH-A0RX	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	59	Alive	NA	40455849	FALSE
+9bffa41c-8d78-4077-9343-a124b370c8b6	TCGA-BH-A0W3-01A-11R-A109-07	TCGA-BH-A0W3	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	58	Alive	NA	39267892	FALSE
+8f30f0e6-ce60-480f-b69d-8cd9655ba6f2	TCGA-BH-A0W4-01A-11R-A109-07	TCGA-BH-A0W4	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	46	Alive	NA	38902066	FALSE
+a82bf67f-6b69-499a-8631-4101be9ba9ab	TCGA-BH-A0W5-01A-11R-A109-07	TCGA-BH-A0W5	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	77	Alive	NA	38489950	FALSE
+7112c999-f9b4-4754-a45b-e2c653b94374	TCGA-BH-A0W7-01A-11R-A115-07	TCGA-BH-A0W7	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	49	Alive	NA	39952800	FALSE
+5b527fb2-9de2-419a-9f62-989333449f6c	TCGA-BH-A0WA-01A-11R-A109-07	TCGA-BH-A0WA	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	82	Alive	NA	39890189	FALSE
+5e3544a8-5ff9-45cc-b4a5-fdf43427e305	TCGA-BH-A18F-01A-11R-A12D-07	TCGA-BH-A18F	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	50	Alive	NA	39980564	FALSE
+c90142d8-f939-4fea-bc48-073d2814f54e	TCGA-BH-A18G-01A-11R-A12D-07	TCGA-BH-A18G	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	81	Alive	NA	40965968	FALSE
+454383cb-3cb3-4b8c-8078-a2ec27139d33	TCGA-BH-A18H-01A-11R-A12D-07	TCGA-BH-A18H	tumor	Primary Tumor	Positive	Positive	Positive	Stage IA	63	Alive	NA	38966747	FALSE
+16fa9305-8d86-4330-b932-07274b631574	TCGA-BH-A18I-01A-11R-A12D-07	TCGA-BH-A18I	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	53	Alive	NA	39013459	FALSE
+9a756d11-4f93-4a52-9755-c338b21ccdca	TCGA-BH-A18J-01A-11R-A12D-07	TCGA-BH-A18J	tumor	Primary Tumor	Positive	Positive	Negative	Stage IV	56	Dead	612	40007963	FALSE
+1e19ecd4-81f1-48d5-8b30-a74ad6411d3f	TCGA-BH-A18J-11A-31R-A12D-07	TCGA-BH-A18J	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IV	56	Dead	612	38784400	FALSE
+6735b42c-e2cd-4b24-9ac2-5ba1468acd61	TCGA-BH-A18K-01A-11R-A12D-07	TCGA-BH-A18K	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	46	Dead	2763	39442045	FALSE
+424c7da7-1e1f-4b2b-9743-5996bd163573	TCGA-BH-A18K-11A-13R-A12D-07	TCGA-BH-A18K	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	46	Dead	2763	38108784	FALSE
+1ce73491-493d-44b6-8ab5-705f10f5df16	TCGA-BH-A18L-01A-32R-A12D-07	TCGA-BH-A18L	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	50	Dead	811	40039525	FALSE
+e112fbfc-f85e-43e3-b3fe-552b261c7c84	TCGA-BH-A18L-11A-42R-A12D-07	TCGA-BH-A18L	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIA	50	Dead	811	39403087	FALSE
+49b4cdad-26fb-4b62-aea7-7db13f13c389	TCGA-BH-A18M-01A-11R-A12D-07	TCGA-BH-A18M	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	39	Dead	2207	39442495	FALSE
+a5572139-03ca-4299-98b6-13a2945649d0	TCGA-BH-A18M-11A-33R-A12D-07	TCGA-BH-A18M	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIA	39	Dead	2207	38799016	FALSE
+1701dfd9-74cd-4203-b2aa-b158932825fc	TCGA-BH-A18N-01A-11R-A12D-07	TCGA-BH-A18N	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	88	Dead	1148	38827996	FALSE
+4e6f68c7-b89b-4e5f-aeee-141b3de0206f	TCGA-BH-A18N-11A-43R-A12D-07	TCGA-BH-A18N	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	88	Dead	1148	38617385	FALSE
+6559039d-b6f2-4bbb-b10c-dfbf22dbfcaa	TCGA-BH-A18P-01A-11R-A12D-07	TCGA-BH-A18P	tumor	Primary Tumor	Positive	Negative	Positive	Stage I	60	Dead	921	39350321	FALSE
+09db54ab-1dcc-49b1-bf2f-00f824f51942	TCGA-BH-A18P-11A-43R-A12D-07	TCGA-BH-A18P	normal	Solid Tissue Normal	Positive	Negative	Positive	Stage I	60	Dead	921	39243376	FALSE
+9cd9cf8f-31ac-414d-ad37-1669bb56547c	TCGA-BH-A18Q-01A-12R-A12D-07	TCGA-BH-A18Q	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	56	Dead	1692	38744982	FALSE
+3306fd75-d97a-4cff-8dba-8264a2e29cd9	TCGA-BH-A18Q-11A-34R-A12D-07	TCGA-BH-A18Q	normal	Solid Tissue Normal	Negative	Negative	Positive	Stage IIB	56	Dead	1692	37569613	FALSE
+68f89489-0460-4e20-b878-7c432907bafc	TCGA-BH-A18R-01A-11R-A12D-07	TCGA-BH-A18R	tumor	Primary Tumor	Indeterminate	Negative	Positive	Stage IIA	50	Dead	1142	39104201	FALSE
+572d8e48-ad79-4a97-97e6-5298db50e8e3	TCGA-BH-A18R-11A-42R-A12D-07	TCGA-BH-A18R	normal	Solid Tissue Normal	Indeterminate	Negative	Positive	Stage IIA	50	Dead	1142	38838826	FALSE
+c2864531-cbf6-41a1-87dc-d166ebf8b962	TCGA-BH-A18S-01A-11R-A12D-07	TCGA-BH-A18S	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	79	Dead	2009	39851837	FALSE
+942dd527-d1cd-43fc-9d6c-906bbd0150b4	TCGA-BH-A18S-11A-43R-A12D-07	TCGA-BH-A18S	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	79	Dead	2009	39098155	FALSE
+4c14d929-c320-43ea-95bf-781c3eda174c	TCGA-BH-A18T-01A-11R-A12D-07	TCGA-BH-A18T	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	70	Dead	224	39938624	FALSE
+d7877cdd-a69b-4d4c-bb62-d279e18dbf88	TCGA-BH-A18U-01A-21R-A12D-07	TCGA-BH-A18U	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	72	Dead	1563	39478051	FALSE
+9b3467f3-41e9-4517-bdf5-8cb910a36f1e	TCGA-BH-A18U-11A-23R-A12D-07	TCGA-BH-A18U	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIA	72	Dead	1563	38786581	FALSE
+b1627372-85e8-4d0e-baaf-feec24249a89	TCGA-BH-A18V-01A-11R-A12D-07	TCGA-BH-A18V	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	48	Dead	1556	39410075	FALSE
+27e456ae-a15f-41e4-b595-be55e11a4ce1	TCGA-BH-A18V-11A-52R-A12D-07	TCGA-BH-A18V	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIB	48	Dead	1556	39391717	FALSE
+ebf4b684-ae5d-4410-800e-bf14d32837d2	TCGA-BH-A1EN-01A-11R-A13Q-07	TCGA-BH-A1EN	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	78	Dead	2053	40277418	FALSE
+33571663-b693-4f8e-b518-efb951d32f67	TCGA-BH-A1EN-11A-23R-A13Q-07	TCGA-BH-A1EN	normal	Solid Tissue Normal	Negative	Negative	Positive	Stage IIA	78	Dead	2053	39668548	FALSE
+3507cf96-965a-44f3-98f3-d8adef372832	TCGA-BH-A1EO-01A-11R-A137-07	TCGA-BH-A1EO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	68	Dead	2798	39966176	FALSE
+65d527bc-4a71-46ff-be2a-04c6eb3c9ef0	TCGA-BH-A1EO-11A-31R-A137-07	TCGA-BH-A1EO	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	68	Dead	2798	40642626	FALSE
+e0b3c5d3-a6b3-4516-97e4-ae8796c8b12f	TCGA-BH-A1ES-01A-11R-A137-07	TCGA-BH-A1ES	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	35	Dead	3462	38918334	FALSE
+83f80e90-6546-4545-8b4e-f1bcecf77362	TCGA-BH-A1ET-01A-11R-A137-07	TCGA-BH-A1ET	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	55	Dead	2520	38726941	FALSE
+20567c4e-5da3-494f-ab5e-def861008247	TCGA-BH-A1ET-11B-23R-A137-07	TCGA-BH-A1ET	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	55	Dead	2520	37678710	FALSE
+c02ba2eb-4a4a-4ea6-86c7-5c6f999a606c	TCGA-BH-A1EU-01A-11R-A137-07	TCGA-BH-A1EU	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	83	Dead	1286	37513337	FALSE
+eaa7e05d-1417-4a92-a61b-06c7a90e336c	TCGA-BH-A1EU-11A-23R-A137-07	TCGA-BH-A1EU	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	83	Dead	1286	37681464	FALSE
+4f579967-6cb9-4672-ba7a-f94f789b280e	TCGA-BH-A1EV-01A-11R-A137-07	TCGA-BH-A1EV	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	45	Dead	365	39322034	FALSE
+d398e3d3-8af3-4ce0-8348-a62ef6319632	TCGA-BH-A1EV-11A-24R-A137-07	TCGA-BH-A1EV	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIA	45	Dead	365	38233637	FALSE
+c07800c1-91b6-4612-9831-f4f6fc6cf318	TCGA-BH-A1EW-01A-11R-A137-07	TCGA-BH-A1EW	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	38	Dead	1694	39543843	FALSE
+6be57d47-2006-4fe6-a5ae-6954d0e60e96	TCGA-BH-A1EW-11B-33R-A137-07	TCGA-BH-A1EW	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIA	38	Dead	1694	37442469	FALSE
+20c90e97-e900-488e-af6a-6648d9a8bb01	TCGA-BH-A1EX-01A-11R-A13Q-07	TCGA-BH-A1EX	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	67	Dead	1508	38973655	FALSE
+e6901976-2075-463c-828d-8df924efc78e	TCGA-BH-A1EY-01A-11R-A13Q-07	TCGA-BH-A1EY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	79	Dead	538	39293196	FALSE
+58bc4857-6a34-4bfb-91c0-0c35fb9169ed	TCGA-BH-A1F0-01A-11R-A137-07	TCGA-BH-A1F0	tumor	Primary Tumor	Negative	Indeterminate	Negative	Stage IIA	80	Dead	785	39618846	FALSE
+80e543a9-9617-4fb9-89ec-d09a19e8b46f	TCGA-BH-A1F0-11B-23R-A137-07	TCGA-BH-A1F0	normal	Solid Tissue Normal	Negative	Indeterminate	Negative	Stage IIA	80	Dead	785	39623658	FALSE
+c8d64135-1b75-428a-8c75-351d32009eac	TCGA-BH-A1F2-01A-31R-A13Q-07	TCGA-BH-A1F2	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIB	53	Dead	959	39398946	FALSE
+72499823-10eb-4c49-9053-8aa74f40f26a	TCGA-BH-A1F2-11A-32R-A13Q-07	TCGA-BH-A1F2	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIB	53	Dead	959	38687140	FALSE
+1b75bbe2-56c5-4979-b6f3-2e79c7642057	TCGA-BH-A1F5-01A-12R-A13Q-07	TCGA-BH-A1F5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Dead	2712	37969613	FALSE
+fe8bf22a-1156-43c2-9d96-a409fd4bb999	TCGA-BH-A1F6-01A-11R-A13Q-07	TCGA-BH-A1F6	tumor	Primary Tumor	Negative	Negative	Negative	NA	51	Dead	2965	39881149	FALSE
+e3ef24ed-7610-4180-afcd-7025f27d99f6	TCGA-BH-A1F6-11B-94R-A13Q-07	TCGA-BH-A1F6	normal	Solid Tissue Normal	Negative	Negative	Negative	NA	51	Dead	2965	37815228	FALSE
+e634b7db-eab9-4986-895d-d9732c681c4b	TCGA-BH-A1F8-01A-11R-A13Q-07	TCGA-BH-A1F8	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIB	90	Dead	749	39296096	FALSE
+bbdc160d-5c5d-475a-906b-500a925884f3	TCGA-BH-A1F8-11B-21R-A13Q-07	TCGA-BH-A1F8	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIB	90	Dead	749	39282992	FALSE
+8236a77b-e07e-4859-86c4-c154f706c239	TCGA-BH-A1FB-01A-11R-A13Q-07	TCGA-BH-A1FB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	60	Dead	3669	38504560	FALSE
+de188743-5a3a-49bc-9541-32bfb8a3595c	TCGA-BH-A1FB-11A-33R-A13Q-07	TCGA-BH-A1FB	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	60	Dead	3669	38217504	FALSE
+2e125727-43f2-4a9d-8aa7-5d501240c883	TCGA-BH-A1FC-01A-11R-A13Q-07	TCGA-BH-A1FC	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	78	Dead	3472	40102550	FALSE
+0fd2c629-99dd-4a0e-82cc-b3115072d436	TCGA-BH-A1FC-11A-32R-A13Q-07	TCGA-BH-A1FC	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIA	78	Dead	3472	39046791	FALSE
+9c7554e5-aecc-4f41-9b1a-5f82541bb4df	TCGA-BH-A1FD-01A-11R-A13Q-07	TCGA-BH-A1FD	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	68	Dead	1009	39486701	FALSE
+7d4a1d2c-e06d-4277-9529-0fd5584765cd	TCGA-BH-A1FD-11B-21R-A13Q-07	TCGA-BH-A1FD	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	68	Dead	1009	39434178	FALSE
+9450690b-a2b2-45d9-bc5d-534624dddff5	TCGA-BH-A1FE-01A-11R-A13Q-07	TCGA-BH-A1FE	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	31	Dead	2273	38858380	FALSE
+3b080548-8bd9-446b-b16e-ba7719a6df69	TCGA-BH-A1FE-11B-14R-A13Q-07	TCGA-BH-A1FE	normal	Solid Tissue Normal	Positive	Positive	NA	Stage IIB	31	Dead	2273	37077813	FALSE
+35f6a061-a257-482a-8a72-6e0bff199503	TCGA-BH-A1FG-01A-11R-A13Q-07	TCGA-BH-A1FG	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	88	Dead	3738	39542287	FALSE
+7d119f66-6acb-4a78-a0f7-d90ed6d1fa50	TCGA-BH-A1FG-11B-12R-A13Q-07	TCGA-BH-A1FG	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage I	88	Dead	3738	38418160	FALSE
+b8de7c7f-5de1-45b9-948d-cf5df3850551	TCGA-BH-A1FH-01A-12R-A13Q-07	TCGA-BH-A1FH	tumor	Primary Tumor	Positive	Negative	NA	Stage IV	47	Dead	1123	39339114	FALSE
+49071466-095e-4330-907b-68884b6d849f	TCGA-BH-A1FH-11B-42R-A13Q-07	TCGA-BH-A1FH	normal	Solid Tissue Normal	Positive	Negative	NA	Stage IV	47	Dead	1123	39430662	FALSE
+635263e8-c2ca-497e-a55f-1f938f22b7aa	TCGA-BH-A1FJ-01A-11R-A13Q-07	TCGA-BH-A1FJ	tumor	Primary Tumor	Negative	Positive	NA	Stage IIIA	66	Dead	1927	39117250	FALSE
+b0c3d4f5-d82b-468a-9d62-a9b6ca5533b8	TCGA-BH-A1FJ-11B-42R-A13Q-07	TCGA-BH-A1FJ	normal	Solid Tissue Normal	Negative	Positive	NA	Stage IIIA	66	Dead	1927	38483116	FALSE
+c653aad5-59c7-458a-8ea7-9295a2aac884	TCGA-BH-A1FL-01A-11R-A13Q-07	TCGA-BH-A1FL	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	69	Dead	1673	38602683	FALSE
+5b880794-58ab-4b72-9913-6afc21d9110f	TCGA-BH-A1FM-01A-11R-A13Q-07	TCGA-BH-A1FM	tumor	Primary Tumor	Positive	Negative	NA	Stage IIIA	44	Dead	1388	38737741	FALSE
+ebf22036-d34a-444d-8903-835159e23491	TCGA-BH-A1FM-11B-23R-A13Q-07	TCGA-BH-A1FM	normal	Solid Tissue Normal	Positive	Negative	NA	Stage IIIA	44	Dead	1388	38628505	FALSE
+be81c2e7-25e7-4beb-8661-115b58cf41ea	TCGA-BH-A1FN-01A-11R-A13Q-07	TCGA-BH-A1FN	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	34	Dead	2192	38853489	FALSE
+3db13a53-4229-4e35-86e3-c9215a33d721	TCGA-BH-A1FN-11A-34R-A13Q-07	TCGA-BH-A1FN	normal	Solid Tissue Normal	Positive	Positive	NA	Stage IIA	34	Dead	2192	39162271	FALSE
+56e9187b-cc61-4553-8976-96dd64e21226	TCGA-BH-A1FR-01A-11R-A13Q-07	TCGA-BH-A1FR	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIB	73	Dead	4398	39411191	FALSE
+a5fd7d09-e2a0-49d0-b976-8bef7b0e38e5	TCGA-BH-A1FR-11B-42R-A13Q-07	TCGA-BH-A1FR	normal	Solid Tissue Normal	Positive	Positive	NA	Stage IIIB	73	Dead	4398	38273079	FALSE
+28170eed-5efc-43b5-bfd8-d71e1b8937db	TCGA-BH-A1FU-01A-11R-A14D-07	TCGA-BH-A1FU	tumor	Primary Tumor	Negative	Negative	NA	Stage IA	44	Dead	2192	39930050	FALSE
+9d691da2-0fc9-41eb-aa27-245ab6136466	TCGA-BH-A1FU-11A-23R-A14D-07	TCGA-BH-A1FU	normal	Solid Tissue Normal	Negative	Negative	NA	Stage IA	44	Dead	2192	38193533	FALSE
+bc9a5294-255f-47a4-8879-11c441093a3d	TCGA-BH-A201-01A-11R-A14M-07	TCGA-BH-A201	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	64	Alive	NA	39116822	FALSE
+70bea149-3cb1-4b6b-9b3a-84c6eb88972c	TCGA-BH-A202-01A-11R-A14M-07	TCGA-BH-A202	tumor	Primary Tumor	Positive	Positive	Positive	Stage II	60	Alive	NA	39622320	FALSE
+2ba5b847-887f-415a-a7f3-94e6ea4d3800	TCGA-BH-A203-01A-12R-A169-07	TCGA-BH-A203	tumor	Primary Tumor	NA	NA	NA	Stage IIB	78	Dead	1174	38995020	FALSE
+cde9046d-3c7b-4b08-90c8-ff0a6bb585c7	TCGA-BH-A203-11A-42R-A169-07	TCGA-BH-A203	normal	Solid Tissue Normal	NA	NA	NA	Stage IIB	78	Dead	1174	37884198	FALSE
+16b2f770-0357-4de9-b0bf-7c546b169042	TCGA-BH-A204-01A-11R-A157-07	TCGA-BH-A204	tumor	Primary Tumor	NA	NA	NA	Stage IIB	80	Dead	2534	39215034	FALSE
+4113bb01-8676-40b1-ad48-d31462d6ea3c	TCGA-BH-A204-11A-53R-A157-07	TCGA-BH-A204	normal	Solid Tissue Normal	NA	NA	NA	Stage IIB	80	Dead	2534	39580133	FALSE
+38fca0b0-4399-4061-99aa-b886f54ca0db	TCGA-BH-A208-01A-11R-A157-07	TCGA-BH-A208	tumor	Primary Tumor	NA	NA	NA	Stage IIB	48	Dead	1759	40081644	FALSE
+d67db58d-2971-4b11-8a95-49ea7e0028d3	TCGA-BH-A208-11A-51R-A157-07	TCGA-BH-A208	normal	Solid Tissue Normal	NA	NA	NA	Stage IIB	48	Dead	1759	38921726	FALSE
+02d1c342-bc77-49cc-a039-39a961521602	TCGA-BH-A209-01A-11R-A157-07	TCGA-BH-A209	tumor	Primary Tumor	Positive	Positive	NA	Stage I	77	Dead	3959	39437381	FALSE
+6ce2d504-f247-4766-9c26-02a1d158fb26	TCGA-BH-A209-11A-42R-A157-07	TCGA-BH-A209	normal	Solid Tissue Normal	Positive	Positive	NA	Stage I	77	Dead	3959	38958413	FALSE
+f5afe112-281e-43ac-9662-e2de331f7789	TCGA-BH-A28O-01A-11R-A22K-07	TCGA-BH-A28O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	50	Alive	NA	38912872	FALSE
+10f2c028-06c5-4560-9a52-dd76a227b891	TCGA-BH-A28Q-01A-11R-A16F-07	TCGA-BH-A28Q	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	46	Alive	NA	39183349	FALSE
+9f6360e2-1df2-4459-9103-5073926e93ba	TCGA-BH-A2L8-01A-11R-A18M-07	TCGA-BH-A2L8	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	45	Alive	NA	40405921	FALSE
+fd476524-e22c-44a1-8f91-2a8a0519aa7d	TCGA-BH-A42T-01A-11R-A24H-07	TCGA-BH-A42T	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	75	Alive	NA	40118708	FALSE
+cf2ec046-7565-4bba-be63-1a859ee6ff3a	TCGA-BH-A42U-01A-12R-A24H-07	TCGA-BH-A42U	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	80	Alive	NA	40651236	FALSE
+5752f686-d7e4-4e4e-ac16-5b66dfebaec9	TCGA-BH-A42V-01A-11R-A24H-07	TCGA-BH-A42V	tumor	Primary Tumor	Positive	Positive	Negative	Stage IB	41	Alive	NA	39405836	FALSE
+2437a516-5312-409e-8679-b85bb60530cd	TCGA-BH-A5IZ-01A-11R-A27Q-07	TCGA-BH-A5IZ	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	51	Alive	NA	40292100	FALSE
+989000d0-fba6-4af0-9fbb-1a0949a29425	TCGA-BH-A5J0-01A-11R-A27Q-07	TCGA-BH-A5J0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	63	Alive	NA	40645076	FALSE
+61778a82-2f7e-4b5e-9503-a7ba2ddfb9bd	TCGA-BH-A6R8-01A-21R-A33J-07	TCGA-BH-A6R8	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	46	Alive	NA	40670818	FALSE
+aa615303-6416-4ec6-b803-9cf6054c321d	TCGA-BH-A6R9-01A-21R-A32P-07	TCGA-BH-A6R9	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIA	61	Alive	NA	40159178	FALSE
+20c67226-bef8-4098-87a0-6ef7b612a284	TCGA-BH-A8FY-01A-11R-A36F-07	TCGA-BH-A8FY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	87	Dead	295	39106022	FALSE
+7ff75f50-b61c-4230-96b0-f711fbc27834	TCGA-BH-A8FZ-01A-11R-A352-07	TCGA-BH-A8FZ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	58	Alive	NA	39173431	FALSE
+839d7d71-2360-4d8b-a935-67eebc2f92ae	TCGA-BH-A8G0-01A-11R-A352-07	TCGA-BH-A8G0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	38937742	FALSE
+499c6f4d-d346-4324-9892-e5c6922d84c5	TCGA-BH-AB28-01A-31R-A41B-07	TCGA-BH-AB28	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	53	Alive	NA	38934188	FALSE
+164252dd-3294-4420-86f1-44c4344039ae	TCGA-C8-A12K-01A-21R-A115-07	TCGA-C8-A12K	tumor	Primary Tumor	NA	NA	NA	Stage IIB	80	Alive	NA	40141085	FALSE
+08eca7af-fea6-4691-99d9-ec626d5bb4fa	TCGA-C8-A12L-01A-11R-A115-07	TCGA-C8-A12L	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	67	Alive	NA	39626954	FALSE
+c0dc6757-e0cd-4615-9543-a348500aae84	TCGA-C8-A12M-01A-11R-A115-07	TCGA-C8-A12M	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	70	Alive	NA	38764397	FALSE
+9aabe7f6-9ea3-41e9-b763-418bada1cf4f	TCGA-C8-A12N-01A-11R-A115-07	TCGA-C8-A12N	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	58	Alive	NA	39306478	FALSE
+d8dcd080-5bb7-4723-8714-443eb8b07477	TCGA-C8-A12O-01A-11R-A115-07	TCGA-C8-A12O	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	50	Alive	NA	40211343	FALSE
+421e2607-50fa-4260-bd10-c37fcb7d063f	TCGA-C8-A12P-01A-11R-A115-07	TCGA-C8-A12P	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	55	Alive	NA	40339456	FALSE
+cb75fb62-e6e9-4763-a97c-1a2b919adc5a	TCGA-C8-A12Q-01A-11R-A115-07	TCGA-C8-A12Q	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIA	78	Alive	NA	39779836	FALSE
+10848c09-8257-426b-aab6-eedcab1274b1	TCGA-C8-A12T-01A-11R-A115-07	TCGA-C8-A12T	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	43	Alive	NA	40505562	FALSE
+73835c8d-60bb-4001-80c6-2a7afd8709af	TCGA-C8-A12U-01A-11R-A115-07	TCGA-C8-A12U	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	46	Alive	NA	39663973	FALSE
+06820399-3529-412f-b3a7-6714c9dd5f7d	TCGA-C8-A12V-01A-11R-A115-07	TCGA-C8-A12V	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	55	Alive	NA	39953383	FALSE
+5b2072ee-b856-45c4-9c14-449654a40600	TCGA-C8-A12W-01A-11R-A115-07	TCGA-C8-A12W	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	49	Alive	NA	40221520	FALSE
+d9b83390-c155-4703-a0bb-78e84d53ba88	TCGA-C8-A12X-01A-11R-A115-07	TCGA-C8-A12X	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	62	Alive	NA	18792363	FALSE
+3c032234-c350-4170-b8f7-f8de8269e713	TCGA-C8-A12Y-01A-11R-A12D-07	TCGA-C8-A12Y	tumor	Primary Tumor	NA	NA	NA	Stage IIB	44	Alive	NA	40793669	FALSE
+babd334d-8eeb-4cc1-af95-c024dcdbd3c1	TCGA-C8-A12Z-01A-11R-A115-07	TCGA-C8-A12Z	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	45	Alive	NA	40164216	FALSE
+994570f9-404b-471c-a5c3-78e59480dd44	TCGA-C8-A130-01A-31R-A115-07	TCGA-C8-A130	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	52	Alive	NA	38779876	FALSE
+6f77d195-0c77-4860-8142-3cacde1f3279	TCGA-C8-A131-01A-11R-A115-07	TCGA-C8-A131	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	82	Alive	NA	39605617	FALSE
+3a0e52d7-eb47-44a7-9c30-83bb42841aaa	TCGA-C8-A132-01A-31R-A115-07	TCGA-C8-A132	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	56	Alive	NA	39344470	FALSE
+4411941f-9a7c-4bff-86f3-26c959ed849b	TCGA-C8-A133-01A-32R-A12D-07	TCGA-C8-A133	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	65	Alive	NA	40808198	FALSE
+42084c0b-c619-4220-a75e-eb9c2496f6e8	TCGA-C8-A134-01A-11R-A115-07	TCGA-C8-A134	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	52	Alive	NA	39601765	FALSE
+1324c50e-3d79-48bb-bcde-28a0e5b73f68	TCGA-C8-A135-01A-11R-A115-07	TCGA-C8-A135	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	64	Alive	NA	40105929	FALSE
+4909afed-792e-4daf-b002-b47b5b28c7ed	TCGA-C8-A137-01A-11R-A115-07	TCGA-C8-A137	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	34	Alive	NA	40430817	FALSE
+a0b6932b-d530-4b47-b1f5-b8429a3d3d22	TCGA-C8-A138-01A-11R-A115-07	TCGA-C8-A138	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIA	54	Alive	NA	39418198	FALSE
+117ab6a3-d288-4bd4-9271-47abb2f9c96d	TCGA-C8-A1HE-01A-11R-A13Q-07	TCGA-C8-A1HE	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	59	Alive	NA	39239543	FALSE
+4ea1b1d3-dd62-4991-9119-88c00c6b83cd	TCGA-C8-A1HF-01A-11R-A137-07	TCGA-C8-A1HF	tumor	Primary Tumor	Negative	Positive	Positive	Stage IIA	48	Alive	NA	40305575	FALSE
+de60834e-364b-4814-ad26-d6891d6eb9ff	TCGA-C8-A1HG-01A-11R-A137-07	TCGA-C8-A1HG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	50	Alive	NA	40304225	FALSE
+b5f328db-3d7d-4b9a-a5e1-639f07865f23	TCGA-C8-A1HI-01A-11R-A137-07	TCGA-C8-A1HI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	40	Alive	NA	40249319	FALSE
+39ecb041-7ba9-428b-8d8b-44a06d50e309	TCGA-C8-A1HJ-01A-11R-A13Q-07	TCGA-C8-A1HJ	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	53	Alive	NA	38221877	FALSE
+b1df468d-306d-4483-87a2-f5022e0d31cd	TCGA-C8-A1HK-01A-21R-A13Q-07	TCGA-C8-A1HK	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	53	Alive	NA	39334745	FALSE
+b63edf98-ed66-485d-bea8-9ebb5666d030	TCGA-C8-A1HL-01A-11R-A137-07	TCGA-C8-A1HL	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIA	38	Alive	NA	39447260	FALSE
+97c6b590-2c15-446e-b31b-444880489441	TCGA-C8-A1HM-01A-12R-A137-07	TCGA-C8-A1HM	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	74	Alive	NA	39562223	FALSE
+b7971e42-45f6-4f58-a97e-e6d97e8a9880	TCGA-C8-A1HN-01A-11R-A137-07	TCGA-C8-A1HN	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	56	Alive	NA	39547296	FALSE
+862a4113-9037-43ce-bdba-1b1818ca19e5	TCGA-C8-A1HO-01A-11R-A13Q-07	TCGA-C8-A1HO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	34	Alive	NA	39484126	FALSE
+641a082e-5ca1-48f1-80e2-f7aab53611f0	TCGA-C8-A26V-01A-11R-A16F-07	TCGA-C8-A26V	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	47	Alive	NA	40148996	FALSE
+933ea2ac-b473-40cd-ba4b-e8ea5c3dea92	TCGA-C8-A26W-01A-11R-A16F-07	TCGA-C8-A26W	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	58	Alive	NA	38976147	FALSE
+3abb29ac-deb1-4bd3-9b6b-a220e8405c69	TCGA-C8-A26X-01A-31R-A16F-07	TCGA-C8-A26X	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	58	Alive	NA	39997485	FALSE
+724c1952-4366-4daa-929d-cdb46478d03d	TCGA-C8-A26Y-01A-11R-A16F-07	TCGA-C8-A26Y	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	90	Alive	NA	38712401	FALSE
+836f841e-4b66-4ab0-957a-5c62be787e49	TCGA-C8-A26Z-01A-11R-A16F-07	TCGA-C8-A26Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	59	Alive	NA	39008804	FALSE
+0188e5a1-2b0c-4fe3-9280-07052d964bff	TCGA-C8-A273-01A-11R-A16F-07	TCGA-C8-A273	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	29	Alive	NA	40121258	FALSE
+c681e7bd-8307-4753-8309-6f4abe9a6433	TCGA-C8-A274-01A-11R-A16F-07	TCGA-C8-A274	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	63	Alive	NA	39059952	FALSE
+27a33881-f497-4322-b24d-3af1e5e7ae8a	TCGA-C8-A275-01A-21R-A16F-07	TCGA-C8-A275	tumor	Primary Tumor	NA	NA	NA	Stage IIA	56	Alive	NA	39942058	FALSE
+a48d1663-22e8-4f98-af8a-53ececfa5f4c	TCGA-C8-A278-01A-11R-A169-07	TCGA-C8-A278	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIA	61	Alive	NA	39631062	FALSE
+8607f343-5c54-4112-a8c3-ec1f0a48f4f4	TCGA-C8-A27A-01A-11R-A169-07	TCGA-C8-A27A	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	48	Alive	NA	38196584	FALSE
+27a2d405-3fe3-45ca-8150-f0567e310512	TCGA-C8-A27B-01A-11R-A169-07	TCGA-C8-A27B	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	48	Alive	NA	39669266	FALSE
+ab68528c-cf90-425b-bf92-33d5e4c54345	TCGA-C8-A3M7-01A-12R-A21T-07	TCGA-C8-A3M7	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIB	60	Alive	NA	38284574	FALSE
+839ec959-1497-45dc-8e46-b5c285215603	TCGA-C8-A3M8-01A-11R-A213-07	TCGA-C8-A3M8	tumor	Primary Tumor	Positive	Positive	Positive	Stage IA	68	Alive	NA	39031917	FALSE
+e09cd286-229e-4dca-9b8c-ca2340ae1fe5	TCGA-C8-A8HP-01A-11R-A36F-07	TCGA-C8-A8HP	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIA	59	Alive	NA	39613562	FALSE
+6e218cc2-0437-4d31-8d22-7d15f63297bb	TCGA-C8-A8HQ-01A-11R-A36F-07	TCGA-C8-A8HQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	53	Alive	NA	39139142	FALSE
+e01ca3e0-beb0-46b7-bb7c-f5b16f966918	TCGA-C8-A8HR-01A-11R-A36F-07	TCGA-C8-A8HR	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	49	Alive	NA	39395721	FALSE
+c2e78287-f440-4bcb-b9dc-c8cda71760b1	TCGA-D8-A13Y-01A-11R-A115-07	TCGA-D8-A13Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	52	Alive	NA	38693946	FALSE
+d6d374ce-aafb-4388-80af-900a9d19aec1	TCGA-D8-A13Z-01A-11R-A115-07	TCGA-D8-A13Z	tumor	Primary Tumor	Negative	Negative	Negative	NA	51	Alive	NA	40179548	FALSE
+34ac430e-2cbf-4047-9a9c-210e7ae24f55	TCGA-D8-A140-01A-11R-A115-07	TCGA-D8-A140	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	62	Alive	NA	38524180	FALSE
+385ccd40-d009-4185-86b8-a0fd28e5b4c7	TCGA-D8-A141-01A-11R-A115-07	TCGA-D8-A141	tumor	Primary Tumor	Positive	Positive	Negative	NA	40	Alive	NA	39363665	FALSE
+9d74471e-2f64-42aa-9d51-339a4d7ea49b	TCGA-D8-A142-01A-11R-A115-07	TCGA-D8-A142	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIB	74	Alive	NA	39755283	FALSE
+f014eca8-aa22-432c-b1ef-3113728b8899	TCGA-D8-A143-01A-11R-A115-07	TCGA-D8-A143	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	51	Alive	NA	40635197	FALSE
+46563983-2b05-4eb7-9e15-07487565158f	TCGA-D8-A145-01A-11R-A115-07	TCGA-D8-A145	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	80	Alive	NA	38840843	FALSE
+f9135d0d-6447-4452-8ea8-98dee4610226	TCGA-D8-A146-01A-31R-A115-07	TCGA-D8-A146	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	57	Alive	NA	38935286	FALSE
+d7ff2e3a-5472-4413-8c28-0cd76e3c2ffc	TCGA-D8-A147-01A-11R-A115-07	TCGA-D8-A147	tumor	Primary Tumor	Negative	Negative	Negative	NA	45	Alive	NA	39088418	FALSE
+47ac991e-2472-4613-a0f0-fc4cad42bb9d	TCGA-D8-A1J8-01A-11R-A13Q-07	TCGA-D8-A1J8	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	77	Alive	NA	39231857	FALSE
+d5bf82b7-7508-4773-a104-cff25a557149	TCGA-D8-A1J9-01A-11R-A13Q-07	TCGA-D8-A1J9	tumor	Primary Tumor	Positive	Negative	Positive	Stage IA	48	Alive	NA	39733630	FALSE
+0357e675-f83e-4aa6-9205-c72c0614a661	TCGA-D8-A1JA-01A-11R-A13Q-07	TCGA-D8-A1JA	tumor	Primary Tumor	Negative	Negative	Positive	NA	60	Alive	NA	38949227	FALSE
+2cdf0e6a-b2d3-491e-b5bd-7a3121af676d	TCGA-D8-A1JB-01A-11R-A13Q-07	TCGA-D8-A1JB	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	54	Alive	NA	38843029	FALSE
+88a0e401-3507-496f-a4e4-981d089beaf1	TCGA-D8-A1JC-01A-11R-A13Q-07	TCGA-D8-A1JC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	59	Alive	NA	39492679	FALSE
+bdd03456-777b-4e94-8240-cd6b1d4eac51	TCGA-D8-A1JD-01A-11R-A13Q-07	TCGA-D8-A1JD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	41	Alive	NA	40033494	FALSE
+60061f42-311a-4890-bcbf-4add272aa5e7	TCGA-D8-A1JE-01A-11R-A13Q-07	TCGA-D8-A1JE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	38980154	FALSE
+089285f7-560e-4952-8c71-8f0f01d655c9	TCGA-D8-A1JF-01A-11R-A13Q-07	TCGA-D8-A1JF	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	79	Alive	NA	39357158	FALSE
+5c811b7b-0457-448e-b170-7abb4bb63cab	TCGA-D8-A1JG-01B-11R-A13Q-07	TCGA-D8-A1JG	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	62	Alive	NA	39507008	FALSE
+db4d15e2-063b-4bdf-a410-f574b73509b9	TCGA-D8-A1JH-01A-11R-A13Q-07	TCGA-D8-A1JH	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	56	Alive	NA	39113133	FALSE
+052f5358-94f2-44f2-b52b-a79068eb032f	TCGA-D8-A1JI-01A-11R-A13Q-07	TCGA-D8-A1JI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	54	Alive	NA	40003562	FALSE
+7ebc9015-6907-4467-9468-bc1b57c9b24e	TCGA-D8-A1JJ-01A-31R-A14M-07	TCGA-D8-A1JJ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	54	Alive	NA	39645207	FALSE
+1bd3c6da-1de9-4dfa-b9da-a69c1840c8f4	TCGA-D8-A1JK-01A-11R-A13Q-07	TCGA-D8-A1JK	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIA	90	Alive	NA	40330638	FALSE
+04bad3d4-22f8-463e-a191-77901eb17f65	TCGA-D8-A1JL-01A-11R-A13Q-07	TCGA-D8-A1JL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	72	Alive	NA	40064994	FALSE
+508c73d0-3a7e-47e6-934c-2cc68e00ed53	TCGA-D8-A1JM-01A-11R-A13Q-07	TCGA-D8-A1JM	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	59	Alive	NA	40077726	FALSE
+88cd8f3f-5158-4e98-aba0-1abffcea5ff5	TCGA-D8-A1JN-01A-11R-A13Q-07	TCGA-D8-A1JN	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIC	80	Alive	NA	38405401	FALSE
+2efd38f9-54ae-4e93-9a46-cb7e24be4481	TCGA-D8-A1JP-01A-11R-A13Q-07	TCGA-D8-A1JP	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	73	Alive	NA	39010364	FALSE
+b2d67d4c-8555-4ba8-965a-ab42ef516119	TCGA-D8-A1JS-01A-11R-A13Q-07	TCGA-D8-A1JS	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	77	Alive	NA	40931180	FALSE
+5e4afb9b-9141-40c1-a86e-42d5b74930c4	TCGA-D8-A1JT-01A-31R-A13Q-07	TCGA-D8-A1JT	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	70	Alive	NA	39543513	FALSE
+9b8b57d6-c077-4b89-b1fc-b868c9ba3ee4	TCGA-D8-A1JU-01A-11R-A13Q-07	TCGA-D8-A1JU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	51	Alive	NA	39537227	FALSE
+24e09ef7-b902-4624-a7fa-1b649e3ec142	TCGA-D8-A1X5-01A-11R-A14D-07	TCGA-D8-A1X5	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	81	Alive	NA	39352505	FALSE
+fcc10778-9575-41f4-bf95-4a97f7c58ba6	TCGA-D8-A1X6-01A-11R-A14M-07	TCGA-D8-A1X6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	80	Alive	NA	39849593	FALSE
+808c3b2a-4b4d-49e6-b60e-2e05f7e9ca04	TCGA-D8-A1X7-01A-11R-A14M-07	TCGA-D8-A1X7	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	40	Alive	NA	39517571	FALSE
+d84bdfd1-33e0-46b9-8895-7d06a2d5e7f9	TCGA-D8-A1X8-01A-11R-A14M-07	TCGA-D8-A1X8	tumor	Primary Tumor	Positive	Indeterminate	Negative	Stage IIIA	62	Alive	NA	39827967	FALSE
+0fea9d2b-08ce-47c6-b097-a7191eaaffdf	TCGA-D8-A1X9-01A-12R-A157-07	TCGA-D8-A1X9	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIB	66	Alive	NA	39570307	FALSE
+79253a9a-6ebf-490c-b976-505880669cc2	TCGA-D8-A1XA-01A-11R-A14D-07	TCGA-D8-A1XA	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	64	Alive	NA	38814123	FALSE
+2b26df3e-4454-447f-bfea-2964447ac559	TCGA-D8-A1XB-01A-11R-A14D-07	TCGA-D8-A1XB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	62	Alive	NA	39313397	FALSE
+3601ad2a-b827-42c3-b378-443bb3e36e6f	TCGA-D8-A1XC-01A-11R-A14D-07	TCGA-D8-A1XC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	85	Alive	NA	39230462	FALSE
+35e082f4-aa88-4b71-a9ee-19bd7e4d4847	TCGA-D8-A1XD-01A-11R-A14D-07	TCGA-D8-A1XD	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	36	Alive	NA	38616986	FALSE
+88fcc5d7-dc8f-4349-b809-dc6764f48748	TCGA-D8-A1XF-01A-11R-A14D-07	TCGA-D8-A1XF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	45	Alive	NA	39551712	FALSE
+016952d0-ae1b-4467-8250-fa799e757814	TCGA-D8-A1XG-01A-11R-A14D-07	TCGA-D8-A1XG	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIB	86	Alive	NA	39107568	FALSE
+ae43ff42-0266-4cd1-8c27-c3a2db9c4f55	TCGA-D8-A1XJ-01A-11R-A14M-07	TCGA-D8-A1XJ	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	76	Alive	NA	40451795	FALSE
+0d9269dd-b733-4f3f-93d4-58d6d51cface	TCGA-D8-A1XK-01A-21R-A14M-07	TCGA-D8-A1XK	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	55	Alive	NA	40119520	FALSE
+8faa604b-bdc4-4481-89a7-0ab6f4839c04	TCGA-D8-A1XL-01A-11R-A14M-07	TCGA-D8-A1XL	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	34	Alive	NA	40629624	FALSE
+64ba791a-c418-4507-bf64-b4b473c78834	TCGA-D8-A1XM-01A-21R-A14M-07	TCGA-D8-A1XM	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	57	Alive	NA	39674962	FALSE
+de5d6071-f5f3-4d8d-be76-a49d92014641	TCGA-D8-A1XO-01A-11R-A14M-07	TCGA-D8-A1XO	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	56	Alive	NA	39432163	FALSE
+d92aef7c-fa39-4d0a-b003-9067a7f2d14a	TCGA-D8-A1XQ-01A-11R-A14M-07	TCGA-D8-A1XQ	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	69	Alive	NA	40309579	FALSE
+1200af21-94cc-493a-85bd-70cc56f50497	TCGA-D8-A1XR-01A-11R-A14M-07	TCGA-D8-A1XR	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	56	Alive	NA	38821502	FALSE
+2c527579-8b48-49b4-8383-8c084c046c62	TCGA-D8-A1XS-01A-11R-A14M-07	TCGA-D8-A1XS	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	48	Alive	NA	38992148	FALSE
+e642d04a-927d-4c33-862f-3a3b86047bc9	TCGA-D8-A1XT-01A-11R-A14M-07	TCGA-D8-A1XT	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	61	Alive	NA	39572470	FALSE
+bb5a5553-b4f9-4c63-b9b3-22a928250c97	TCGA-D8-A1XU-01A-11R-A14M-07	TCGA-D8-A1XU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	56	Alive	NA	39339444	FALSE
+9657c56c-0a9d-4c0b-9039-9dc26feef5c4	TCGA-D8-A1XV-01A-11R-A14M-07	TCGA-D8-A1XV	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	84	Alive	NA	38788446	FALSE
+b081b69f-bb9c-4e5a-89a4-2842fe2e557d	TCGA-D8-A1XW-01A-11R-A14M-07	TCGA-D8-A1XW	tumor	Primary Tumor	Negative	Positive	Negative	Stage IIA	53	Alive	NA	39258770	FALSE
+13ef5323-ead9-4bc7-8ac4-33875bf12e17	TCGA-D8-A1XY-01A-11R-A14M-07	TCGA-D8-A1XY	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	74	Alive	NA	39387055	FALSE
+84b05220-4e28-44ae-b6ee-6018c0dbf0d2	TCGA-D8-A1XZ-01A-11R-A14M-07	TCGA-D8-A1XZ	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	81	Alive	NA	39986948	FALSE
+c7feeb6b-05e1-4ebf-8790-4e9060c48367	TCGA-D8-A1Y0-01A-11R-A14M-07	TCGA-D8-A1Y0	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	65	Alive	NA	38580825	FALSE
+d3e2d033-1203-4844-8559-aa34763d37b6	TCGA-D8-A1Y1-01A-21R-A14M-07	TCGA-D8-A1Y1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	80	Alive	NA	40091752	FALSE
+48023df3-770b-4c9e-9eba-ac5586eda57f	TCGA-D8-A1Y2-01A-11R-A157-07	TCGA-D8-A1Y2	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIA	71	Alive	NA	40199128	FALSE
+679ee059-ddd9-4138-9973-51a583941b71	TCGA-D8-A1Y3-01A-11R-A157-07	TCGA-D8-A1Y3	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIA	61	Alive	NA	40839056	FALSE
+b177e48f-77cb-445d-b938-260312ad175b	TCGA-D8-A27E-01A-11R-A16F-07	TCGA-D8-A27E	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	66	Alive	NA	39091538	FALSE
+c0ff6201-9bfd-4c95-9770-b122d8206c3d	TCGA-D8-A27F-01A-11R-A16F-07	TCGA-D8-A27F	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	40	Alive	NA	39392933	FALSE
+42aaae48-01cc-4010-bef6-ccd49202e816	TCGA-D8-A27G-01A-11R-A16F-07	TCGA-D8-A27G	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	75	Alive	NA	39674296	FALSE
+f53c3d33-7501-46e1-8125-56fb73083b65	TCGA-D8-A27H-01A-11R-A16F-07	TCGA-D8-A27H	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	72	Alive	NA	39402867	FALSE
+a004bafc-36be-4084-8ae6-0094194f9c6a	TCGA-D8-A27I-01A-11R-A16F-07	TCGA-D8-A27I	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	58	Alive	NA	39133030	FALSE
+69b1e110-3733-4afc-b8dd-e21565c65899	TCGA-D8-A27K-01A-11R-A16F-07	TCGA-D8-A27K	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	47	Alive	NA	38244038	FALSE
+9e0bc893-3036-49ee-a807-957b90b2a195	TCGA-D8-A27L-01A-11R-A16F-07	TCGA-D8-A27L	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	49	Alive	NA	38707361	FALSE
+ea38585e-e393-4e7f-a2c1-64b33caf168d	TCGA-D8-A27M-01A-11R-A16F-07	TCGA-D8-A27M	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	59	Alive	NA	38956261	FALSE
+f1b395cb-70e2-420e-9e15-1afd66eabe12	TCGA-D8-A27N-01A-11R-A16F-07	TCGA-D8-A27N	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	36	Alive	NA	39668422	FALSE
+3551ea04-99f5-4748-8304-6a63e77ae756	TCGA-D8-A27P-01A-11R-A16F-07	TCGA-D8-A27P	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	64	Alive	NA	38863733	FALSE
+36f63b8a-5f8d-41ae-958f-8b142feb1a3d	TCGA-D8-A27R-01A-11R-A16F-07	TCGA-D8-A27R	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIC	41	Alive	NA	40231067	FALSE
+601d287e-1f5c-4ac7-a4a4-85bd89ad5327	TCGA-D8-A27T-01A-11R-A16F-07	TCGA-D8-A27T	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	53	Alive	NA	39389841	FALSE
+50a7a07e-b452-466d-97bf-978c4f9c47da	TCGA-D8-A27V-01A-12R-A17B-07	TCGA-D8-A27V	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39202352	FALSE
+1d673a06-1b44-46df-80f3-d8a9f61da6c2	TCGA-D8-A27W-01A-11R-A16F-07	TCGA-D8-A27W	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIB	55	Alive	NA	40479564	FALSE
+17e8321e-7265-486e-8ec8-a5ebb547892d	TCGA-D8-A3Z5-01A-41R-A24H-07	TCGA-D8-A3Z5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	54	Alive	NA	38727644	FALSE
+10fcdd7e-8103-423d-9b4d-85223d9db75e	TCGA-D8-A3Z6-01A-11R-A239-07	TCGA-D8-A3Z6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	56	Alive	NA	39435860	FALSE
+04c60003-5d6d-45ea-957c-e54aacac7485	TCGA-D8-A4Z1-01A-21R-A266-07	TCGA-D8-A4Z1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	68	Alive	NA	38488833	FALSE
+e7c9b0ed-a12a-4f39-bc1f-8ee6ffa05136	TCGA-D8-A73U-01A-11R-A33J-07	TCGA-D8-A73U	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	88	Alive	NA	39070129	FALSE
+fb7499a6-0519-4d8a-b424-86c5cf382195	TCGA-D8-A73W-01A-22R-A352-07	TCGA-D8-A73W	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	79	Alive	NA	38315324	FALSE
+bd2081d7-90dd-4f9a-89c1-76d4322a1c8e	TCGA-D8-A73X-01A-11R-A32P-07	TCGA-D8-A73X	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	53	Alive	NA	38551615	FALSE
+796ca6e7-2be7-4862-a5e7-6b262ba099f2	TCGA-E2-A105-01A-11R-A10J-07	TCGA-E2-A105	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	79	Alive	NA	38951969	FALSE
+4ede70fe-c7cf-4caa-b180-01c5035ecee4	TCGA-E2-A106-01A-11R-A10J-07	TCGA-E2-A106	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IB	34	Alive	NA	40079914	FALSE
+1302a36d-ea6d-4909-bac2-a90e0c03d062	TCGA-E2-A107-01A-11R-A10J-07	TCGA-E2-A107	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIA	54	Alive	NA	40451392	FALSE
+8514955c-57d3-4d01-9cd6-da04592f4955	TCGA-E2-A108-01A-13R-A10J-07	TCGA-E2-A108	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	64	Alive	NA	39826152	FALSE
+9ac00677-9ba1-4ee9-bf02-ecb04533f45d	TCGA-E2-A109-01A-11R-A10J-07	TCGA-E2-A109	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	64	Alive	NA	39770724	FALSE
+66d8eef3-27f2-4439-8f1b-e0665811b06e	TCGA-E2-A10A-01A-21R-A115-07	TCGA-E2-A10A	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	41	Alive	NA	39387431	FALSE
+fbd43a48-c880-45ff-bb6a-08f922de93b5	TCGA-E2-A10B-01A-11R-A10J-07	TCGA-E2-A10B	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	67	Alive	NA	39929494	FALSE
+6a6420f7-3618-4d8e-b4c2-d6e6eddcda39	TCGA-E2-A10C-01A-21R-A10J-07	TCGA-E2-A10C	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	39472895	FALSE
+babcc02f-9aa4-468f-8829-e605afea8c7c	TCGA-E2-A10E-01A-21R-A10J-07	TCGA-E2-A10E	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	64	Alive	NA	39103195	FALSE
+6d611ffa-4268-4c6e-aed8-42557405d6a9	TCGA-E2-A10F-01A-11R-A10J-07	TCGA-E2-A10F	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	47	Alive	NA	39442045	FALSE
+b5eea321-4e76-4fcc-831e-e03e9c5789d2	TCGA-E2-A14N-01A-31R-A137-07	TCGA-E2-A14N	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	37	Alive	NA	39484361	FALSE
+bd351d39-883a-47e8-af88-db0c77a888c8	TCGA-E2-A14O-01A-31R-A115-07	TCGA-E2-A14O	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	76	Alive	NA	39830367	FALSE
+3d3453a8-9260-4bd0-a4e6-a21feabc750c	TCGA-E2-A14P-01A-31R-A12D-07	TCGA-E2-A14P	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIC	79	Alive	NA	40317145	FALSE
+a04dfaf8-6727-4838-8c69-636a608bdf25	TCGA-E2-A14Q-01A-11R-A12D-07	TCGA-E2-A14Q	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	50	Alive	NA	39811682	FALSE
+0eddef62-9e5a-4ed7-a319-9462514bd162	TCGA-E2-A14R-01A-11R-A115-07	TCGA-E2-A14R	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	62	Alive	NA	39584720	FALSE
+e61e01b8-3719-4ae2-a906-8d963eaad309	TCGA-E2-A14S-01A-11R-A12D-07	TCGA-E2-A14S	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	65	Alive	NA	38745865	FALSE
+af5a3afa-0e81-4864-b51d-7e857804c336	TCGA-E2-A14T-01A-11R-A115-07	TCGA-E2-A14T	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	52	Alive	NA	39434638	FALSE
+4cc145ea-1a8e-4b26-9d22-473466de569a	TCGA-E2-A14U-01A-11R-A22K-07	TCGA-E2-A14U	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	74	Alive	NA	39156687	FALSE
+b4604353-ec2d-4ff5-91c1-faedb89f6bc0	TCGA-E2-A14V-01A-11R-A12D-07	TCGA-E2-A14V	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	53	Alive	NA	39524869	FALSE
+e0215e64-2787-40c4-a8bc-8c26118bae76	TCGA-E2-A14W-01A-11R-A12D-07	TCGA-E2-A14W	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	78	Alive	NA	39703209	FALSE
+b6e47b05-afe9-41b5-b040-7fbcc62d4720	TCGA-E2-A14X-01A-11R-A115-07	TCGA-E2-A14X	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	55	Alive	NA	38922583	FALSE
+d1b716e8-e4d4-4089-b46a-9892a8be55f5	TCGA-E2-A14Y-01A-21R-A12D-07	TCGA-E2-A14Y	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	35	Alive	NA	40277317	FALSE
+5742ea72-ed77-4a67-9bae-f3a3d5eb96de	TCGA-E2-A14Z-01A-11R-A115-07	TCGA-E2-A14Z	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	64	Alive	NA	39483714	FALSE
+fe646ed8-aa01-4cf1-bff4-1e9198e13a4b	TCGA-E2-A150-01A-11R-A12D-07	TCGA-E2-A150	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	48	Alive	NA	39907882	FALSE
+d7814767-c4ec-43ce-9cb2-646941b2870c	TCGA-E2-A152-01A-11R-A12D-07	TCGA-E2-A152	tumor	Primary Tumor	Positive	Negative	Positive	Stage I	56	Alive	NA	39892825	FALSE
+de32121c-b7f5-4a94-9977-8f4b2d3be976	TCGA-E2-A153-01A-12R-A12D-07	TCGA-E2-A153	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	51	Alive	NA	40002694	FALSE
+21a8434d-eaca-4af2-8ee1-f2c45e13eb52	TCGA-E2-A153-11A-31R-A12D-07	TCGA-E2-A153	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	51	Alive	NA	38517417	FALSE
+5836f2d8-cb09-4aff-9cdd-45eeaf835262	TCGA-E2-A154-01A-11R-A115-07	TCGA-E2-A154	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	68	Alive	NA	38886479	FALSE
+aa0783ef-ea84-4b0b-8ea5-1600a85c9ab3	TCGA-E2-A155-01A-11R-A12D-07	TCGA-E2-A155	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	58	Alive	NA	39218178	FALSE
+8631ada8-2cda-42f7-927e-76a24efa128d	TCGA-E2-A156-01A-11R-A12D-07	TCGA-E2-A156	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	61	Alive	NA	39276660	FALSE
+46384059-8ee2-4c89-8a48-cddeaa10ea26	TCGA-E2-A158-01A-11R-A12D-07	TCGA-E2-A158	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	43	Alive	NA	38729928	FALSE
+b695a1d1-083f-43bd-8389-a1106635eaed	TCGA-E2-A158-11A-22R-A12D-07	TCGA-E2-A158	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIA	43	Alive	NA	39885112	FALSE
+6506402f-5ab1-48bd-80f5-6d53c1a7f775	TCGA-E2-A159-01A-11R-A115-07	TCGA-E2-A159	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	50	Alive	NA	39842205	FALSE
+46c0f948-2eac-41f7-b490-fbca1724d710	TCGA-E2-A15A-01A-11R-A12D-07	TCGA-E2-A15A	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	45	Alive	NA	39956560	FALSE
+e5c1a89f-c3d9-4dc8-a35f-d2834b155843	TCGA-E2-A15C-01A-31R-A12D-07	TCGA-E2-A15C	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	61	Alive	NA	38566753	FALSE
+98e09c59-13e5-4085-86d9-873dec99dfe9	TCGA-E2-A15D-01A-11R-A115-07	TCGA-E2-A15D	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	47	Alive	NA	38696813	FALSE
+ab75bca7-5635-4839-a178-120a02ef575f	TCGA-E2-A15E-01A-11R-A12D-07	TCGA-E2-A15E	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	40	Alive	NA	38936098	FALSE
+c079cc60-a420-4f66-8b9c-32dc51c49986	TCGA-E2-A15F-01A-11R-A115-07	TCGA-E2-A15F	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	64	Alive	NA	38470608	FALSE
+08962894-8a7d-4bf0-a562-5cdfba7e72fb	TCGA-E2-A15G-01A-11R-A12D-07	TCGA-E2-A15G	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	76	Alive	NA	38356939	FALSE
+c3916163-fdc5-4048-9ac4-bf3de91091ce	TCGA-E2-A15H-01A-11R-A12D-07	TCGA-E2-A15H	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	38	Alive	NA	39155177	FALSE
+db7fd043-2a8f-480a-a208-912d99ce8848	TCGA-E2-A15I-01A-21R-A137-07	TCGA-E2-A15I	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	44	Alive	NA	37219183	FALSE
+cfa5fc5f-4381-415c-b244-c1fe9d992ffb	TCGA-E2-A15I-11A-32R-A137-07	TCGA-E2-A15I	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIA	44	Alive	NA	39371948	FALSE
+71b02059-b87e-4288-b02e-6470d6a582c3	TCGA-E2-A15J-01A-11R-A12P-07	TCGA-E2-A15J	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	51	Alive	NA	39554555	FALSE
+6d5de1af-e8c0-46bc-8f78-97f57489b081	TCGA-E2-A15K-01A-11R-A12P-07	TCGA-E2-A15K	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	58	Alive	NA	39819019	FALSE
+b40a1d99-8676-46c9-b28e-5ba43c1987c3	TCGA-E2-A15K-11A-13R-A12P-07	TCGA-E2-A15K	normal	Solid Tissue Normal	Positive	Positive	Equivocal	Stage IIB	58	Alive	NA	40437556	FALSE
+6eaf8148-9ef1-4172-a7fe-b9fe7d747796	TCGA-E2-A15L-01A-11R-A12D-07	TCGA-E2-A15L	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	65	Alive	NA	39430791	FALSE
+6198b84c-490a-426d-a43e-afd8be5a211b	TCGA-E2-A15M-01A-11R-A12D-07	TCGA-E2-A15M	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	38985378	FALSE
+f00c47dc-d7ab-45f3-85e8-94b4b4e3ede1	TCGA-E2-A15M-11A-22R-A12D-07	TCGA-E2-A15M	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	66	Alive	NA	40160554	FALSE
+442cfb48-2665-4404-889d-3626442670c1	TCGA-E2-A15O-01A-11R-A115-07	TCGA-E2-A15O	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	89	Alive	NA	38905452	FALSE
+9972daf9-73b0-41b3-9de3-da946e65e347	TCGA-E2-A15P-01A-11R-A115-07	TCGA-E2-A15P	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	61	Alive	NA	38773189	FALSE
+06b39bb2-3381-4452-8000-ecaae10c1734	TCGA-E2-A15R-01A-11R-A115-07	TCGA-E2-A15R	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	64	Alive	NA	39091233	FALSE
+cc52bf35-48f8-415b-8b15-db5d7e17a66c	TCGA-E2-A15S-01A-11R-A115-07	TCGA-E2-A15S	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIB	34	Alive	NA	38308912	FALSE
+fa4cc864-9edd-4843-88f0-956aaecb53b8	TCGA-E2-A15T-01A-11R-A115-07	TCGA-E2-A15T	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	65	Alive	NA	39220918	FALSE
+faa284cf-abd4-4405-b847-ad06672bf451	TCGA-E2-A1AZ-01A-11R-A12P-07	TCGA-E2-A1AZ	tumor	Primary Tumor	Negative	Negative	Indeterminate	Stage IIB	63	Alive	NA	38367957	FALSE
+dc7c1407-1b5f-4827-b319-810babcb9a3e	TCGA-E2-A1B0-01A-11R-A12P-07	TCGA-E2-A1B0	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIA	50	Alive	NA	39667742	FALSE
+dd20d507-013b-4e54-9b1b-0d3b82a3c9ca	TCGA-E2-A1B1-01A-21R-A12P-07	TCGA-E2-A1B1	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	45	Alive	NA	39105454	FALSE
+31d88855-e509-48ac-818f-f817ebfb35ab	TCGA-E2-A1B4-01A-11R-A12P-07	TCGA-E2-A1B4	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	74	Alive	NA	39418720	FALSE
+3420e4dd-879a-44f0-b7bb-5cdd8bd5401a	TCGA-E2-A1B5-01A-21R-A12P-07	TCGA-E2-A1B5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	46	Alive	NA	39870029	FALSE
+6cf498ba-46d9-451f-b65a-e649964e5d25	TCGA-E2-A1B6-01A-31R-A12P-07	TCGA-E2-A1B6	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	44	Alive	NA	39276807	FALSE
+a8304bf0-ec4e-41c2-8fc8-90949c7a4f38	TCGA-E2-A1BC-01A-11R-A12P-07	TCGA-E2-A1BC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	63	Alive	NA	38800089	FALSE
+5f284542-900e-4fac-a1e6-4f267502d845	TCGA-E2-A1BC-11A-32R-A12P-07	TCGA-E2-A1BC	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IA	63	Alive	NA	40153157	FALSE
+0195b339-0a12-4163-a281-50e1eae085cf	TCGA-E2-A1BD-01A-11R-A12P-07	TCGA-E2-A1BD	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	53	Alive	NA	38834114	FALSE
+dd4a2ac9-2996-4fac-852c-d4511efb607d	TCGA-E2-A1IE-01A-11R-A13Q-07	TCGA-E2-A1IE	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	61	Alive	NA	39108498	FALSE
+41951aff-344c-4b10-935c-6dcdbb54c5b4	TCGA-E2-A1IF-01A-11R-A144-07	TCGA-E2-A1IF	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	74	Alive	NA	39870958	FALSE
+79afecac-c5cc-41af-9f0a-4cc3f5c6548b	TCGA-E2-A1IG-01A-11R-A144-07	TCGA-E2-A1IG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	45	Alive	NA	39923619	FALSE
+6fe8898a-1052-42ca-a3d3-7db45226fe94	TCGA-E2-A1IG-11A-22R-A144-07	TCGA-E2-A1IG	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIB	45	Alive	NA	39638857	FALSE
+6f3a1f44-002a-412a-9df2-27322253e0ff	TCGA-E2-A1IH-01A-11R-A13Q-07	TCGA-E2-A1IH	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	80	Alive	NA	38922116	FALSE
+096c96df-4740-40c0-864c-3873ccc57afe	TCGA-E2-A1II-01A-11R-A144-07	TCGA-E2-A1II	tumor	Primary Tumor	Negative	Positive	Negative	Stage I	51	Alive	NA	40085839	FALSE
+e58e4d1a-4682-4a48-86f1-9e62dbbe79d9	TCGA-E2-A1IJ-01A-11R-A144-07	TCGA-E2-A1IJ	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	57	Alive	NA	39323830	FALSE
+8b67d4ef-bca7-4184-86c3-9dd50b8dc2c3	TCGA-E2-A1IK-01A-11R-A144-07	TCGA-E2-A1IK	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	71	Alive	NA	40160307	FALSE
+094703fe-a2ec-49de-aefb-dd1dd3d80f46	TCGA-E2-A1IL-01A-11R-A14D-07	TCGA-E2-A1IL	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	78	Alive	NA	38578119	FALSE
+703ea797-79e6-4ace-8717-ff1f3a9bb888	TCGA-E2-A1IN-01A-11R-A13Q-07	TCGA-E2-A1IN	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	60	Alive	NA	39422738	FALSE
+85853af3-27b0-49e0-9e71-478019ae1fa6	TCGA-E2-A1IO-01A-11R-A144-07	TCGA-E2-A1IO	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage I	37	Alive	NA	39533046	FALSE
+1ab92ada-637e-4a42-a39a-70ceeea41ae3	TCGA-E2-A1IU-01A-11R-A14D-07	TCGA-E2-A1IU	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	60	Alive	NA	39506612	FALSE
+f16fe955-9a7c-43c1-9f74-3d9d69c5e1b7	TCGA-E2-A1L6-01A-11R-A13Q-07	TCGA-E2-A1L6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	44	Alive	NA	38153311	FALSE
+8e47d178-8309-4a01-9ba7-5a48615158ca	TCGA-E2-A1L7-01A-11R-A144-07	TCGA-E2-A1L7	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	40	Alive	NA	39520340	FALSE
+19593225-5423-4c65-8440-7be7e3fb5353	TCGA-E2-A1L7-11A-33R-A144-07	TCGA-E2-A1L7	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIIA	40	Alive	NA	39160632	FALSE
+39bf9fe5-0385-44cd-a45e-29d432784bde	TCGA-E2-A1L8-01A-11R-A13Q-07	TCGA-E2-A1L8	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	52	Alive	NA	37552842	FALSE
+dd138ff8-d54f-4a77-aaf7-dbfea3beb17d	TCGA-E2-A1L9-01A-11R-A13Q-07	TCGA-E2-A1L9	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	40	Alive	NA	39036012	FALSE
+7bb7891b-0697-466a-a003-4f9e06358d41	TCGA-E2-A1LA-01A-11R-A144-07	TCGA-E2-A1LA	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	59	Alive	NA	39411468	FALSE
+75f1e6b3-b296-49ae-b065-b4e39a986790	TCGA-E2-A1LB-01A-11R-A144-07	TCGA-E2-A1LB	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	41	Alive	NA	40281555	FALSE
+f13c65ec-ec32-4ad8-a79e-f517071dba63	TCGA-E2-A1LB-11A-22R-A144-07	TCGA-E2-A1LB	normal	Solid Tissue Normal	Negative	Negative	Positive	Stage IIB	41	Alive	NA	39282849	FALSE
+e1d2bac2-664c-4e09-b008-b879aab76841	TCGA-E2-A1LE-01A-12R-A19W-07	TCGA-E2-A1LE	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIIC	71	Dead	879	39993901	FALSE
+91714b41-6550-4638-bc95-bd9bd8163f37	TCGA-E2-A1LG-01A-21R-A14M-07	TCGA-E2-A1LG	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	50	Alive	NA	39933952	FALSE
+cfd5c33b-c102-4f62-b34d-c178342ceb4d	TCGA-E2-A1LH-01A-11R-A14D-07	TCGA-E2-A1LH	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	59	Alive	NA	39364025	FALSE
+ee36b146-853c-4ee0-be18-0ccdd542e17d	TCGA-E2-A1LH-11A-22R-A14D-07	TCGA-E2-A1LH	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage I	59	Alive	NA	39430974	FALSE
+17ca0dc6-8ff2-4d03-adf7-b12ac8c5da44	TCGA-E2-A1LI-01A-12R-A157-07	TCGA-E2-A1LI	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIB	57	Alive	NA	39227446	FALSE
+4cd84adb-81dd-484f-bd75-4ded4b0bef82	TCGA-E2-A1LK-01A-21R-A14D-07	TCGA-E2-A1LK	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIIC	84	Dead	266	40195516	FALSE
+a03bda91-0936-4c67-9508-4903f84c980f	TCGA-E2-A1LL-01A-11R-A144-07	TCGA-E2-A1LL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	73	Alive	NA	40409693	FALSE
+172944fc-5d14-491c-bd4a-f1eaae96a38d	TCGA-E2-A1LS-01A-12R-A157-07	TCGA-E2-A1LS	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	46	Alive	NA	38429058	FALSE
+b422fff3-623b-419a-964e-046bae3578b3	TCGA-E2-A1LS-11A-32R-A157-07	TCGA-E2-A1LS	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IA	46	Alive	NA	39929647	FALSE
+192fa453-79d0-4167-8d27-bc3c07a664f5	TCGA-E2-A2P5-01A-11R-A19W-07	TCGA-E2-A2P5	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	78	Alive	NA	39986901	FALSE
+dbecbce2-8aa9-46dd-bc74-06b18bef9dac	TCGA-E2-A2P6-01A-11R-A19W-07	TCGA-E2-A2P6	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	77	Alive	NA	38499443	FALSE
+b11d1d98-5a21-434d-bf20-4925315e38f7	TCGA-E2-A3DX-01A-21R-A213-07	TCGA-E2-A3DX	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	43	Alive	NA	39449917	FALSE
+8d53e953-da0b-4734-815b-0cb6dd129827	TCGA-E2-A56Z-01A-12R-A29R-07	TCGA-E2-A56Z	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	69	Alive	NA	39800244	FALSE
+07b99b18-192f-40a4-86b4-219eee164d42	TCGA-E2-A570-01A-11R-A29R-07	TCGA-E2-A570	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IB	47	Alive	NA	39419437	FALSE
+a4cecc77-3764-4f27-bd37-d7e76e436944	TCGA-E2-A572-01A-13R-A31O-07	TCGA-E2-A572	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIA	72	Alive	NA	41075564	FALSE
+f6d722b6-2590-4695-814c-0830ef0d9b06	TCGA-E2-A573-01A-11R-A29R-07	TCGA-E2-A573	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	48	Alive	NA	40068765	FALSE
+03e71bd3-8fc7-4f34-96e7-b0e3a9ac4b05	TCGA-E2-A574-01A-11R-A29R-07	TCGA-E2-A574	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	44	Alive	NA	38366632	FALSE
+61a5786a-1575-4f6d-8b96-75efc78410f3	TCGA-E2-A576-01A-11R-A31O-07	TCGA-E2-A576	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	69	Alive	NA	37086416	FALSE
+d4137836-3f03-4a66-a7e1-1a735b289cbd	TCGA-E2-A9RU-01A-11R-A41B-07	TCGA-E2-A9RU	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIC	90	Alive	NA	40525723	FALSE
+1e122aa0-1ca9-4f1b-823e-68d21d9b50ba	TCGA-E9-A1N3-01A-12R-A157-07	TCGA-E9-A1N3	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	70	Alive	NA	37600472	FALSE
+22139565-60e2-4a36-8b8a-832f459af87a	TCGA-E9-A1N4-01A-11R-A14M-07	TCGA-E9-A1N4	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	41	Alive	NA	39984076	FALSE
+efe04d5a-3d40-49b2-994c-f1d725736638	TCGA-E9-A1N4-11A-33R-A14M-07	TCGA-E9-A1N4	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIIA	41	Alive	NA	37767877	FALSE
+ba1d9bf5-f4ab-40b0-8e2f-fe406afcc77e	TCGA-E9-A1N5-01A-11R-A14D-07	TCGA-E9-A1N5	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	45	Alive	NA	38945765	FALSE
+94f26f8f-a223-4b19-95f0-9937134b8f32	TCGA-E9-A1N5-11A-41R-A14D-07	TCGA-E9-A1N5	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIB	45	Alive	NA	39390145	FALSE
+21821b38-6786-4078-9918-ec0e877c1533	TCGA-E9-A1N6-01A-11R-A144-07	TCGA-E9-A1N6	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	52	Alive	NA	40167701	FALSE
+f2f93096-8eda-4c48-9dfc-1c0df505137e	TCGA-E9-A1N6-11A-32R-A144-07	TCGA-E9-A1N6	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIB	52	Alive	NA	38154148	FALSE
+3d4d1fa7-da4f-44cd-aa52-b8963cd61f31	TCGA-E9-A1N8-01A-11R-A144-07	TCGA-E9-A1N8	tumor	Primary Tumor	Negative	NA	Negative	Stage IIA	48	Alive	NA	39646314	FALSE
+d91cdb44-f946-44ad-8100-026e9da98bd3	TCGA-E9-A1N9-01A-11R-A14D-07	TCGA-E9-A1N9	tumor	Primary Tumor	Negative	Positive	Positive	Stage IIA	58	Alive	NA	39678706	FALSE
+b3582a67-1df7-4531-8564-a0b33e4da506	TCGA-E9-A1N9-11A-71R-A14D-07	TCGA-E9-A1N9	normal	Solid Tissue Normal	Negative	Positive	Positive	Stage IIA	58	Alive	NA	38524405	FALSE
+c41c0d47-9ac3-417c-8746-945945fa7386	TCGA-E9-A1NA-01A-11R-A144-07	TCGA-E9-A1NA	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	58	Alive	NA	40545035	FALSE
+d1017f74-3a39-4427-af57-273e34247b49	TCGA-E9-A1NA-11A-33R-A144-07	TCGA-E9-A1NA	normal	Solid Tissue Normal	Positive	Positive	Positive	Stage IIA	58	Alive	NA	40065010	FALSE
+38b0c53a-af60-4610-a6a6-360550059966	TCGA-E9-A1NC-01A-21R-A26B-07	TCGA-E9-A1NC	tumor	Primary Tumor	Negative	Positive	Positive	Stage IIB	61	Alive	NA	40584695	FALSE
+230082b7-39ec-4fe1-b3c6-daf35458f396	TCGA-E9-A1ND-01A-11R-A144-07	TCGA-E9-A1ND	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIB	75	Alive	NA	40327517	FALSE
+325f0a64-2e43-473f-b946-d328bf79be69	TCGA-E9-A1ND-11A-43R-A144-07	TCGA-E9-A1ND	normal	Solid Tissue Normal	Negative	Negative	Positive	Stage IIB	75	Alive	NA	40448899	FALSE
+27afe520-0907-4f6e-91f8-4f9d9acbc9f2	TCGA-E9-A1NE-01A-21R-A14M-07	TCGA-E9-A1NE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	28	Alive	NA	39240866	FALSE
+a6cfd821-a749-4d12-8b80-927255aad39d	TCGA-E9-A1NF-01A-11R-A14D-07	TCGA-E9-A1NF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	60	Alive	NA	40016202	FALSE
+e45cd1b1-4cfd-44c0-8a33-5581db3e41fc	TCGA-E9-A1NF-11A-73R-A14D-07	TCGA-E9-A1NF	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	60	Alive	NA	39565515	FALSE
+c2d1befc-422c-46a1-857a-13eb87f0657c	TCGA-E9-A1NG-01A-21R-A14M-07	TCGA-E9-A1NG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	62	Alive	NA	40299896	FALSE
+55bbcad3-f2a6-4b43-be4a-9e1de71c369e	TCGA-E9-A1NG-11A-52R-A14M-07	TCGA-E9-A1NG	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIA	62	Alive	NA	39723372	FALSE
+4d845308-2bea-47bd-bf18-e0b3ebcb81a4	TCGA-E9-A1NH-01A-11R-A14D-07	TCGA-E9-A1NH	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	71	Alive	NA	39344474	FALSE
+bcc79c0a-f4d6-48fd-aa37-4e0d1017f443	TCGA-E9-A1NI-01A-11R-A14D-07	TCGA-E9-A1NI	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	51	Alive	NA	40103574	FALSE
+6e0512bc-03e8-412a-8a99-55d5addd66a8	TCGA-E9-A1QZ-01A-21R-A169-07	TCGA-E9-A1QZ	tumor	Primary Tumor	NA	NA	NA	Stage IIA	61	Alive	NA	39219283	FALSE
+a45a86c9-8168-4036-b186-db471eb53546	TCGA-E9-A1R0-01A-22R-A16F-07	TCGA-E9-A1R0	tumor	Primary Tumor	NA	NA	NA	Stage IIA	58	Alive	NA	39675495	FALSE
+59d0a0a2-6241-489e-9e65-efbbcc312256	TCGA-E9-A1R2-01A-11R-A14D-07	TCGA-E9-A1R2	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIIC	51	Alive	NA	39293725	FALSE
+e06668e3-03b5-4e17-9e22-40d5734af988	TCGA-E9-A1R3-01A-31R-A14M-07	TCGA-E9-A1R3	tumor	Primary Tumor	NA	NA	NA	Stage IIIC	70	Alive	NA	39897533	FALSE
+d512d7d6-0f5f-484c-a4eb-20fcce53643a	TCGA-E9-A1R4-01A-21R-A14D-07	TCGA-E9-A1R4	tumor	Primary Tumor	NA	NA	NA	Stage IA	66	Alive	NA	39348255	FALSE
+cef2bdb2-017f-4e90-94b3-45a91ac9fb6c	TCGA-E9-A1R5-01A-11R-A14M-07	TCGA-E9-A1R5	tumor	Primary Tumor	NA	NA	NA	Stage IA	63	Alive	NA	39590186	FALSE
+3d635708-c72f-44c2-84e1-036cb2ddbfaf	TCGA-E9-A1R6-01A-11R-A14D-07	TCGA-E9-A1R6	tumor	Primary Tumor	NA	NA	NA	Stage IIA	63	Alive	NA	39941989	FALSE
+300d7f74-a627-4738-91a9-62778d98c5ad	TCGA-E9-A1R7-01A-11R-A14M-07	TCGA-E9-A1R7	tumor	Primary Tumor	NA	NA	NA	Stage IIA	64	Alive	NA	39492611	FALSE
+24ce43ef-dafc-445c-bf3d-cdef578a734a	TCGA-E9-A1R7-11A-42R-A14M-07	TCGA-E9-A1R7	normal	Solid Tissue Normal	NA	NA	NA	Stage IIA	64	Alive	NA	39250108	FALSE
+ad36d45c-5bd4-4c14-87b7-eb57dc110ac7	TCGA-E9-A1RA-01A-11R-A14D-07	TCGA-E9-A1RA	tumor	Primary Tumor	NA	NA	NA	Stage IA	48	Alive	NA	38414602	FALSE
+cb8e1e32-91db-4b35-9556-f6537f64bcbe	TCGA-E9-A1RB-01A-11R-A157-07	TCGA-E9-A1RB	tumor	Primary Tumor	NA	NA	NA	Stage IIA	40	Alive	NA	39552445	FALSE
+65cd49c8-f7d4-403c-9dcd-3a2ac936dd10	TCGA-E9-A1RB-11A-33R-A157-07	TCGA-E9-A1RB	normal	Solid Tissue Normal	NA	NA	NA	Stage IIA	40	Alive	NA	39110122	FALSE
+743c3a64-081c-4001-a8f0-6a510981d6e0	TCGA-E9-A1RC-01A-11R-A157-07	TCGA-E9-A1RC	tumor	Primary Tumor	NA	NA	NA	Stage IIIC	56	Alive	NA	38808963	FALSE
+42b438c3-df9d-4be6-9798-43935c5f0b66	TCGA-E9-A1RC-11A-33R-A157-07	TCGA-E9-A1RC	normal	Solid Tissue Normal	NA	NA	NA	Stage IIIC	56	Alive	NA	39329788	FALSE
+d7a583f5-736c-4461-ae6d-e464763154ae	TCGA-E9-A1RD-01A-11R-A157-07	TCGA-E9-A1RD	tumor	Primary Tumor	NA	NA	NA	Stage IIA	67	Alive	NA	38067315	FALSE
+17a70a1e-f5f7-4abf-9697-3db382b2ed18	TCGA-E9-A1RD-11A-33R-A157-07	TCGA-E9-A1RD	normal	Solid Tissue Normal	NA	NA	NA	Stage IIA	67	Alive	NA	39283065	FALSE
+dfe29d4c-1564-4c22-bfb4-6b69a830f788	TCGA-E9-A1RE-01A-11R-A157-07	TCGA-E9-A1RE	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	74	Alive	NA	39038786	FALSE
+703e4f05-de97-44e1-b978-48a8dd03b9ad	TCGA-E9-A1RF-01A-11R-A157-07	TCGA-E9-A1RF	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	68	Alive	NA	39031735	FALSE
+d66124fe-e1c5-4d3b-8c95-cfb2e013e924	TCGA-E9-A1RF-11A-32R-A157-07	TCGA-E9-A1RF	normal	Solid Tissue Normal	NA	NA	NA	Stage IIIA	68	Alive	NA	38398367	FALSE
+6caacba4-712d-4976-b955-1e4c9c004587	TCGA-E9-A1RG-01A-11R-A14D-07	TCGA-E9-A1RG	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	62	Alive	NA	40902498	FALSE
+150feeb1-7643-4b1c-a77c-cfd97d301d37	TCGA-E9-A1RH-01A-21R-A169-07	TCGA-E9-A1RH	tumor	Primary Tumor	NA	NA	NA	Stage IIA	63	Alive	NA	39865606	FALSE
+91cd657c-ffad-485f-89de-cfa00309e6bc	TCGA-E9-A1RH-11A-34R-A169-07	TCGA-E9-A1RH	normal	Solid Tissue Normal	NA	NA	NA	Stage IIA	63	Alive	NA	39369667	FALSE
+a65f91d7-a961-42e8-b20f-25128a6bb37d	TCGA-E9-A1RI-01A-11R-A169-07	TCGA-E9-A1RI	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	43	Alive	NA	38262139	FALSE
+105e437a-2d46-4604-bcaa-a90523e951f9	TCGA-E9-A1RI-11A-41R-A169-07	TCGA-E9-A1RI	normal	Solid Tissue Normal	NA	NA	NA	Stage IIIA	43	Alive	NA	37931356	FALSE
+a7b0203c-c5a8-45b3-a912-d403b2e479a4	TCGA-E9-A226-01A-21R-A157-07	TCGA-E9-A226	tumor	Primary Tumor	NA	NA	NA	Stage IIIA	45	Alive	NA	38456357	FALSE
+27e40510-f244-482e-983f-bbe4a2f85edf	TCGA-E9-A227-01A-11R-A157-07	TCGA-E9-A227	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	42	Alive	NA	39386030	FALSE
+e43dade2-3a54-4fc5-a94a-70752288de94	TCGA-E9-A228-01A-31R-A157-07	TCGA-E9-A228	tumor	Primary Tumor	NA	NA	NA	Stage IIB	58	Alive	NA	39289657	FALSE
+a72b96c5-2ece-463e-a6cc-4598901a9bef	TCGA-E9-A229-01A-31R-A157-07	TCGA-E9-A229	tumor	Primary Tumor	NA	NA	NA	Stage IA	37	Alive	NA	38743685	FALSE
+7a4c087e-9638-42f8-a438-0f5c4edcdc6c	TCGA-E9-A22A-01A-11R-A157-07	TCGA-E9-A22A	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	74	Alive	NA	40303173	FALSE
+bc005778-f88d-47b7-8e04-ceb9750f00c2	TCGA-E9-A22B-01A-11R-A157-07	TCGA-E9-A22B	tumor	Primary Tumor	Positive	Negative	Negative	Stage IA	71	Alive	NA	40100657	FALSE
+af27fd0a-108c-47d2-9f87-665bed408e99	TCGA-E9-A22D-01A-11R-A157-07	TCGA-E9-A22D	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	38	Alive	NA	40362945	FALSE
+baf01317-033e-4198-9d66-e91c7fc2bd37	TCGA-E9-A22E-01A-11R-A157-07	TCGA-E9-A22E	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	56	Alive	NA	40260137	FALSE
+ea2e8ecb-841c-4224-9468-ed2d649c31a3	TCGA-E9-A22G-01A-11R-A157-07	TCGA-E9-A22G	tumor	Primary Tumor	Negative	Negative	Positive	Stage IIA	47	Alive	NA	39583649	FALSE
+c68a0a08-0c16-4b8a-9da8-af167ab1d67f	TCGA-E9-A22H-01A-11R-A157-07	TCGA-E9-A22H	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	42	Alive	NA	39087478	FALSE
+79807938-a28e-4f9f-ae07-ee97778f5424	TCGA-E9-A243-01A-21R-A169-07	TCGA-E9-A243	tumor	Primary Tumor	NA	NA	NA	Stage IIA	52	Alive	NA	39449854	FALSE
+9bbada51-d827-4eea-af45-47d7b5ba137e	TCGA-E9-A244-01A-11R-A169-07	TCGA-E9-A244	tumor	Primary Tumor	NA	NA	NA	Stage IIA	54	Alive	NA	39267600	FALSE
+00dd9349-a18d-4a08-8f90-639f64dc5ae6	TCGA-E9-A245-01A-22R-A16F-07	TCGA-E9-A245	tumor	Primary Tumor	NA	NA	NA	Stage IIB	47	Alive	NA	33592551	FALSE
+0141f9ca-a8a1-4ea4-b194-6c3afb943253	TCGA-E9-A247-01A-11R-A169-07	TCGA-E9-A247	tumor	Primary Tumor	NA	NA	NA	Stage IA	59	Alive	NA	38375706	FALSE
+0ac5f4b6-c269-4dac-9f84-8ddcb5227823	TCGA-E9-A248-01A-11R-A169-07	TCGA-E9-A248	tumor	Primary Tumor	NA	NA	NA	Stage IIA	51	Alive	NA	38893842	FALSE
+0b1cf6de-f98f-4020-baa7-c4fc518e5f00	TCGA-E9-A249-01A-11R-A169-07	TCGA-E9-A249	tumor	Primary Tumor	NA	NA	NA	Stage IIA	45	Alive	NA	39217954	FALSE
+239193df-c80b-407a-b5b9-c7e637cf49ad	TCGA-E9-A24A-01A-11R-A169-07	TCGA-E9-A24A	tumor	Primary Tumor	NA	NA	NA	Stage IIA	69	Alive	NA	38213406	FALSE
+b38ce2eb-7610-45c6-a83e-bbc16a341f79	TCGA-E9-A295-01A-11R-A16F-07	TCGA-E9-A295	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	71	Alive	NA	39920474	FALSE
+21bfabfe-7c78-4879-bec0-74c0cfd20529	TCGA-E9-A2JS-01A-11R-A180-07	TCGA-E9-A2JS	tumor	Primary Tumor	NA	NA	NA	Stage IIB	72	Alive	NA	39459659	FALSE
+ace4837a-dd3a-4668-a67a-d7ba9b51980f	TCGA-E9-A2JT-01A-22R-A18M-07	TCGA-E9-A2JT	tumor	Primary Tumor	NA	NA	NA	Stage IIA	63	Alive	NA	38462047	FALSE
+7abfbcc7-5756-4ef7-8ebf-3345488d21d1	TCGA-E9-A3HO-01A-11R-A213-07	TCGA-E9-A3HO	tumor	Primary Tumor	NA	NA	NA	Stage IIA	49	Alive	NA	37437809	FALSE
+26b1f23c-8bc2-42b5-924b-b51f25c84da9	TCGA-E9-A3Q9-01A-11R-A21T-07	TCGA-E9-A3Q9	tumor	Primary Tumor	Positive	Positive	Indeterminate	Stage IIIC	78	Alive	NA	38660921	FALSE
+8a791099-6538-4f5c-9400-d3f3dd73bde1	TCGA-E9-A3QA-01A-61R-A22K-07	TCGA-E9-A3QA	tumor	Primary Tumor	NA	NA	NA	Stage IIA	33	Alive	NA	40141622	FALSE
+7ed6588c-9071-4698-9876-1f7273591991	TCGA-E9-A3X8-01A-31R-A22U-07	TCGA-E9-A3X8	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	48	Alive	NA	40766094	FALSE
+d0920958-b342-4844-9fd6-93f3784cf5a4	TCGA-E9-A54X-01A-11R-A266-07	TCGA-E9-A54X	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	85	Alive	NA	40090333	FALSE
+55a3afe4-8f9f-4faf-92f1-d15a9a562dd8	TCGA-E9-A54Y-01A-11R-A466-07	TCGA-E9-A54Y	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	63	Alive	NA	38719107	FALSE
+bcceb33f-d17a-4986-bb39-15cde059415a	TCGA-E9-A5FK-01A-11R-A27Q-07	TCGA-E9-A5FK	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	60	Alive	NA	40696591	FALSE
+82a7523d-02c1-4f75-956a-b95519dd7547	TCGA-E9-A5FL-01A-11R-A27Q-07	TCGA-E9-A5FL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	65	Alive	NA	40093838	FALSE
+aeb7ccc8-cb30-4640-8995-e12113160e08	TCGA-E9-A5UO-01A-11R-A28M-07	TCGA-E9-A5UO	tumor	Primary Tumor	NA	NA	NA	Stage IIA	41	Alive	NA	39268976	FALSE
+8865e079-d8ab-406c-8886-c854f1a26201	TCGA-E9-A5UP-01A-11R-A28M-07	TCGA-E9-A5UP	tumor	Primary Tumor	NA	NA	NA	Stage IIA	63	Alive	NA	39467823	FALSE
+7fc6cf7d-67bd-452f-b55e-3adfd7fda590	TCGA-E9-A6HE-01A-11R-A31O-07	TCGA-E9-A6HE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	45	Alive	NA	40332092	FALSE
+7125b861-75f8-4119-8fb1-2f7b81413780	TCGA-EW-A1IW-01A-11R-A13Q-07	TCGA-EW-A1IW	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	80	Alive	NA	39626786	FALSE
+4845b96c-4325-44ae-ae47-66aad04fbbcf	TCGA-EW-A1IX-01A-12R-A144-07	TCGA-EW-A1IX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	48	Alive	NA	39315333	FALSE
+1dd762b5-653d-4516-8215-1ced908182b2	TCGA-EW-A1IY-01A-11R-A13Q-07	TCGA-EW-A1IY	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	38	Alive	NA	38876111	FALSE
+e313b1bb-b85a-4dd9-baa8-017bfbd87146	TCGA-EW-A1IZ-01A-11R-A13Q-07	TCGA-EW-A1IZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	53	Alive	NA	38933979	FALSE
+c1e11d37-82aa-444e-9b51-18bc378761a8	TCGA-EW-A1J1-01A-11R-A13Q-07	TCGA-EW-A1J1	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	38	Alive	NA	39379422	FALSE
+56c4ca91-26bf-4589-9232-c6400adc1a08	TCGA-EW-A1J2-01A-21R-A13Q-07	TCGA-EW-A1J2	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	50	Alive	NA	38739561	FALSE
+0c24c03a-fe76-4fa4-8e63-b3a6f908b256	TCGA-EW-A1J3-01A-11R-A13Q-07	TCGA-EW-A1J3	tumor	Primary Tumor	Positive	Positive	Positive	Stage IA	61	Alive	NA	37174125	FALSE
+0915dde6-5839-4705-8d9b-b01a6450feb6	TCGA-EW-A1J5-01A-11R-A13Q-07	TCGA-EW-A1J5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	37782779	FALSE
+bcc71ff5-8729-4e6b-8c2c-471f80a4f91d	TCGA-EW-A1J6-01A-11R-A13Q-07	TCGA-EW-A1J6	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	70	Alive	NA	37599319	FALSE
+a81e5ef5-c201-410d-be73-63f273dff6e7	TCGA-EW-A1OV-01A-11R-A144-07	TCGA-EW-A1OV	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	56	Alive	NA	39937743	FALSE
+e07b4c18-8cb4-4006-935e-c5036b5e1879	TCGA-EW-A1OW-01A-21R-A144-07	TCGA-EW-A1OW	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	58	Alive	NA	39904500	FALSE
+421c51e1-ba5f-4ffe-b4ed-39303113709b	TCGA-EW-A1OX-01A-11R-A144-07	TCGA-EW-A1OX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	43	Alive	NA	39700236	FALSE
+17899f0b-76dd-48ef-893e-c7e95118b243	TCGA-EW-A1OY-01A-11R-A144-07	TCGA-EW-A1OY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	63	Alive	NA	39978835	FALSE
+13e5316e-1323-4018-b21e-10671d1ca7f9	TCGA-EW-A1OZ-01A-11R-A144-07	TCGA-EW-A1OZ	tumor	Primary Tumor	Positive	Negative	Equivocal	Stage IIA	56	Alive	NA	40128870	FALSE
+64f561ff-896f-44ae-9807-2a299c81c633	TCGA-EW-A1P0-01A-11R-A144-07	TCGA-EW-A1P0	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	55	Alive	NA	39315069	FALSE
+b5483af7-880c-4029-9c5b-90eb97408580	TCGA-EW-A1P1-01A-31R-A14D-07	TCGA-EW-A1P1	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIIC	68	Alive	NA	39787228	FALSE
+59860a22-dcea-4871-8799-6f91a5d9c88c	TCGA-EW-A1P3-01A-11R-A144-07	TCGA-EW-A1P3	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	48	Alive	NA	38449079	FALSE
+2c2f376a-2aa7-4c45-9056-b612707c3fcf	TCGA-EW-A1P4-01A-21R-A144-07	TCGA-EW-A1P4	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	43	Alive	NA	40728537	FALSE
+9ed7137b-acec-4eb0-868f-cbfef00ce85e	TCGA-EW-A1P5-01A-11R-A144-07	TCGA-EW-A1P5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	77	Alive	NA	40259742	FALSE
+0725ed55-cac6-48c4-a632-e5147720e7ea	TCGA-EW-A1P6-01A-11R-A144-07	TCGA-EW-A1P6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	64	Alive	NA	39855983	FALSE
+58305698-457f-4e9d-a27d-7b8f98491411	TCGA-EW-A1P7-01A-21R-A144-07	TCGA-EW-A1P7	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIA	59	Alive	NA	39668502	FALSE
+9905b104-db34-4cc2-a6b9-bf3fcd21c9cd	TCGA-EW-A1P8-01A-11R-A144-07	TCGA-EW-A1P8	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIC	58	Dead	239	40381432	FALSE
+6c677ecd-cc01-4b66-badb-0779b7274b20	TCGA-EW-A1PA-01A-11R-A144-07	TCGA-EW-A1PA	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	59	Alive	NA	38215437	FALSE
+1ca20860-4a2e-4d34-a479-5b56facc2c0a	TCGA-EW-A1PB-01A-11R-A144-07	TCGA-EW-A1PB	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	70	Alive	NA	40363856	FALSE
+0a770cd6-c9b1-4cc4-9e31-1f8a820c5c1f	TCGA-EW-A1PC-01B-11R-A21T-07	TCGA-EW-A1PC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	66	Alive	NA	39777573	FALSE
+48bd0e00-be54-47a2-9aed-73c0c863fd39	TCGA-EW-A1PD-01A-11R-A144-07	TCGA-EW-A1PD	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	61	Alive	NA	39405444	FALSE
+0ccc440d-022a-4f6f-a96e-77e0e6c8abbc	TCGA-EW-A1PE-01A-11R-A144-07	TCGA-EW-A1PE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	56	Alive	NA	38978829	FALSE
+a39b6b48-a0cc-49f4-beee-119a5777ac0c	TCGA-EW-A1PF-01A-11R-A144-07	TCGA-EW-A1PF	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	50	Alive	NA	39562241	FALSE
+64e2fb31-8ac3-4162-825f-a7680f410f70	TCGA-EW-A1PG-01A-11R-A144-07	TCGA-EW-A1PG	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	53	Alive	NA	39642593	FALSE
+9efb4d56-8ada-4280-bb76-b5746e4335b8	TCGA-EW-A1PH-01A-11R-A14M-07	TCGA-EW-A1PH	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	52	Alive	NA	39816368	FALSE
+34a1e6c3-a4c7-4a1d-a707-2d24dd44dbf4	TCGA-EW-A2FR-01A-11R-A21T-07	TCGA-EW-A2FR	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IIIC	59	Alive	NA	39788494	FALSE
+a703ba78-a3c0-45d4-bead-30e27ddbc8ef	TCGA-EW-A2FS-01A-11R-A17B-07	TCGA-EW-A2FS	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	41	Alive	NA	37664109	FALSE
+594d9a6e-ecf8-4fcd-aebe-de81c638fcca	TCGA-EW-A2FV-01A-11R-A17B-07	TCGA-EW-A2FV	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	39	Alive	NA	39586293	FALSE
+b17ba902-d97d-47d7-a33c-e31718c50778	TCGA-EW-A2FW-01A-11R-A17B-07	TCGA-EW-A2FW	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	52	Alive	NA	39943230	FALSE
+00e9cce0-2367-4963-a72f-2a08b143b0b8	TCGA-EW-A3E8-01B-11R-A24H-07	TCGA-EW-A3E8	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	60	Alive	NA	39363720	FALSE
+59ad0679-53de-4370-86ac-e3a9605f6997	TCGA-EW-A3U0-01A-11R-A22K-07	TCGA-EW-A3U0	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIIA	61	Alive	NA	39287331	FALSE
+f405cd29-4016-415b-9546-02da179a97ac	TCGA-EW-A423-01A-11R-A24H-07	TCGA-EW-A423	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	75	Alive	NA	39228024	FALSE
+896a84a3-f8a2-44c6-b48a-dbf887f8f5ac	TCGA-EW-A424-01A-11R-A24H-07	TCGA-EW-A424	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	51	Alive	NA	39167419	FALSE
+ec6f630a-8f81-4170-b41b-97d9e4582b68	TCGA-EW-A6S9-01A-22R-A33J-07	TCGA-EW-A6S9	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	34	Alive	NA	39759913	FALSE
+456dadea-0262-488f-8af9-63ca86c8a9f7	TCGA-EW-A6SA-01A-21R-A32P-07	TCGA-EW-A6SA	tumor	Primary Tumor	Positive	Negative	Negative	Stage II	59	Alive	NA	38874989	FALSE
+181a26d8-ad25-40e5-9703-66d771b42b13	TCGA-EW-A6SB-01A-12R-A32P-07	TCGA-EW-A6SB	tumor	Primary Tumor	Negative	Negative	Negative	Stage II	62	Alive	NA	40648350	FALSE
+42202af1-6414-4509-995b-21edcd2cc2cf	TCGA-EW-A6SC-01A-12R-A32P-07	TCGA-EW-A6SC	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	60	Alive	NA	39572625	FALSE
+41c86eb6-00e3-4ef9-b4ab-165e97513825	TCGA-EW-A6SD-01A-12R-A33J-07	TCGA-EW-A6SD	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	32	Alive	NA	39322375	FALSE
+03c22fb8-0643-48fb-a09a-6119f722c09a	TCGA-GI-A2C8-01A-11R-A16F-07	TCGA-GI-A2C8	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIB	63	Alive	NA	38309452	FALSE
+ee1bfe3e-bab5-4c24-adaf-849c011f04e3	TCGA-GI-A2C8-11A-22R-A16F-07	TCGA-GI-A2C8	normal	Solid Tissue Normal	Positive	Positive	Negative	Stage IIIB	63	Alive	NA	40402708	FALSE
+45c2cef7-58b5-4e76-abf6-8b88088c6c82	TCGA-GI-A2C9-01A-11R-A21T-07	TCGA-GI-A2C9	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	58	Alive	NA	39667783	FALSE
+37712ced-585c-40b7-915c-4653ee59b428	TCGA-GI-A2C9-11A-22R-A21T-07	TCGA-GI-A2C9	normal	Solid Tissue Normal	Negative	Negative	Negative	Stage IIB	58	Alive	NA	38708046	FALSE
+766e0d2f-123b-474a-901c-f3cb25a92d95	TCGA-GM-A2D9-01A-11R-A18M-07	TCGA-GM-A2D9	tumor	Primary Tumor	Positive	Positive	NA	Stage I	69	Dead	1812	38276685	FALSE
+8bf7c878-5dfb-4531-ae33-571bb424d359	TCGA-GM-A2DA-01A-11R-A18M-07	TCGA-GM-A2DA	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	46	Alive	NA	37703531	FALSE
+d8be3484-c0f6-40bd-a9e2-d9f3f2ec47fb	TCGA-GM-A2DB-01A-31R-A18M-07	TCGA-GM-A2DB	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	62	Alive	NA	39406625	FALSE
+842b272a-9f51-4919-b7c1-a16a2f410b57	TCGA-GM-A2DC-01A-11R-A18M-07	TCGA-GM-A2DC	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	57	Alive	NA	39052433	FALSE
+2a54226f-50a1-466d-859a-6c64575fc0a7	TCGA-GM-A2DD-01A-11R-A180-07	TCGA-GM-A2DD	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage I	53	Alive	NA	39597655	FALSE
+00f70d11-3b58-4517-82ec-258cced34a60	TCGA-GM-A2DF-01A-11R-A180-07	TCGA-GM-A2DF	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	53	Alive	NA	39386787	FALSE
+8fb28200-513f-4697-8b49-65cc424fdf5e	TCGA-GM-A2DH-01A-11R-A180-07	TCGA-GM-A2DH	tumor	Primary Tumor	Negative	Negative	Negative	Stage I	58	Alive	NA	38920207	FALSE
+4bd3228b-e994-414c-bade-1b4010637bcf	TCGA-GM-A2DI-01A-31R-A18M-07	TCGA-GM-A2DI	tumor	Primary Tumor	Negative	Negative	NA	Stage I	52	Alive	NA	39803950	FALSE
+26e46808-d736-4b6a-ac7e-f638dc5560cd	TCGA-GM-A2DK-01A-21R-A180-07	TCGA-GM-A2DK	tumor	Primary Tumor	Positive	Negative	Negative	Stage I	58	Alive	NA	39743542	FALSE
+09cef733-7623-44a0-816e-5668d0d8edae	TCGA-GM-A2DL-01A-11R-A18M-07	TCGA-GM-A2DL	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	50	Alive	NA	39739441	FALSE
+4dbc7a58-f09f-4209-9686-05884e4668a1	TCGA-GM-A2DM-01A-11R-A180-07	TCGA-GM-A2DM	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	57	Alive	NA	39937891	FALSE
+0cde4402-e1ac-4b6b-a000-f579f4c2d168	TCGA-GM-A2DN-01A-11R-A180-07	TCGA-GM-A2DN	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	58	Alive	NA	39679893	FALSE
+fca0db35-708a-45a5-8f18-cc0b0a123f42	TCGA-GM-A2DO-01A-11R-A18M-07	TCGA-GM-A2DO	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	54	Alive	NA	38013029	FALSE
+f0312eb5-191c-41e8-991b-d070f67aaf22	TCGA-GM-A3NW-01A-21R-A22K-07	TCGA-GM-A3NW	tumor	Primary Tumor	Negative	Positive	Equivocal	Stage IIA	63	Alive	NA	39460891	FALSE
+8cad119d-652e-4d43-bb99-49f90fe5cbf3	TCGA-GM-A3NY-01A-11R-A21T-07	TCGA-GM-A3NY	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	72	Alive	NA	38045250	FALSE
+4ef663a1-721e-4417-89b4-f201c2c3901d	TCGA-GM-A3XG-01A-31R-A24H-07	TCGA-GM-A3XG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	46	Alive	NA	40184643	FALSE
+9121500e-1757-4024-963b-2d875e66932f	TCGA-GM-A3XL-01A-11R-A22U-07	TCGA-GM-A3XL	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	49	Alive	NA	40380437	FALSE
+658f68d0-ae74-4d23-9a8c-146e9a53fc77	TCGA-GM-A3XN-01A-12R-A22U-07	TCGA-GM-A3XN	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	44	Alive	NA	39118419	FALSE
+ecdaf208-d5e1-44b3-a181-cee1d9440e40	TCGA-GM-A4E0-01A-12R-A266-07	TCGA-GM-A4E0	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	67	Alive	NA	38747927	FALSE
+61ae67d5-e167-4e32-9fce-27db9c48bd65	TCGA-GM-A5PV-01A-11R-A28M-07	TCGA-GM-A5PV	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	63	Alive	NA	40133866	FALSE
+dd6e96bc-ff4a-4d29-a4e7-a9cb1c30c229	TCGA-GM-A5PX-01A-12R-A28M-07	TCGA-GM-A5PX	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	65	Alive	NA	40004151	FALSE
+22a5e04d-a9a8-4c13-8a13-9bdbeb357686	TCGA-HN-A2NL-01A-11R-A18M-07	TCGA-HN-A2NL	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	56	Alive	NA	39896882	FALSE
+464746f6-2c7a-4969-859a-77830222752d	TCGA-HN-A2OB-01A-21R-A27Q-07	TCGA-HN-A2OB	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	45	Alive	NA	39102028	FALSE
+18dd7b03-138a-4c36-88e1-aeabb3760b66	TCGA-JL-A3YW-01A-12R-A239-07	TCGA-JL-A3YW	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	49	Alive	NA	40067777	FALSE
+89a77489-f3c1-438a-8a9f-9afaccdc47e0	TCGA-JL-A3YX-01A-11R-A22U-07	TCGA-JL-A3YX	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	46	Alive	NA	39841621	FALSE
+6a0043eb-58dc-4659-889f-b39bfac57258	TCGA-LD-A66U-01A-11R-A31O-07	TCGA-LD-A66U	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	44	Alive	NA	40462490	FALSE
+0c5866d5-41e9-4a62-a84e-5ad63879e249	TCGA-LD-A74U-01A-13R-A33J-07	TCGA-LD-A74U	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIC	79	Alive	NA	39123532	FALSE
+e08f0600-73c6-4144-8af5-ec31097f0e74	TCGA-LD-A7W5-01A-22R-A352-07	TCGA-LD-A7W5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIC	52	Alive	NA	38974895	FALSE
+05127463-a69a-42b3-9635-575a08eb980a	TCGA-LD-A7W6-01A-81R-A352-07	TCGA-LD-A7W6	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	54	Alive	NA	37952293	FALSE
+5e4d0532-9407-4e5a-b733-f4a09079d911	TCGA-LD-A9QF-01A-32R-A41B-07	TCGA-LD-A9QF	tumor	Primary Tumor	Negative	Negative	Positive	Stage IA	73	Alive	NA	40286765	FALSE
+cc4c52a7-57d4-4959-abfb-8ed3b1ba4ded	TCGA-LL-A440-01A-11R-A24H-07	TCGA-LL-A440	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IA	61	Alive	NA	38792009	FALSE
+d27541fa-68eb-4066-a6b8-6abd49575fe1	TCGA-LL-A441-01A-11R-A24H-07	TCGA-LL-A441	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	62	Alive	NA	38053358	FALSE
+1e87e8b3-e97f-4ff7-9531-efbbf0b1f3c5	TCGA-LL-A442-01A-11R-A24H-07	TCGA-LL-A442	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	56	Alive	NA	39017623	FALSE
+9d4e55f2-fcd1-4523-8879-44f95bc3da35	TCGA-LL-A50Y-01A-11R-A266-07	TCGA-LL-A50Y	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	84	Alive	NA	39994082	FALSE
+cf6af5e1-ed9c-4cd2-8c29-5d002ef59b7d	TCGA-LL-A5YL-01A-12R-A29R-07	TCGA-LL-A5YL	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIB	64	Alive	NA	40712905	FALSE
+f86bce61-6748-4f0d-b56a-c30bd71eb2fe	TCGA-LL-A5YM-01A-11R-A28M-07	TCGA-LL-A5YM	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIB	88	Alive	NA	41085294	FALSE
+d89ae0be-8a3b-427f-84c0-6cce2f7b4cbe	TCGA-LL-A5YN-01A-11R-A28M-07	TCGA-LL-A5YN	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	46	Alive	NA	40751269	FALSE
+37b29806-fbd6-432f-9a47-ce72bee3a5bb	TCGA-LL-A5YO-01A-21R-A28M-07	TCGA-LL-A5YO	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	50	Alive	NA	35529076	FALSE
+c25b6919-5dc7-4a8a-97b0-8ee5128b868a	TCGA-LL-A5YP-01A-21R-A28M-07	TCGA-LL-A5YP	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIB	49	Alive	NA	39947931	FALSE
+0cafa6b8-fc3d-49ea-acc5-1e75eec10cc2	TCGA-LL-A6FP-01A-11R-A31O-07	TCGA-LL-A6FP	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	90	Alive	NA	40515299	FALSE
+58758689-b392-46ee-bf47-47429727e7ea	TCGA-LL-A6FQ-01A-11R-A31O-07	TCGA-LL-A6FQ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	77	Alive	NA	41175708	FALSE
+eacf55b2-27dd-48e9-b56e-f1189328f1e5	TCGA-LL-A6FR-01A-12R-A31O-07	TCGA-LL-A6FR	tumor	Primary Tumor	Negative	Positive	Equivocal	Stage IIA	50	Alive	NA	40853937	FALSE
+842f6668-669f-4e7d-89f6-f6da627297b8	TCGA-LL-A73Y-01A-11R-A33J-07	TCGA-LL-A73Y	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	67	Alive	NA	38679939	FALSE
+9a2c9224-ec66-4560-b909-08144c67e00d	TCGA-LL-A73Z-01A-11R-A32P-07	TCGA-LL-A73Z	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IV	55	Alive	NA	40334389	FALSE
+479dca62-5053-4919-9d21-695298aa76b4	TCGA-LL-A740-01A-21R-A32P-07	TCGA-LL-A740	tumor	Primary Tumor	Negative	Negative	Equivocal	Stage IA	61	Alive	NA	39687602	FALSE
+c9a64139-06c9-4154-b8ad-9c6959696977	TCGA-LL-A7SZ-01A-32R-A352-07	TCGA-LL-A7SZ	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	49	Alive	NA	39118559	FALSE
+f7b7f7e8-612f-46d4-bf4a-63befa5acb04	TCGA-LL-A7T0-01A-31R-A352-07	TCGA-LL-A7T0	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIB	70	Alive	NA	39534614	FALSE
+6a193b2e-ea8d-4cbe-8eae-b2486e65c920	TCGA-LL-A8F5-01A-11R-A36F-07	TCGA-LL-A8F5	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIA	61	Alive	NA	40712504	FALSE
+16326873-7589-4840-ba46-6b2995e2dd4a	TCGA-LL-A9Q3-01A-11R-A41B-07	TCGA-LL-A9Q3	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIC	69	Alive	NA	41302356	FALSE
+795d478d-e1fe-49eb-92ad-8b1b145f944b	TCGA-LQ-A4E4-01A-11R-A266-07	TCGA-LQ-A4E4	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	73	Alive	NA	37980580	FALSE
+e21f5a7e-518f-4e33-8930-eb268fc168a4	TCGA-MS-A51U-01A-31R-A266-07	TCGA-MS-A51U	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	44	Alive	NA	38277622	FALSE
+12d8f871-c919-44a0-96bc-c95f4fece8cd	TCGA-OK-A5Q2-01A-11R-A27Q-07	TCGA-OK-A5Q2	tumor	Primary Tumor	Positive	Positive	Negative	Stage II	59	Alive	NA	39868038	FALSE
+29b6a9ce-d0cc-4c2f-828c-86d840585985	TCGA-OL-A5D6-01A-21R-A27Q-07	TCGA-OL-A5D6	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	71	Alive	NA	39823976	FALSE
+ca6d11cc-6933-4eeb-a3b2-b364608abf82	TCGA-OL-A5D7-01A-11R-A27Q-07	TCGA-OL-A5D7	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	70	Alive	NA	40214858	FALSE
+419d0065-52aa-4340-9fdd-9b2b15f44412	TCGA-OL-A5D8-01A-11R-A27Q-07	TCGA-OL-A5D8	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	40	Alive	NA	38900880	FALSE
+a1eb28f4-2621-492d-9e0c-fde3749d464a	TCGA-OL-A5DA-01A-11R-A27Q-07	TCGA-OL-A5DA	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	61	Alive	NA	38827130	FALSE
+c6f4ef8f-353c-463e-8069-fdeacf556176	TCGA-OL-A5RU-01A-11R-A28M-07	TCGA-OL-A5RU	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	63	Alive	NA	39532463	FALSE
+cd86eeaf-d99b-4bd6-96cc-c44a4263cdd7	TCGA-OL-A5RV-01A-12R-A28M-07	TCGA-OL-A5RV	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIC	43	Alive	NA	37949076	FALSE
+8c0e3f5d-e5f0-4b6f-85db-a18cfba08758	TCGA-OL-A5RW-01A-11R-A28M-07	TCGA-OL-A5RW	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	40	Alive	NA	39840163	FALSE
+4ff799d9-202c-4f5a-bd58-495a23b3c39c	TCGA-OL-A5RX-01A-11R-A28M-07	TCGA-OL-A5RX	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	51	Alive	NA	39408347	FALSE
+0f4e859a-50be-454e-9631-7aa4e18827d9	TCGA-OL-A5RY-01A-21R-A28M-07	TCGA-OL-A5RY	tumor	Primary Tumor	Positive	Negative	NA	Stage IIA	52	Alive	NA	40652691	FALSE
+f6abc71a-0718-4b88-a17d-0ceda545778c	TCGA-OL-A5RZ-01A-11R-A28M-07	TCGA-OL-A5RZ	tumor	Primary Tumor	Positive	Negative	NA	Stage IA	57	Alive	NA	39766062	FALSE
+d42b7981-3d8e-4233-b90d-f2b8a9c04d7f	TCGA-OL-A5S0-01A-11R-A28M-07	TCGA-OL-A5S0	tumor	Primary Tumor	Positive	Negative	NA	Stage IIB	66	Alive	NA	40686781	FALSE
+ff3769db-0958-4f3e-aea8-db70149d0a67	TCGA-OL-A66H-01A-11R-A29R-07	TCGA-OL-A66H	tumor	Primary Tumor	Positive	Positive	NA	Stage IB	74	Alive	NA	40144357	FALSE
+97195e98-3256-464d-89a2-f025edc38c43	TCGA-OL-A66I-01A-21R-A29R-07	TCGA-OL-A66I	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	36	Alive	NA	40289532	FALSE
+05360705-c0c6-43e1-82f1-db17a4f49038	TCGA-OL-A66J-01A-11R-A29R-07	TCGA-OL-A66J	tumor	Primary Tumor	Positive	Positive	NA	Stage I	80	Alive	NA	39487534	FALSE
+ba3e03ef-663f-437a-beed-897a2fd80daf	TCGA-OL-A66K-01A-11R-A29R-07	TCGA-OL-A66K	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	72	Alive	NA	38955404	FALSE
+6595a271-8731-4e64-8033-2bc24907b585	TCGA-OL-A66L-01A-12R-A31O-07	TCGA-OL-A66L	tumor	Primary Tumor	Positive	Positive	NA	Stage IA	71	Alive	NA	40840908	FALSE
+7e87cd79-d38c-448b-8d02-018b1e7efe9f	TCGA-OL-A66N-01A-12R-A31O-07	TCGA-OL-A66N	tumor	Primary Tumor	Positive	Negative	NA	Stage IIIC	59	Alive	NA	40751632	FALSE
+be04fdc1-6eac-4877-abf3-cdec248eebbb	TCGA-OL-A66O-01A-11R-A31O-07	TCGA-OL-A66O	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	39	Alive	NA	40164733	FALSE
+b8a40edd-83c7-4ca0-a5ef-9b8614e8b2a6	TCGA-OL-A66P-01A-11R-A31O-07	TCGA-OL-A66P	tumor	Primary Tumor	Negative	Negative	NA	Stage IIA	75	Alive	NA	40544834	FALSE
+812e8e8f-71b2-49db-ac1f-fa3761cb3bc1	TCGA-OL-A6VO-01A-12R-A33J-07	TCGA-OL-A6VO	tumor	Primary Tumor	Negative	Negative	Negative	Stage IA	43	Alive	NA	40161715	FALSE
+8df83379-a2c6-44f1-86fe-bc691eb09027	TCGA-OL-A6VQ-01A-12R-A41B-07	TCGA-OL-A6VQ	tumor	Primary Tumor	Positive	Positive	NA	Stage IIA	49	Alive	NA	39459442	FALSE
+f0037f68-8f20-4668-a8ab-ace38717cbf2	TCGA-OL-A6VR-01A-32R-A33J-07	TCGA-OL-A6VR	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	48	Alive	NA	40031494	FALSE
+3d5e28a0-5c13-4049-8bf1-3ff107dd0dae	TCGA-OL-A97C-01A-32R-A41B-07	TCGA-OL-A97C	tumor	Primary Tumor	Negative	Negative	NA	Stage IIB	67	Alive	NA	39339470	FALSE
+3343fc79-fa17-4319-91ac-55f2d2e74cef	TCGA-PE-A5DC-01A-12R-A27Q-07	TCGA-PE-A5DC	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIIA	72	Dead	1430	39389230	FALSE
+434c866b-c42b-4161-9f63-6078b214a7cc	TCGA-PE-A5DD-01A-12R-A27Q-07	TCGA-PE-A5DD	tumor	Primary Tumor	Positive	Negative	Positive	Stage IIA	64	Alive	NA	38445139	FALSE
+ba714d2c-c88f-44c8-85cb-de57055bab1d	TCGA-PE-A5DE-01A-11R-A27Q-07	TCGA-PE-A5DE	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	41	Alive	NA	40043826	FALSE
+26876e4f-dbf2-42ed-8fc4-62529029c826	TCGA-PL-A8LV-01A-21R-A41B-07	TCGA-PL-A8LV	tumor	Primary Tumor	NA	NA	NA	Stage IIIB	54	Alive	NA	38977903	FALSE
+3d648fd2-3148-478b-a74c-0016a04cdbe5	TCGA-PL-A8LX-01A-11R-A41B-07	TCGA-PL-A8LX	tumor	Primary Tumor	NA	NA	NA	Stage IV	35	Alive	NA	40171027	FALSE
+0ab7f76d-f87d-449b-ba39-73dee4f032fc	TCGA-PL-A8LY-01A-11R-A41B-07	TCGA-PL-A8LY	tumor	Primary Tumor	NA	NA	NA	Stage IIB	30	Alive	NA	40494923	FALSE
+a340e38d-af36-4b13-add3-50be6819d4fe	TCGA-PL-A8LZ-01A-31R-A36F-07	TCGA-PL-A8LZ	tumor	Primary Tumor	NA	NA	NA	Stage IIIB	29	Alive	NA	40146642	FALSE
+bf128355-3e49-449d-a503-00e678e90df8	TCGA-S3-A6ZF-01A-32R-A32P-07	TCGA-S3-A6ZF	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	64	Alive	NA	39282964	FALSE
+f1a437bb-9b43-438d-ab32-9a6f15cd1aea	TCGA-S3-A6ZG-01A-22R-A32P-07	TCGA-S3-A6ZG	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	71	Alive	NA	38664094	FALSE
+8a1c823b-62df-4c1f-9d0f-bbf4d93e3245	TCGA-S3-A6ZH-01A-22R-A32P-07	TCGA-S3-A6ZH	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIIC	29	Alive	NA	40093010	FALSE
+6a2e15d6-5304-4d3e-a18c-bac86e50133f	TCGA-S3-AA0Z-01A-11R-A41B-07	TCGA-S3-AA0Z	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	63	Alive	NA	38211684	FALSE
+073c074d-a9df-4547-9bfa-1f46c27650d7	TCGA-S3-AA10-01A-21R-A41B-07	TCGA-S3-AA10	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIA	65	Alive	NA	40197620	FALSE
+682c11e8-099c-466f-bc8a-b09a754205e3	TCGA-S3-AA11-01A-31R-A41B-07	TCGA-S3-AA11	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIA	67	Alive	NA	38002546	FALSE
+f2891ace-f170-4dbf-b23e-a7cc21414786	TCGA-S3-AA12-01A-11R-A41B-07	TCGA-S3-AA12	tumor	Primary Tumor	Positive	Negative	Negative	Stage IIIA	82	Alive	NA	39109861	FALSE
+79641836-8684-4e1e-a8b1-935a6760cd6f	TCGA-S3-AA14-01A-11R-A41B-07	TCGA-S3-AA14	tumor	Primary Tumor	Positive	Positive	Positive	Stage I	47	Alive	NA	38838934	FALSE
+72ef685a-00bb-42c5-bb4f-4cb52b798db2	TCGA-S3-AA15-01A-11R-A41B-07	TCGA-S3-AA15	tumor	Primary Tumor	Negative	Negative	Negative	Stage IIB	51	Alive	NA	39819994	FALSE
+b906958a-334b-4e82-ad9b-0b94dbf8dfb9	TCGA-S3-AA17-01A-11R-A41B-07	TCGA-S3-AA17	tumor	Primary Tumor	Positive	Positive	Equivocal	Stage IIB	64	Alive	NA	38684862	FALSE
+e9a9b482-a15b-493b-891c-387e2f327751	TCGA-UL-AAZ6-01A-11R-A41B-07	TCGA-UL-AAZ6	tumor	Primary Tumor	Positive	Positive	Positive	Stage IIA	73	Alive	NA	39651613	FALSE
+8a72416e-242b-4482-921e-88fdae3c17ff	TCGA-UU-A93S-01A-21R-A41B-07	TCGA-UU-A93S	tumor	Primary Tumor	Negative	Negative	Positive	Stage IV	63	Dead	116	40411479	FALSE
+e547aed5-1579-4589-a683-d07cc0e51f93	TCGA-V7-A7HQ-01A-11R-A33J-07	TCGA-V7-A7HQ	tumor	Primary Tumor	Positive	Positive	NA	Stage IIIA	75	Alive	NA	40136755	FALSE
+2a7d9ae7-6458-4e34-aab2-212f2e62030e	TCGA-W8-A86G-01A-21R-A36F-07	TCGA-W8-A86G	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIA	66	Alive	NA	37574968	FALSE
+a1ad6e6b-270d-4c2d-9092-b18099ee1783	TCGA-WT-AB41-01A-11R-A41B-07	TCGA-WT-AB41	tumor	Primary Tumor	Positive	Positive	NA	Stage IIB	55	Alive	NA	40342703	FALSE
+c4ec541d-8bea-4b1d-8e7d-83b04e349944	TCGA-WT-AB44-01A-11R-A41B-07	TCGA-WT-AB44	tumor	Primary Tumor	Positive	Positive	Negative	Stage IA	77	Alive	NA	39282212	FALSE
+fe3d3c9b-7f30-4359-9904-48612503f531	TCGA-XX-A899-01A-11R-A36F-07	TCGA-XX-A899	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	46	Alive	NA	38729491	FALSE
+2a131c31-6c59-457a-8926-f88ac5c57f54	TCGA-XX-A89A-01A-11R-A36F-07	TCGA-XX-A89A	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIB	68	Alive	NA	39171393	FALSE
+cdec90ec-016b-4c68-82aa-7ee297188b03	TCGA-Z7-A8R5-01A-42R-A41B-07	TCGA-Z7-A8R5	tumor	Primary Tumor	Positive	Positive	Negative	Stage IIIA	61	Alive	NA	40665598	FALSE
+7dd62104-6535-4900-9865-de45a287372d	TCGA-Z7-A8R6-01A-11R-A41B-07	TCGA-Z7-A8R6	tumor	Primary Tumor	Positive	Positive	Negative	Stage I	46	Alive	NA	40330769	FALSE

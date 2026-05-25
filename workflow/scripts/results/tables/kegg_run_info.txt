@@ -1,0 +1,5 @@
+kegg_organism: hsa
+clusterProfiler_version: 4.16.0
+org_db_version: 3.21.0
+queried_at: 2026-05-25 11:28:14 IST
+R_version: R version 4.5.0 (2025-04-11 ucrt)
