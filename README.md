@@ -16,6 +16,7 @@ also data provenance, interpretation, reproducibility, and limitations.
 
 ## Quick Links
 
+- GitHub-readable report: [REPORT.md](REPORT.md)
 - Report HTML source: [docs/index.html](docs/index.html)
 - Live report: available after this branch is merged and GitHub Pages is enabled
 - Pipeline config: [config/config.yaml](config/config.yaml)
@@ -120,7 +121,10 @@ Large raw/intermediate data and generated result files are intentionally ignored
 by git. The rendered report in `docs/index.html` is the compact shareable
 analysis summary.
 
-## Viewing The HTML Report
+## Viewing The Reports
+
+For immediate viewing in GitHub, open [REPORT.md](REPORT.md). This Markdown
+version includes the main result tables and selected figures.
 
 GitHub shows `docs/index.html` as source code when it is opened from the
 repository file browser. To view it as a webpage, the report must be served by

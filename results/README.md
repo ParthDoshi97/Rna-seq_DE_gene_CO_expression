@@ -18,6 +18,12 @@ and Pages is enabled from the `/docs` folder:
 https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
 ```
 
+A Markdown version that renders immediately in GitHub is available at:
+
+```text
+REPORT.md
+```
+
 ## Key Tables
 
 | File | Produced by | Meaning |

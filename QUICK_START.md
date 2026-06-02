@@ -37,6 +37,12 @@ The final HTML report is written to:
 docs/index.html
 ```
 
+For a report that renders directly in GitHub's repository viewer, open:
+
+```text
+REPORT.md
+```
+
 When browsing the repository on GitHub, opening `docs/index.html` shows the
 HTML source. To view the rendered webpage, merge the report into `main`, enable
 GitHub Pages from the `main` branch and `/docs` folder, then use:
