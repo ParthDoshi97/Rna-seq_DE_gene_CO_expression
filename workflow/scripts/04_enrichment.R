@@ -20,6 +20,14 @@ args <- commandArgs(trailingOnly = TRUE)
 config_path <- if (length(args) >= 1) args[[1]] else "../../config/config.yaml"
 cfg <- yaml::read_yaml(config_path)
 
+# All paths in config.yaml are relative to the repo root.
+# Resolve repo root from config file location and setwd so relative paths work
+# regardless of whether the script is run from workflow/scripts/ or repo root.
+config_abs <- normalizePath(config_path, mustWork = TRUE)
+repo_root  <- dirname(dirname(config_abs))   # <repo>/config/config.yaml -> <repo>
+setwd(repo_root)
+message("Working directory set to repo root: ", repo_root)
+
 # enrichGO's `keyType` must match the type of de$entrez (Entrez IDs). A stale
 # config that still said "ENSEMBL" would silently fail to map every gene and
 # return an empty result table for no obvious reason.
@@ -63,6 +71,12 @@ message("Enrichment inputs: ", length(up_genes), " up, ",
 
 min_input     <- cfg$enrichment$min_input_genes %||% 10
 go_ontologies <- cfg$enrichment$go_ontology
+dotplot_label_wrap_width <- cfg$enrichment$dotplot_label_wrap_width %||% 34
+dotplot_width <- cfg$enrichment$dotplot_width %||% 11
+gsea_dotplot_width <- cfg$enrichment$gsea_dotplot_width %||% 14
+dotplot_min_height <- cfg$enrichment$dotplot_min_height %||% 7
+dotplot_row_height <- cfg$enrichment$dotplot_row_height %||% 0.42
+gsea_dotplot_row_height <- cfg$enrichment$gsea_dotplot_row_height %||% 0.38
 if (length(go_ontologies) == 1 && go_ontologies == "ALL") {
   go_ontologies <- c("BP", "MF", "CC")
 }
@@ -104,7 +118,8 @@ run_kegg <- function(genes, label) {
       pvalueCutoff = cfg$enrichment$pvalue_cutoff,
       qvalueCutoff = cfg$enrichment$qvalue_cutoff,
       minGSSize = cfg$enrichment$min_gs_size,
-      maxGSSize = cfg$enrichment$max_gs_size
+      maxGSSize = cfg$enrichment$max_gs_size,
+      use_internal_data = FALSE
     )
   }, error = function(e) {
     message("  KEGG failed (", label, "): ", conditionMessage(e))
@@ -124,6 +139,9 @@ build_ranked <- function() {
   names(v) <- de$entrez[ok]
   # Multiple Ensembl IDs collapsing to the same Entrez: keep the strongest |LFC|.
   v <- tapply(v, names(v), function(x) x[which.max(abs(x))])
+  v_names <- names(v)
+  v <- as.numeric(v)
+  names(v) <- v_names
   sort(v, decreasing = TRUE)
 }
 
@@ -137,7 +155,8 @@ run_gsea_go <- function(ranked, ont) {
           minGSSize    = cfg$enrichment$min_gs_size,
           maxGSSize    = cfg$enrichment$max_gs_size,
           pvalueCutoff = cfg$enrichment$pvalue_cutoff,
-          verbose      = FALSE)
+          verbose      = FALSE,
+          eps          = 0)
   }, error = function(e) {
     message("  GSEA GO ", ont, " failed: ", conditionMessage(e))
     NULL
@@ -153,7 +172,9 @@ run_gsea_kegg <- function(ranked) {
             minGSSize    = cfg$enrichment$min_gs_size,
             maxGSSize    = cfg$enrichment$max_gs_size,
             pvalueCutoff = cfg$enrichment$pvalue_cutoff,
-            verbose      = FALSE)
+            verbose      = FALSE,
+            eps          = 0,
+            use_internal_data = FALSE)
   }, error = function(e) {
     message("  GSEA KEGG failed: ", conditionMessage(e))
     NULL
@@ -162,19 +183,67 @@ run_gsea_kegg <- function(ranked) {
 
 # ---- Dotplot helper ---------------------------------------------------------
 
+wrap_plot_labels <- function(labels, width) {
+  vapply(labels, function(x) {
+    paste(strwrap(x, width = width), collapse = "\n")
+  }, character(1))
+}
+
+count_displayed_terms <- function(obj, gsea, top_n) {
+  df <- as.data.frame(obj)
+  if (nrow(df) == 0) return(0)
+
+  if (gsea && "NES" %in% colnames(df)) {
+    signs <- ifelse(df$NES >= 0, "activated", "suppressed")
+    return(sum(vapply(split(seq_len(nrow(df)), signs),
+                      function(i) min(length(i), top_n),
+                      numeric(1))))
+  }
+
+  min(nrow(df), top_n)
+}
+
 save_dotplot <- function(obj, file, title, gsea = FALSE) {
   if (is.null(obj) || nrow(as.data.frame(obj)) == 0) {
     message("  no enriched terms for ", title)
     return(invisible())
   }
+  top_n <- cfg$enrichment$top_n_dotplot
+  n_terms <- count_displayed_terms(obj, gsea = gsea, top_n = top_n)
+  plot_height <- max(
+    dotplot_min_height,
+    2.5 + if (gsea) {
+      gsea_dotplot_row_height * n_terms
+    } else {
+      dotplot_row_height * n_terms
+    }
+  )
+
   p <- if (gsea) {
-    dotplot(obj, showCategory = cfg$enrichment$top_n_dotplot,
+    dotplot(obj, showCategory = top_n,
             title = title, split = ".sign") + facet_grid(. ~ .sign)
   } else {
-    dotplot(obj, showCategory = cfg$enrichment$top_n_dotplot, title = title)
+    dotplot(obj, showCategory = top_n, title = title)
   }
-  p <- p + theme(plot.title = element_text(size = 11))
-  ggsave(file, p, width = if (gsea) 11 else 9, height = 7, dpi = 150)
+  p <- p +
+    scale_y_discrete(labels = function(x) {
+      wrap_plot_labels(x, dotplot_label_wrap_width)
+    }) +
+    theme(
+      plot.title = element_text(size = 11, hjust = 0.5),
+      axis.text.y = element_text(size = if (gsea) 8 else 9,
+                                 lineheight = 0.95),
+      axis.text.x = element_text(size = 9),
+      axis.title.x = element_text(size = 10),
+      strip.text = element_text(size = 10),
+      legend.title = element_text(size = 10),
+      legend.text = element_text(size = 9),
+      plot.margin = margin(8, 18, 8, 8)
+    )
+  ggsave(file, p,
+         width = if (gsea) gsea_dotplot_width else dotplot_width,
+         height = plot_height,
+         dpi = 150)
 }
 
 # ---- Run ORA ---------------------------------------------------------------
@@ -285,5 +354,82 @@ write.table(gsea_go_tbl,   file = gsea_go_path,
             sep = "\t", quote = FALSE, row.names = FALSE, na = "")
 write.table(gsea_kegg_tbl, file = gsea_kegg_path,
             sep = "\t", quote = FALSE, row.names = FALSE, na = "")
+
+# ---- Per-module GO BP enrichment (PDF §3) ----------------------------------
+# WGCNA modules are just colours until you can say what biology each one
+# represents. Run GO BP on the gene list of every non-grey module so the
+# report can label them ("turquoise = cell cycle", "blue = ECM", etc.).
+# Universe = all genes that survived prefilter + WGCNA's variance cut, not
+# the whole genome, so over-representation is measured against the right
+# background.
+
+run_per_module <- isTRUE(cfg$enrichment$per_module %||% TRUE) &&
+                  file.exists(cfg$paths$wgcna_rds)
+
+if (run_per_module) {
+  message("Running per-module GO BP enrichment...")
+  wgcna <- readRDS(cfg$paths$wgcna_rds)
+  module_min_size <- cfg$enrichment$per_module_min_size %||% 30
+
+  ensembl_to_entrez <- function(ensembl_ids) {
+    mapIds(org.Hs.eg.db, keys = sub("\\..*$", "", ensembl_ids),
+           column = "ENTREZID", keytype = "ENSEMBL", multiVals = "first")
+  }
+  module_universe <- unique(na.omit(ensembl_to_entrez(colnames(wgcna$datExpr))))
+
+  modules        <- setdiff(unique(wgcna$moduleColors), "grey")
+  per_module_dir <- file.path(cfg$paths$figures_dir, "modules")
+  dir.create(per_module_dir, recursive = TRUE, showWarnings = FALSE)
+
+  per_module_parts <- list()
+  for (m in modules) {
+    gene_ids <- colnames(wgcna$datExpr)[wgcna$moduleColors == m]
+    if (length(gene_ids) < module_min_size) {
+      message("  skipping module '", m, "' (",
+              length(gene_ids), " < min_module_size=", module_min_size, ")")
+      next
+    }
+    entrez <- unique(na.omit(ensembl_to_entrez(gene_ids)))
+    if (length(entrez) < min_input) {
+      message("  skipping module '", m, "' (",
+              length(entrez), " mapped < min_input=", min_input, ")")
+      next
+    }
+    message("  module '", m, "': ", length(entrez), " gene(s)")
+    res_m <- tryCatch(
+      enrichGO(gene = entrez, universe = module_universe,
+               OrgDb = cfg$enrichment$org_db,
+               keyType = "ENTREZID", ont = "BP",
+               pvalueCutoff = cfg$enrichment$pvalue_cutoff,
+               qvalueCutoff = cfg$enrichment$qvalue_cutoff,
+               minGSSize = cfg$enrichment$min_gs_size,
+               maxGSSize = cfg$enrichment$max_gs_size,
+               readable = TRUE),
+      error = function(e) {
+        message("    enrichGO failed for '", m, "': ", conditionMessage(e))
+        NULL
+      }
+    )
+    if (is.null(res_m) || nrow(as.data.frame(res_m)) == 0) {
+      message("    no enriched GO BP terms for module '", m, "'")
+      next
+    }
+    save_dotplot(res_m,
+                 file.path(per_module_dir, paste0("go_bp_", m, ".png")),
+                 paste0("GO BP — module ", m))
+    per_module_parts[[m]] <- cbind(module = m, as.data.frame(res_m))
+  }
+
+  per_module_tbl <- bind_rows_safe(per_module_parts)
+  per_module_path <- cfg$paths$enrichment_per_module_csv %||%
+                     file.path(cfg$paths$tables_dir, "enrichment_per_module.tsv")
+  write.table(per_module_tbl, file = per_module_path,
+              sep = "\t", quote = FALSE, row.names = FALSE, na = "")
+  message("Wrote per-module enrichment (",
+          nrow(per_module_tbl), " row(s)) -> ", per_module_path)
+} else {
+  message("Per-module enrichment skipped ",
+          "(enrichment.per_module=FALSE or wgcna.rds not found)")
+}
 
 message("Done.")

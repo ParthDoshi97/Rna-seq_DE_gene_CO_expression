@@ -1,6 +1,8 @@
 # R session / history
 .Rhistory
 .RData
+*.RData
+.R-lib/
 .Rproj.user/
 .Ruserdata
 *.Rproj
@@ -25,19 +27,28 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Raw and intermediate data — never commit
+# Raw and intermediate data - never commit
 data/*
 !data/demo/
 !data/.gitkeep
+!data/README.md
 data/demo/*
 !data/demo/.gitkeep
 
-# Generated results — only the curated example set is committed
+# Generated results - only curated example stubs are committed
 results/*
 !results/example/
 !results/.gitkeep
+!results/README.md
 
-# Container build artefacts
+# Guard against accidentally running scripts from workflow/scripts/
+workflow/scripts/data/
+workflow/scripts/results/
+workflow/scripts/docs/
+workflow/scripts/.Rhistory
+workflow/scripts/*.RData
+
+# Container build artifacts
 containers/*.sif
 containers/*.img
 
@@ -48,3 +59,10 @@ containers/*.img
 
 # Claude Code / agent tooling
 .claude/
+
+# Generated implementation notes / temporary run artifacts
+IMPLEMENTATION_COMPLETE.md
+PIPELINE_IMPLEMENTATION_SUMMARY.md
+README_IMPLEMENTATION.md
+SOLUTION_TO_GREENYELLOW_DISCOVERY.md
+VALIDATION_CHECKLIST.md

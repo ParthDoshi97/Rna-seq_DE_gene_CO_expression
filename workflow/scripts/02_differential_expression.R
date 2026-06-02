@@ -14,10 +14,18 @@ args <- commandArgs(trailingOnly = TRUE)
 config_path <- if (length(args) >= 1) args[[1]] else "../../config/config.yaml"
 cfg <- yaml::read_yaml(config_path)
 
+# All paths in config.yaml are relative to the repo root.
+# Resolve repo root from config file location and setwd so relative paths work
+# regardless of whether the script is run from workflow/scripts/ or repo root.
+config_abs <- normalizePath(config_path, mustWork = TRUE)
+repo_root  <- dirname(dirname(config_abs))   # <repo>/config/config.yaml -> <repo>
+setwd(repo_root)
+message("Working directory set to repo root: ", repo_root)
+
 set.seed(cfg$runtime$seed)
-dir.create(cfg$paths$figures_dir, recursive = TRUE, showWarnings = FALSE)
-dir.create(cfg$paths$tables_dir,  recursive = TRUE, showWarnings = FALSE)
-dir.create(cfg$paths$rds_dir,     recursive = TRUE, showWarnings = FALSE)
+for (d in c(cfg$paths$figures_dir, cfg$paths$tables_dir, cfg$paths$rds_dir)) {
+  dir.create(d, recursive = TRUE, showWarnings = FALSE)
+}
 
 # ---- Load counts + samples --------------------------------------------------
 
@@ -76,11 +84,18 @@ if (file.exists(genes_path)) {
   res$gene_symbol <- NA_character_
 }
 
-# Save dds + vsd + res for downstream
+# Save dds + vsd + res for downstream BEFORE plotting — figure code can fail
+# (e.g. EnhancedVolcano choking on extreme p-values) and we must not lose the
+# expensive DESeq fit when that happens.
 vsd <- vst(dds, blind = FALSE)
-saveRDS(dds, cfg$paths$dds_rds)
-saveRDS(vsd, cfg$paths$vsd_rds)
-saveRDS(res, cfg$paths$de_results_rds)
+rds_targets <- list(
+  dds         = cfg$paths$dds_rds,
+  vsd         = cfg$paths$vsd_rds,
+  de_results  = cfg$paths$de_results_rds
+)
+saveRDS(dds, rds_targets$dds);        message("Wrote ", rds_targets$dds)
+saveRDS(vsd, rds_targets$vsd);        message("Wrote ", rds_targets$vsd)
+saveRDS(res, rds_targets$de_results); message("Wrote ", rds_targets$de_results)
 
 # ---- Deliverable table ------------------------------------------------------
 
@@ -97,17 +112,29 @@ de_out <- data.frame(
 write.table(de_out, file = cfg$paths$de_results_csv,
             sep = "\t", quote = FALSE, row.names = FALSE, na = "")
 
-n_sig_up   <- sum(de_out$padj < cfg$deseq2$padj_threshold &
-                  de_out$log2FoldChange >  cfg$deseq2$log2fc_threshold, na.rm = TRUE)
-n_sig_down <- sum(de_out$padj < cfg$deseq2$padj_threshold &
-                  de_out$log2FoldChange < -cfg$deseq2$log2fc_threshold, na.rm = TRUE)
-message("DE genes (padj < ", cfg$deseq2$padj_threshold,
-        ", |log2FC| > ", cfg$deseq2$log2fc_threshold, "): ",
+padj_cut <- cfg$deseq2$padj_threshold
+lfc_cut  <- cfg$deseq2$log2fc_threshold
+sig <- !is.na(de_out$padj) & de_out$padj < padj_cut
+n_sig_up   <- sum(sig & de_out$log2FoldChange >  lfc_cut, na.rm = TRUE)
+n_sig_down <- sum(sig & de_out$log2FoldChange < -lfc_cut, na.rm = TRUE)
+message("DE genes (padj < ", padj_cut, ", |log2FC| > ", lfc_cut, "): ",
         n_sig_up, " up, ", n_sig_down, " down")
 
 # ---- Figures ----------------------------------------------------------------
 
 # Volcano
+# Clamp underflowed p-values (padj == 0) to .Machine$double.xmin so that
+# -log10(padj) is finite. With large cohorts (e.g. TCGA-BRCA), the most
+# significant genes can have padj that underflows to literally 0 in IEEE-754
+# double precision — EnhancedVolcano warns and silently substitutes a tiny
+# value, but doing it explicitly is cleaner and silences the warning.
+underflowed <- which(res$padj == 0)
+if (length(underflowed) > 0) {
+  message("Clamping ", length(underflowed),
+          " padj == 0 values to .Machine$double.xmin for plotting")
+  res$padj[underflowed] <- .Machine$double.xmin
+}
+
 volcano <- EnhancedVolcano(
   res,
   lab = res$gene_symbol,
@@ -130,12 +157,12 @@ DESeq2::plotMA(res, ylim = c(-5, 5),
 dev.off()
 
 # Heatmap of top-N DE genes
-top_idx <- head(order(res$padj), cfg$deseq2$top_n_heatmap)
+top_idx  <- head(order(res$padj), cfg$deseq2$top_n_heatmap)
 heat_mat <- assay(vsd)[top_idx, , drop = FALSE]
 heat_mat <- heat_mat - rowMeans(heat_mat)
-rownames(heat_mat) <- ifelse(is.na(res$gene_symbol[top_idx]),
-                             rownames(res)[top_idx],
-                             res$gene_symbol[top_idx])
+# Prefer gene symbol, fall back to ENSEMBL ID for symbols that didn't map.
+labels <- res$gene_symbol[top_idx]
+rownames(heat_mat) <- ifelse(is.na(labels), rownames(res)[top_idx], labels)
 pheatmap(
   heat_mat,
   annotation_col = data.frame(condition = samples$condition,
@@ -147,3 +174,5 @@ pheatmap(
   filename = file.path(cfg$paths$figures_dir, "heatmap_top_de.png"),
   width = 10, height = 10
 )
+
+message("Done.")

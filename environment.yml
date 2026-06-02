@@ -1,0 +1,24 @@
+name: rnaseq-deseq2-wgcna
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.5
+  - r-yaml
+  - r-ggplot2
+  - r-pheatmap
+  - r-dplyr
+  - r-matrixstats
+  - r-wgcna
+  - r-quarto
+  - quarto
+  - bioconductor-summarizedexperiment
+  - bioconductor-recount3
+  - bioconductor-deseq2
+  - bioconductor-enhancedvolcano
+  - bioconductor-apeglm
+  - bioconductor-clusterprofiler
+  - bioconductor-org.hs.eg.db
+  - bioconductor-annotationdbi
+  - bioconductor-enrichplot
+
