@@ -10,6 +10,13 @@ The rendered report is committed at:
 docs/index.html
 ```
 
+GitHub's repository file browser shows that file as HTML source. The rendered
+webpage is served through GitHub Pages:
+
+```text
+https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
+```
+
 ## Key Tables
 
 | File | Produced by | Meaning |

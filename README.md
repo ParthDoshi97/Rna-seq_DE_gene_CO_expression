@@ -16,7 +16,8 @@ also data provenance, interpretation, reproducibility, and limitations.
 
 ## Quick Links
 
-- Rendered report: [docs/index.html](docs/index.html)
+- Live report: [GitHub Pages report](https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/)
+- Report HTML source: [docs/index.html](docs/index.html)
 - Pipeline config: [config/config.yaml](config/config.yaml)
 - Run helper for RStudio: [run_01_to_07_in_rstudio.R](run_01_to_07_in_rstudio.R)
 - Report renderer: [workflow/scripts/08_render_report.R](workflow/scripts/08_render_report.R)
@@ -118,6 +119,25 @@ environment.yml
 Large raw/intermediate data and generated result files are intentionally ignored
 by git. The rendered report in `docs/index.html` is the compact shareable
 analysis summary.
+
+## Viewing The HTML Report
+
+GitHub shows `docs/index.html` as source code when it is opened from the
+repository file browser. To view it as a webpage, use GitHub Pages:
+
+```text
+https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
+```
+
+For a newly merged repository, enable Pages in GitHub with:
+
+```text
+Settings -> Pages -> Build and deployment -> Deploy from a branch
+Branch: main
+Folder: /docs
+```
+
+After Pages is enabled, `docs/index.html` is served as the site homepage.
 
 ## Method Choices
 

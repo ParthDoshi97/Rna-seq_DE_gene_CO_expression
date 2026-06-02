@@ -37,6 +37,14 @@ The final HTML report is written to:
 docs/index.html
 ```
 
+When browsing the repository on GitHub, opening `docs/index.html` shows the
+HTML source. To view the rendered webpage, enable GitHub Pages from the `main`
+branch and `/docs` folder, then use:
+
+```text
+https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
+```
+
 ## 3. Script Order
 
 | Step | Script | Main output |
