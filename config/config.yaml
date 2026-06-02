@@ -136,6 +136,8 @@ wgcna:
   exclude_grey_in_hub: true     # grey is the unassigned bin — exclude from hub nomination
   hub_gene_top_n: 10            # number of hub genes reported per trait-correlated module
   kme_threshold: 0.8            # module membership cutoff for "hub" candidacy
+  trait_pval_cutoff: 0.05       # a (module, trait) pair counts as "significantly correlated"
+                                # at p < this; drives hub gene + GS-vs-MM scatter selection
 
 # -----------------------------------------------------------------------------
 # Clinical traits — pulled from recount3 colData in 01_load_and_qc.R, used as
@@ -185,6 +187,9 @@ enrichment:
   dotplot_min_height: 7          # inches; base height for readable labels
   dotplot_row_height: 0.42       # extra height per ORA term
   gsea_dotplot_row_height: 0.38  # extra height per GSEA term across facets
+  per_module: false              # legacy 04_enrichment.R option; module-level
+                                 # enrichment is handled by 05_module_enrichment.R
+  per_module_min_size: 30        # retained for compatibility with the legacy block
 
 # -----------------------------------------------------------------------------
 # Module enrichment (05_module_enrichment.R)
