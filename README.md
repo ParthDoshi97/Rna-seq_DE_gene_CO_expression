@@ -16,6 +16,7 @@ also data provenance, interpretation, reproducibility, and limitations.
 
 ## Quick Links
 
+- GitHub-readable report: [REPORT.md](REPORT.md)
 - Report HTML source: [docs/index.html](docs/index.html)
 - Live report: available after this branch is merged and GitHub Pages is enabled
 - Pipeline config: [config/config.yaml](config/config.yaml)
@@ -120,7 +121,10 @@ Large raw/intermediate data and generated result files are intentionally ignored
 by git. The rendered report in `docs/index.html` is the compact shareable
 analysis summary.
 
-## Viewing The HTML Report
+## Viewing The Reports
+
+For immediate viewing in GitHub, open [REPORT.md](REPORT.md). This Markdown
+version includes the main result tables and selected figures.
 
 GitHub shows `docs/index.html` as source code when it is opened from the
 repository file browser. To view it as a webpage, the report must be served by
@@ -137,12 +141,11 @@ https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
 For a newly merged repository, enable Pages in GitHub with:
 
 ```text
-Settings -> Pages -> Build and deployment -> Deploy from a branch
-Branch: main
-Folder: /docs
+Settings -> Pages -> Build and deployment -> Source: GitHub Actions
 ```
 
-After Pages is enabled, `docs/index.html` is served as the site homepage.
+After Pages is enabled, `.github/workflows/deploy-pages.yml` deploys the
+`docs/` folder, so `docs/index.html` is served as the site homepage.
 
 ## Method Choices
 
