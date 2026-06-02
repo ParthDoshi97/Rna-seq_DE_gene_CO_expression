@@ -44,8 +44,8 @@ REPORT.md
 ```
 
 When browsing the repository on GitHub, opening `docs/index.html` shows the
-HTML source. To view the rendered webpage, merge the report into `main`, enable
-GitHub Pages from the `main` branch and `/docs` folder, then use:
+HTML source. To view the rendered webpage, merge the report into `main`, set
+GitHub Pages to use GitHub Actions, then use:
 
 ```text
 https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/

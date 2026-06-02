@@ -141,12 +141,11 @@ https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
 For a newly merged repository, enable Pages in GitHub with:
 
 ```text
-Settings -> Pages -> Build and deployment -> Deploy from a branch
-Branch: main
-Folder: /docs
+Settings -> Pages -> Build and deployment -> Source: GitHub Actions
 ```
 
-After Pages is enabled, `docs/index.html` is served as the site homepage.
+After Pages is enabled, `.github/workflows/deploy-pages.yml` deploys the
+`docs/` folder, so `docs/index.html` is served as the site homepage.
 
 ## Method Choices
 

@@ -12,7 +12,7 @@ docs/index.html
 
 GitHub's repository file browser shows that file as HTML source. The rendered
 webpage is served through GitHub Pages after the report is merged into `main`
-and Pages is enabled from the `/docs` folder:
+and Pages is set to use GitHub Actions:
 
 ```text
 https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
