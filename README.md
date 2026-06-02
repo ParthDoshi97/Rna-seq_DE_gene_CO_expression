@@ -16,8 +16,8 @@ also data provenance, interpretation, reproducibility, and limitations.
 
 ## Quick Links
 
-- Live report: [GitHub Pages report](https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/)
 - Report HTML source: [docs/index.html](docs/index.html)
+- Live report: available after this branch is merged and GitHub Pages is enabled
 - Pipeline config: [config/config.yaml](config/config.yaml)
 - Run helper for RStudio: [run_01_to_07_in_rstudio.R](run_01_to_07_in_rstudio.R)
 - Report renderer: [workflow/scripts/08_render_report.R](workflow/scripts/08_render_report.R)
@@ -123,7 +123,12 @@ analysis summary.
 ## Viewing The HTML Report
 
 GitHub shows `docs/index.html` as source code when it is opened from the
-repository file browser. To view it as a webpage, use GitHub Pages:
+repository file browser. To view it as a webpage, the report must be served by
+GitHub Pages.
+
+Before this branch is merged into `main`, the Pages URL may return `404`
+because `docs/index.html` is only present on the PR branch. After the branch is
+merged and Pages is enabled, the report URL will be:
 
 ```text
 https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/

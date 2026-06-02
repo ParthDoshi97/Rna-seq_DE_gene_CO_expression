@@ -11,7 +11,8 @@ docs/index.html
 ```
 
 GitHub's repository file browser shows that file as HTML source. The rendered
-webpage is served through GitHub Pages:
+webpage is served through GitHub Pages after the report is merged into `main`
+and Pages is enabled from the `/docs` folder:
 
 ```text
 https://parthdoshi97.github.io/Rna-seq_DE_gene_CO_expression/
