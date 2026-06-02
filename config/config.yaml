@@ -58,7 +58,17 @@ paths:
   tables_dir: "results/tables"
   de_results_csv: "results/tables/de_results.tsv"
   module_assignments_csv: "results/tables/module_assignments.tsv"
+  module_enrichment_go_csv: "results/tables/module_enrichment_go.tsv"
+  module_enrichment_kegg_csv: "results/tables/module_enrichment_kegg.tsv"
+  module_annotation_summary_csv: "results/tables/module_annotation_summary.tsv"
+
   hub_genes_csv: "results/tables/hub_genes.tsv"
+  hub_genes_ranked_csv: "results/tables/hub_genes_ranked.tsv"
+  hub_genes_priority_csv: "results/tables/hub_genes_priority_modules.tsv"
+  hub_rds:              "results/rds/hub_genes.rds"
+  module_preservation_csv: "results/tables/module_preservation.tsv"
+  module_preservation_tsv: "results/tables/module_preservation.tsv"
+  preservation_rds:        "results/rds/preservation.rds"
   enrichment_go_csv: "results/tables/enrichment_go.tsv"
   enrichment_kegg_csv: "results/tables/enrichment_kegg.tsv"
   gsea_go_csv: "results/tables/gsea_go.tsv"
@@ -171,9 +181,69 @@ enrichment:
   min_input_genes: 10            # skip a run if the input gene list is smaller than this
                                  # (conceptually distinct from min_gs_size)
   top_n_dotplot: 15              # categories to plot per dotplot
-  per_module: true               # run GO BP on every non-grey WGCNA module so each can
-                                 # be labelled with biology in the report
-  per_module_min_size: 30        # skip modules below this size for per-module enrichment
+  dotplot_label_wrap_width: 34   # wrap long GO/KEGG labels in enrichment plots
+  dotplot_width: 11              # inches for ORA dotplots
+  gsea_dotplot_width: 14         # inches for faceted GSEA dotplots
+  dotplot_min_height: 7          # inches; base height for readable labels
+  dotplot_row_height: 0.42       # extra height per ORA term
+  gsea_dotplot_row_height: 0.38  # extra height per GSEA term across facets
+  per_module: false              # legacy 04_enrichment.R option; module-level
+                                 # enrichment is handled by 05_module_enrichment.R
+  per_module_min_size: 30        # retained for compatibility with the legacy block
+
+# -----------------------------------------------------------------------------
+# Module enrichment (05_module_enrichment.R)
+# -----------------------------------------------------------------------------
+# Functionally annotate each WGCNA module via GO/KEGG over-representation
+# analysis. Tests genes in each module against the background universe of
+# ~5000 variance-selected genes (NOT the whole genome), so enrichment is
+# meaningful relative to the network's own input.
+module_enrichment:
+  keytype: "ENTREZID"             # gene ID type for enrichment
+  go_ontologies: ["BP"]           # ["BP"] or ["BP","MF","CC"] or ["BP","MF","CC"]
+  pvalue_cutoff: 0.05
+  qvalue_cutoff: 0.10
+  min_module_size: 30             # skip modules smaller than this
+  min_gs_size: 10                 # gene-set minimum size
+  max_gs_size: 500                # gene-set maximum size
+  run_kegg: true                  # run KEGG enrichment
+  top_terms_plot: 15              # terms to show per module dotplot
+  label_wrap_width: 34            # wrap long GO/KEGG labels in module plots
+  plot_width: 12                  # inches; wider plot prevents left-label clipping
+  plot_min_height: 6              # inches; base height for readable labels
+  plot_row_height: 0.42           # extra height per plotted enrichment term
+  plot_extra_line_height: 0.18    # extra height when a wrapped label uses >1 line
+
+# -----------------------------------------------------------------------------
+# Hub-gene shortlist (08_hub_genes.R)
+# -----------------------------------------------------------------------------
+# Picks the top-N centrality hubs (by |kME| within the gene's own module) for
+# every non-grey module, cross-references DE, and flags modules using clinical
+# traits, preservation status, and module enrichment. Non-DE hubs are kept
+# on purpose — they are the discovery candidates DE alone would miss.
+hub:
+  top_n: 25                     # hubs reported per non-grey module
+  kme_min: 0.8                  # absolute |kME| floor; 0 = no floor
+  trait_cor_min: 0.3            # |module-trait cor| threshold for "trait-anchored"
+  trait_pval_max: 0.05          # p-value cap for the same test
+  enrichment_padj_max: 1.0e-10  # module annotation padj cutoff for "strongly enriched"
+  plot_max_priority_modules: 12 # cap hub/GS-MM figures when many modules pass
+
+# -----------------------------------------------------------------------------
+# Module preservation (07_module_preservation.R)
+# -----------------------------------------------------------------------------
+# Re-includes the normal arm to ask which tumor modules survive in normal
+# tissue. Zsummary < 2 = tumor-specific rewiring (the biologically interesting
+# finding). Slow: permutations × two networks.
+preservation:
+  n_permutations: 200           # 100 is a common minimum; 200 is more stable
+  min_normal: 20                # warn if normal arm is below this — Z-scores
+                                # depend on test-set size
+  max_module_size: 2000         # CRITICAL: modulePreservation defaults this to
+                                # 1000 and silently subsamples larger modules.
+                                # Set above your largest non-grey module to use
+                                # the full module; lower to deliberately cap.
+                                # The script logs any module exceeding this.
 
 # -----------------------------------------------------------------------------
 # Runtime

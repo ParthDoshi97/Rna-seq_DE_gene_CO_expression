@@ -1,143 +1,173 @@
 # =============================================================================
-# rnaseq-deseq2-wgcna — Snakemake pipeline
+# rnaseq-deseq2-wgcna - Snakemake pipeline
 # -----------------------------------------------------------------------------
-# Five-stage orchestration that wraps the scripts under workflow/scripts/.
+# Eight-stage orchestration for the numbered scripts under workflow/scripts/.
 #
-#   prepare_counts        -> 01_load_and_qc.R
-#   differential_expression -> 02_differential_expression.R
-#   wgcna                 -> 03_wgcna.R
-#   enrichment            -> 04_enrichment.R
-#   render_report         -> 05_render_report.R
+#   01_load_and_qc.R
+#   02_differential_expression.R
+#   03_wgcna.R
+#   04_enrichment.R
+#   05_module_enrichment.R
+#   06_module_preservation.R
+#   07_hub_genes.R
+#   08_render_report.R
 #
 # Run from the repo root:
-#   snakemake --cores 4
-#
-# Swap dataset (e.g. to the CI demo subset) without editing files:
-#   snakemake --cores 4 \
-#     --config paths.raw_counts=data/demo/counts.tsv \
-#              paths.sample_metadata=data/demo/samples.tsv
+#   snakemake --snakefile workflow/Snakefile --cores 4
 #
 # All paths, thresholds, and parameters come from config/config.yaml.
-# No path or threshold is hardcoded in this file.
 # =============================================================================
 
 import os
 
 configfile: "config/config.yaml"
 
-SCRIPTS  = "workflow/scripts"
-CONFIG   = "config/config.yaml"
-LOG_DIR  = "logs"
+SCRIPTS = "workflow/scripts"
+CONFIG = "config/config.yaml"
+LOG_DIR = "logs"
 
 P = config["paths"]
 
 
-# -----------------------------------------------------------------------------
-# Default target — full pipeline ends at the rendered HTML report
-# -----------------------------------------------------------------------------
 rule all:
     input:
         P["report_html"],
         P["de_results_csv"],
+        os.path.join(P["tables_dir"], "de_summary.tsv"),
         P["module_assignments_csv"],
-        P["hub_genes_csv"],
         P["enrichment_go_csv"],
         P["enrichment_kegg_csv"],
+        P["gsea_go_csv"],
+        P["gsea_kegg_csv"],
+        P["module_annotation_summary_csv"],
+        P["module_preservation_tsv"],
+        P["hub_genes_ranked_csv"],
+        P["hub_genes_priority_csv"],
 
 
-# -----------------------------------------------------------------------------
-# 01 — Pull counts + samples (recount3 / TCGA-BRCA), prefilter low-count genes
-# -----------------------------------------------------------------------------
 rule prepare_counts:
     output:
-        counts  = P["raw_counts"],
-        samples = P["sample_metadata"],
-        rds     = os.path.join(P["rds_dir"], "load_qc.rds"),
+        counts=P["raw_counts"],
+        samples=P["sample_metadata"],
+        genes=os.path.join(os.path.dirname(P["raw_counts"]), "genes.tsv"),
+        rds=os.path.join(P["rds_dir"], "load_qc.rds"),
     log:
         os.path.join(LOG_DIR, "01_load_and_qc.log"),
     shell:
         "Rscript {SCRIPTS}/01_load_and_qc.R {CONFIG} > {log} 2>&1"
 
 
-# -----------------------------------------------------------------------------
-# 02 — DESeq2 differential expression (tumor vs normal)
-# -----------------------------------------------------------------------------
 rule differential_expression:
     input:
-        counts  = P["raw_counts"],
-        samples = P["sample_metadata"],
+        counts=P["raw_counts"],
+        samples=P["sample_metadata"],
     output:
-        dds        = P["dds_rds"],
-        vsd        = P["vsd_rds"],
-        de         = P["de_results_rds"],
-        csv        = P["de_results_csv"],
-        de_summary = os.path.join(P["tables_dir"], "de_summary.tsv"),
+        dds=P["dds_rds"],
+        vsd=P["vsd_rds"],
+        de_rds=P["de_results_rds"],
+        de_csv=P["de_results_csv"],
+        de_summary=os.path.join(P["tables_dir"], "de_summary.tsv"),
     log:
         os.path.join(LOG_DIR, "02_differential_expression.log"),
     shell:
         "Rscript {SCRIPTS}/02_differential_expression.R {CONFIG} > {log} 2>&1"
 
 
-# -----------------------------------------------------------------------------
-# 03 — WGCNA on the VST matrix (tumor-only by default; see wgcna.tumor_only)
-# -----------------------------------------------------------------------------
 rule wgcna:
     input:
-        vsd = P["vsd_rds"],
+        vsd=P["vsd_rds"],
+        samples=P["sample_metadata"],
     output:
-        rds      = P["wgcna_rds"],
-        modules  = P["module_assignments_csv"],
-        hubs     = P["hub_genes_csv"],
+        rds=P["wgcna_rds"],
+        modules=P["module_assignments_csv"],
+        hubs=P["hub_genes_csv"],
     log:
         os.path.join(LOG_DIR, "03_wgcna.log"),
     shell:
         "Rscript {SCRIPTS}/03_wgcna.R {CONFIG} > {log} 2>&1"
 
 
-# -----------------------------------------------------------------------------
-# 04 — Functional enrichment (clusterProfiler: GO + KEGG, ORA + GSEA)
-# -----------------------------------------------------------------------------
 rule enrichment:
     input:
-        de    = P["de_results_rds"],
-        wgcna = P["wgcna_rds"],          # per-module enrichment reads module assignments
+        de_rds=P["de_results_rds"],
     output:
-        go         = P["enrichment_go_csv"],
-        kegg       = P["enrichment_kegg_csv"],
-        gsea_go    = P.get("gsea_go_csv",   os.path.join(P["tables_dir"], "gsea_go.tsv")),
-        gsea_kegg  = P.get("gsea_kegg_csv", os.path.join(P["tables_dir"], "gsea_kegg.tsv")),
-        per_module = P.get("enrichment_per_module_csv",
-                           os.path.join(P["tables_dir"], "enrichment_per_module.tsv")),
+        go=P["enrichment_go_csv"],
+        kegg=P["enrichment_kegg_csv"],
+        gsea_go=P["gsea_go_csv"],
+        gsea_kegg=P["gsea_kegg_csv"],
     log:
         os.path.join(LOG_DIR, "04_enrichment.log"),
     shell:
         "Rscript {SCRIPTS}/04_enrichment.R {CONFIG} > {log} 2>&1"
 
 
-# -----------------------------------------------------------------------------
-# 05 — Render the Quarto report to docs/index.html (GitHub Pages target)
-# -----------------------------------------------------------------------------
+rule module_enrichment:
+    input:
+        wgcna=P["wgcna_rds"],
+        modules=P["module_assignments_csv"],
+    output:
+        go=P["module_enrichment_go_csv"],
+        kegg=P["module_enrichment_kegg_csv"],
+        summary=P["module_annotation_summary_csv"],
+    log:
+        os.path.join(LOG_DIR, "05_module_enrichment.log"),
+    shell:
+        "Rscript {SCRIPTS}/05_module_enrichment.R {CONFIG} > {log} 2>&1"
+
+
+rule module_preservation:
+    input:
+        wgcna=P["wgcna_rds"],
+        counts=P["raw_counts"],
+        samples=P["sample_metadata"],
+    output:
+        table=P["module_preservation_tsv"],
+        rds=P["preservation_rds"],
+    log:
+        os.path.join(LOG_DIR, "06_module_preservation.log"),
+    shell:
+        "Rscript {SCRIPTS}/06_module_preservation.R {CONFIG} > {log} 2>&1"
+
+
+rule hub_genes:
+    input:
+        wgcna=P["wgcna_rds"],
+        de=P["de_results_csv"],
+        preservation=P["module_preservation_tsv"],
+        annotation=P["module_annotation_summary_csv"],
+    output:
+        ranked=P["hub_genes_ranked_csv"],
+        priority=P["hub_genes_priority_csv"],
+        rds=P["hub_rds"],
+    log:
+        os.path.join(LOG_DIR, "07_hub_genes.log"),
+    shell:
+        "Rscript {SCRIPTS}/07_hub_genes.R {CONFIG} > {log} 2>&1"
+
+
 rule render_report:
     input:
-        de_csv   = P["de_results_csv"],
-        modules  = P["module_assignments_csv"],
-        hubs     = P["hub_genes_csv"],
-        go       = P["enrichment_go_csv"],
-        kegg     = P["enrichment_kegg_csv"],
-        qmd      = P["report_qmd"],
+        de=P["de_results_csv"],
+        modules=P["module_assignments_csv"],
+        go=P["enrichment_go_csv"],
+        kegg=P["enrichment_kegg_csv"],
+        gsea_go=P["gsea_go_csv"],
+        gsea_kegg=P["gsea_kegg_csv"],
+        module_summary=P["module_annotation_summary_csv"],
+        preservation=P["module_preservation_tsv"],
+        ranked_hubs=P["hub_genes_ranked_csv"],
+        priority_hubs=P["hub_genes_priority_csv"],
+        qmd=P["report_qmd"],
     output:
-        html = P["report_html"],
+        html=P["report_html"],
     log:
-        os.path.join(LOG_DIR, "05_render_report.log"),
+        os.path.join(LOG_DIR, "08_render_report.log"),
     shell:
-        "Rscript {SCRIPTS}/05_render_report.R {CONFIG} > {log} 2>&1"
+        "Rscript {SCRIPTS}/08_render_report.R {CONFIG} > {log} 2>&1"
 
 
-# -----------------------------------------------------------------------------
-# Convenience targets
-# -----------------------------------------------------------------------------
 rule clean:
-    """Remove generated results but keep raw inputs and the committed example set."""
+    """Remove generated outputs, logs, and Snakemake state."""
     shell:
         r"""
         rm -rf results/rds results/tables results/figures \

@@ -1,2 +1,0 @@
-cancer	contrast	padj_threshold	log2fc_threshold	n_samples	n_genes_tested	n_significant	n_up	n_down
-BRCA	tumor vs normal	0.05	1	1207	18158	4823	2854	1969

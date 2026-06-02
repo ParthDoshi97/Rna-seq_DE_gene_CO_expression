@@ -1,0 +1,431 @@
+---
+title: "RNA-seq Differential Expression and WGCNA Report"
+subtitle: "DESeq2, enrichment, module preservation, and hub-gene summary"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+execute:
+  echo: false
+  warning: false
+  message: false
+params:
+  config_path: "../config/config.yaml"
+---
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(yaml)
+  library(knitr)
+})
+
+`%||%` <- function(a, b) if (is.null(a)) b else a
+
+cfg <- yaml::read_yaml(params$config_path)
+config_abs <- normalizePath(params$config_path, mustWork = TRUE)
+repo_root <- dirname(dirname(config_abs))
+
+is_abs_path <- function(path) {
+  grepl("^[A-Za-z]:[\\\\/]", path) || startsWith(path, "/")
+}
+
+repo_path <- function(path, must_work = FALSE) {
+  if (is.null(path) || is.na(path) || path == "") return(path)
+  full_path <- if (is_abs_path(path)) path else file.path(repo_root, path)
+  normalizePath(full_path, winslash = "/", mustWork = must_work)
+}
+
+repo_relative_path <- function(path) {
+  if (is.null(path) || is.na(path) || path == "") return(path)
+  full_path <- normalizePath(path, winslash = "/", mustWork = FALSE)
+  root_path <- normalizePath(repo_root, winslash = "/", mustWork = TRUE)
+  root_prefix <- paste0(root_path, "/")
+  if (startsWith(full_path, root_prefix)) {
+    substring(full_path, nchar(root_prefix) + 1)
+  } else {
+    full_path
+  }
+}
+
+path_or <- function(value, fallback) {
+  if (is.null(value)) fallback else value
+}
+
+read_tsv <- function(path) {
+  full_path <- repo_path(path)
+  if (!file.exists(full_path)) return(data.frame())
+  read.table(full_path, header = TRUE, sep = "\t", quote = "",
+             stringsAsFactors = FALSE, check.names = FALSE)
+}
+
+fmt_p <- function(x, digits = 2) {
+  x <- suppressWarnings(as.numeric(x))
+  out <- ifelse(is.na(x), "",
+                ifelse(x == 0, "<1e-300",
+                       formatC(x, format = "e", digits = digits)))
+  out
+}
+
+fmt_num <- function(x, digits = 2) {
+  x <- suppressWarnings(as.numeric(x))
+  ifelse(is.na(x), "", formatC(x, format = "f", digits = digits))
+}
+
+show_figures <- function(paths) {
+  paths <- vapply(paths, repo_path, character(1))
+  paths <- paths[file.exists(paths)]
+  if (length(paths) == 0) {
+    return(knitr::asis_output("_No figure file was found for this section._"))
+  }
+  knitr::include_graphics(paths)
+}
+
+show_table <- function(df, caption = NULL, digits = 3) {
+  if (is.null(df) || nrow(df) == 0) {
+    cat("_No table rows available._\n")
+    return(invisible(NULL))
+  }
+  knitr::kable(df, caption = caption, digits = digits, row.names = FALSE)
+}
+
+select_existing <- function(df, cols) {
+  cols <- cols[cols %in% colnames(df)]
+  df[, cols, drop = FALSE]
+}
+
+de_path <- path_or(cfg$paths$de_results_csv,
+                   file.path(cfg$paths$tables_dir, "de_results.tsv"))
+samples_path <- repo_path(cfg$paths$sample_metadata)
+modules_path <- path_or(cfg$paths$module_assignments_csv,
+                        file.path(cfg$paths$tables_dir,
+                                  "module_assignments.tsv"))
+go_path <- path_or(cfg$paths$enrichment_go_csv,
+                   file.path(cfg$paths$tables_dir, "enrichment_go.tsv"))
+kegg_path <- path_or(cfg$paths$enrichment_kegg_csv,
+                     file.path(cfg$paths$tables_dir, "enrichment_kegg.tsv"))
+gsea_go_path <- path_or(cfg$paths$gsea_go_csv,
+                        file.path(cfg$paths$tables_dir, "gsea_go.tsv"))
+gsea_kegg_path <- path_or(cfg$paths$gsea_kegg_csv,
+                          file.path(cfg$paths$tables_dir, "gsea_kegg.tsv"))
+module_ann_path <- path_or(cfg$paths$module_annotation_summary_csv,
+                           file.path(cfg$paths$tables_dir,
+                                     "module_annotation_summary.tsv"))
+preservation_path <- path_or(cfg$paths$module_preservation_tsv,
+                             file.path(cfg$paths$tables_dir,
+                                       "module_preservation.tsv"))
+hub_ranked_path <- path_or(cfg$paths$hub_genes_ranked_csv,
+                           file.path(cfg$paths$tables_dir,
+                                     "hub_genes_ranked.tsv"))
+hub_priority_path <- path_or(cfg$paths$hub_genes_priority_csv,
+                             file.path(cfg$paths$tables_dir,
+                                       "hub_genes_priority_modules.tsv"))
+
+de_path <- repo_path(de_path)
+modules_path <- repo_path(modules_path)
+go_path <- repo_path(go_path)
+kegg_path <- repo_path(kegg_path)
+gsea_go_path <- repo_path(gsea_go_path)
+gsea_kegg_path <- repo_path(gsea_kegg_path)
+module_ann_path <- repo_path(module_ann_path)
+preservation_path <- repo_path(preservation_path)
+hub_ranked_path <- repo_path(hub_ranked_path)
+hub_priority_path <- repo_path(hub_priority_path)
+
+de <- read_tsv(de_path)
+samples <- read_tsv(samples_path)
+modules <- read_tsv(modules_path)
+go_tbl <- read_tsv(go_path)
+kegg_tbl <- read_tsv(kegg_path)
+gsea_go_tbl <- read_tsv(gsea_go_path)
+gsea_kegg_tbl <- read_tsv(gsea_kegg_path)
+module_ann <- read_tsv(module_ann_path)
+preservation <- read_tsv(preservation_path)
+hub_ranked <- read_tsv(hub_ranked_path)
+hub_priority <- read_tsv(hub_priority_path)
+
+fig_dir <- repo_path(cfg$paths$figures_dir)
+```
+
+# Executive Summary
+
+This report summarizes the RNA-seq analysis pipeline for `r cfg$project$cancer %||% "the selected cohort"` (`r cfg$project$cancer_short %||% ""`). The analysis compares `r cfg$dataset$treatment_level %||% "treatment"` samples against `r cfg$dataset$reference_level %||% "reference"` samples, then uses WGCNA to find co-expression modules, annotate those modules, test preservation, and nominate hub-gene candidates.
+
+In simple terms, the report follows this flow:
+
+1. Differential expression asks which genes change between tumor and normal.
+2. Enrichment asks what biological processes those changed genes represent.
+3. WGCNA groups genes into modules that move together across samples.
+4. Module annotation gives each module a biological label.
+5. Preservation checks whether tumor modules are also present in normal tissue.
+6. Hub-gene ranking finds central genes inside important modules.
+
+```{r overview-table}
+de_sig <- if (nrow(de) > 0) {
+  !is.na(de$padj) &
+    de$padj < cfg$deseq2$padj_threshold &
+    abs(de$log2FoldChange) > cfg$deseq2$log2fc_threshold
+} else {
+  logical(0)
+}
+
+overview <- data.frame(
+  Metric = c(
+    "Samples",
+    "Genes tested for DE",
+    "Significant DE genes",
+    "WGCNA genes assigned to modules",
+    "Non-grey WGCNA modules",
+    "Modules with annotation rows",
+    "Modules with preservation calls",
+    "Ranked hub rows",
+    "Priority hub rows"
+  ),
+  Value = c(
+    nrow(samples),
+    nrow(de),
+    sum(de_sig, na.rm = TRUE),
+    nrow(modules),
+    length(setdiff(unique(modules$module), "grey")),
+    nrow(module_ann),
+    nrow(preservation),
+    nrow(hub_ranked),
+    nrow(hub_priority)
+  )
+)
+show_table(overview)
+```
+
+# Differential Expression
+
+The DESeq2 step estimates how much each gene changes between tumor and normal. `log2FoldChange` is the size of the change; positive values mean higher in tumor, and negative values mean lower in tumor. `padj` is the multiple-testing corrected p-value.
+
+```{r de-summary}
+if (nrow(de) > 0) {
+  up <- de_sig & de$log2FoldChange > cfg$deseq2$log2fc_threshold
+  down <- de_sig & de$log2FoldChange < -cfg$deseq2$log2fc_threshold
+  de_summary <- data.frame(
+    Direction = c("Up-regulated", "Down-regulated"),
+    Genes = c(sum(up, na.rm = TRUE), sum(down, na.rm = TRUE))
+  )
+  show_table(de_summary)
+} else {
+  cat("_DE results table was not found._\n")
+}
+```
+
+```{r de-top-table}
+if (nrow(de) > 0) {
+  top_de <- de[de_sig, , drop = FALSE]
+  top_de <- top_de[order(top_de$padj, -abs(top_de$log2FoldChange)),
+                   , drop = FALSE]
+  top_de <- head(top_de, 12)
+  top_de$log2FoldChange <- fmt_num(top_de$log2FoldChange)
+  top_de$padj <- fmt_p(top_de$padj)
+  show_table(select_existing(top_de,
+                             c("gene_symbol", "gene_id",
+                               "log2FoldChange", "padj")),
+             caption = "Top significant DE genes")
+}
+```
+
+```{r de-figures, out.width="32%"}
+show_figures(file.path(fig_dir,
+                       c("ma_plot.png", "volcano.png",
+                         "heatmap_top_de.png")))
+```
+
+# Functional Enrichment
+
+Over-representation analysis tests the significant up- and down-regulated gene lists. GSEA uses the full ranked gene list, so it can detect biology spread across many genes even when individual genes do not pass a hard cutoff.
+
+```{r enrichment-summary}
+enrich_summary <- data.frame(
+  Result = c("GO ORA rows", "KEGG ORA rows",
+             "GO GSEA rows", "KEGG GSEA rows"),
+  Rows = c(nrow(go_tbl), nrow(kegg_tbl),
+           nrow(gsea_go_tbl), nrow(gsea_kegg_tbl))
+)
+show_table(enrich_summary)
+```
+
+```{r enrichment-figures, out.width="49%"}
+show_figures(file.path(fig_dir,
+                       c("go_bp_up.png", "go_bp_down.png",
+                         "gsea_go_bp.png", "gsea_kegg.png")))
+```
+
+# WGCNA Co-expression Network
+
+WGCNA groups genes into modules based on similar expression patterns. A module is a color label, not a biological label by itself. The biological meaning comes from module-trait correlations and enrichment results.
+
+```{r module-size-table}
+if (nrow(modules) > 0 && "module" %in% colnames(modules)) {
+  module_sizes <- as.data.frame(sort(table(modules$module), decreasing = TRUE))
+  colnames(module_sizes) <- c("Module", "Genes")
+  show_table(head(module_sizes, 15), caption = "Largest WGCNA modules")
+}
+```
+
+```{r wgcna-figures, out.width="49%"}
+show_figures(file.path(fig_dir,
+                       c("wgcna_sample_tree.png",
+                         "wgcna_soft_threshold.png",
+                         "wgcna_dendrogram.png",
+                         "wgcna_module_trait.png")))
+```
+
+# Module Annotation
+
+This section translates color modules into biological themes. The `best_padj` column is the strongest adjusted p-value among the top GO terms for that module.
+
+```{r module-annotation-table}
+if (nrow(module_ann) > 0) {
+  module_ann_show <- module_ann
+  module_ann_show$best_padj <- fmt_p(module_ann_show$best_padj)
+  show_table(module_ann_show, caption = "Module annotation summary")
+} else {
+  cat("_Module annotation summary was not found._\n")
+}
+```
+
+```{r module-enrichment-gallery, out.width="32%"}
+module_figs <- file.path(fig_dir, "05_module_enrichment",
+                         paste0("enrichment_",
+                                c("turquoise", "brown", "blue",
+                                  "cyan", "greenyellow", "black"),
+                                ".png"))
+show_figures(module_figs)
+```
+
+# Module Preservation
+
+Module preservation compares the tumor network against normal samples. A high Z-summary means the module structure is preserved in normal tissue. A low Z-summary suggests tumor-specific network rewiring.
+
+```{r preservation-table}
+if (nrow(preservation) > 0) {
+  preservation_show <- preservation
+  if ("Zsummary" %in% colnames(preservation_show)) {
+    preservation_show$Zsummary <- fmt_num(preservation_show$Zsummary)
+  }
+  show_table(select_existing(preservation_show,
+                             c("module", "moduleSize",
+                               "Zsummary", "medianRank", "class")),
+             caption = "Module preservation calls")
+}
+```
+
+```{r preservation-figures, out.width="49%"}
+show_figures(file.path(fig_dir, "07_module_preservation",
+                       c("preservation_zsummary.png",
+                         "preservation_medianrank.png")))
+```
+
+# Hub-gene Candidates
+
+Hub genes are genes with high module membership (`kME`) inside their own module. The priority table keeps modules that are trait-associated, not preserved, or strongly enriched.
+
+```{r hub-summary}
+if (nrow(hub_priority) > 0) {
+  hub_summary <- aggregate(gene_id ~ module + priority_reason,
+                           data = hub_priority, FUN = length)
+  colnames(hub_summary) <- c("Module", "Priority reason", "Hub rows")
+  hub_summary <- hub_summary[order(hub_summary$Module), ]
+  show_table(hub_summary, caption = "Priority hub rows by module")
+}
+```
+
+```{r hub-table}
+if (nrow(hub_priority) > 0) {
+  hub_show <- hub_priority[order(hub_priority$module,
+                                 hub_priority$rank_in_module),
+                           , drop = FALSE]
+  hub_show <- head(hub_show, 30)
+  hub_show$kME <- fmt_num(hub_show$kME)
+  hub_show$log2FoldChange <- fmt_num(hub_show$log2FoldChange)
+  hub_show$padj <- fmt_p(hub_show$padj)
+  hub_show$enrichment_best_padj <- fmt_p(hub_show$enrichment_best_padj)
+  show_table(select_existing(hub_show,
+                             c("gene_symbol", "module", "kME",
+                               "rank_in_module", "log2FoldChange",
+                               "padj", "is_DE", "best_trait",
+                               "trait_cor", "preservation_class",
+                               "enrichment_best_padj",
+                               "priority_reason")),
+             caption = "First 30 priority hub-gene rows")
+}
+```
+
+## Greenyellow Module Spotlight
+
+The greenyellow module is preserved, but it is still biologically important because it has strong synaptic/neurotransmitter enrichment. In the hub-priority table this appears as `priority_reason = enriched`.
+
+```{r greenyellow-table}
+if (nrow(hub_priority) > 0) {
+  gy <- hub_priority[hub_priority$module == "greenyellow", , drop = FALSE]
+  if (nrow(gy) > 0) {
+    gy <- gy[order(gy$rank_in_module), , drop = FALSE]
+    gy$kME <- fmt_num(gy$kME)
+    gy$log2FoldChange <- fmt_num(gy$log2FoldChange)
+    gy$padj <- fmt_p(gy$padj)
+    gy$enrichment_best_padj <- fmt_p(gy$enrichment_best_padj)
+    show_table(select_existing(gy,
+                               c("gene_symbol", "kME",
+                                 "log2FoldChange", "padj",
+                                 "is_DE", "preservation_class",
+                                 "enrichment_best_padj",
+                                 "priority_reason")),
+               caption = "Greenyellow priority hub genes")
+  } else {
+    cat("_No greenyellow hub rows were present in the priority table._\n")
+  }
+}
+```
+
+```{r hub-figures, out.width="49%"}
+show_figures(c(
+  file.path(fig_dir, "hub_genes", "hubs_greenyellow.png"),
+  file.path(fig_dir, "hub_genes", "gs_vs_mm",
+            "gs_vs_mm_greenyellow_ER_status.png"),
+  file.path(fig_dir, "hub_genes", "hubs_turquoise.png"),
+  file.path(fig_dir, "hub_genes", "hubs_red.png")
+))
+```
+
+# Output Files
+
+The key machine-readable outputs are kept in `results/tables`, and the figures are kept in `results/figures`.
+
+```{r output-files}
+output_paths <- c(
+  de_path,
+  go_path,
+  kegg_path,
+  gsea_go_path,
+  gsea_kegg_path,
+  modules_path,
+  module_ann_path,
+  preservation_path,
+  hub_ranked_path,
+  hub_priority_path
+)
+
+outputs <- data.frame(
+  Output = c(
+    "DE results",
+    "GO enrichment",
+    "KEGG enrichment",
+    "GO GSEA",
+    "KEGG GSEA",
+    "Module assignments",
+    "Module annotation summary",
+    "Module preservation",
+    "Ranked hubs",
+    "Priority hubs"
+  ),
+  Path = vapply(output_paths, repo_relative_path, character(1)),
+  Status = ifelse(file.exists(output_paths), "found", "missing")
+)
+show_table(outputs)
+```

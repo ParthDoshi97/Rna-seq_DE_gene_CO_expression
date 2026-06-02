@@ -22,6 +22,14 @@ args <- commandArgs(trailingOnly = TRUE)
 config_path <- if (length(args) >= 1) args[[1]] else "../../config/config.yaml"
 cfg <- yaml::read_yaml(config_path)
 
+# All paths in config.yaml are relative to the repo root.
+# Resolve repo root from config file location and setwd so relative paths work
+# regardless of whether the script is run from workflow/scripts/ or repo root.
+config_abs <- normalizePath(config_path, mustWork = TRUE)
+repo_root  <- dirname(dirname(config_abs))   # <repo>/config/config.yaml -> <repo>
+setwd(repo_root)
+message("Working directory set to repo root: ", repo_root)
+
 set.seed(cfg$runtime$seed)
 WGCNA::allowWGCNAThreads(nThreads = cfg$runtime$threads)
 dir.create(cfg$paths$figures_dir, recursive = TRUE, showWarnings = FALSE)
