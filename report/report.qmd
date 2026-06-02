@@ -37,6 +37,18 @@ repo_path <- function(path, must_work = FALSE) {
   normalizePath(full_path, winslash = "/", mustWork = must_work)
 }
 
+repo_relative_path <- function(path) {
+  if (is.null(path) || is.na(path) || path == "") return(path)
+  full_path <- normalizePath(path, winslash = "/", mustWork = FALSE)
+  root_path <- normalizePath(repo_root, winslash = "/", mustWork = TRUE)
+  root_prefix <- paste0(root_path, "/")
+  if (startsWith(full_path, root_prefix)) {
+    substring(full_path, nchar(root_prefix) + 1)
+  } else {
+    full_path
+  }
+}
+
 path_or <- function(value, fallback) {
   if (is.null(value)) fallback else value
 }
@@ -75,7 +87,7 @@ show_table <- function(df, caption = NULL, digits = 3) {
     cat("_No table rows available._\n")
     return(invisible(NULL))
   }
-  knitr::kable(df, caption = caption, digits = digits)
+  knitr::kable(df, caption = caption, digits = digits, row.names = FALSE)
 }
 
 select_existing <- function(df, cols) {
@@ -386,6 +398,19 @@ show_figures(c(
 The key machine-readable outputs are kept in `results/tables`, and the figures are kept in `results/figures`.
 
 ```{r output-files}
+output_paths <- c(
+  de_path,
+  go_path,
+  kegg_path,
+  gsea_go_path,
+  gsea_kegg_path,
+  modules_path,
+  module_ann_path,
+  preservation_path,
+  hub_ranked_path,
+  hub_priority_path
+)
+
 outputs <- data.frame(
   Output = c(
     "DE results",
@@ -399,19 +424,8 @@ outputs <- data.frame(
     "Ranked hubs",
     "Priority hubs"
   ),
-  Path = c(
-    de_path,
-    go_path,
-    kegg_path,
-    gsea_go_path,
-    gsea_kegg_path,
-    modules_path,
-    module_ann_path,
-    preservation_path,
-    hub_ranked_path,
-    hub_priority_path
-  )
+  Path = vapply(output_paths, repo_relative_path, character(1)),
+  Status = ifelse(file.exists(output_paths), "found", "missing")
 )
-outputs$Status <- ifelse(file.exists(outputs$Path), "found", "missing")
 show_table(outputs)
 ```

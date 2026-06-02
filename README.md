@@ -1,4 +1,4 @@
-# TCGA-BRCA RNA-seq Differential Expression and WGCNA Portfolio Project
+# TCGA-BRCA RNA-seq Differential Expression and WGCNA Analysis Project
 
 This repository is an end-to-end bulk RNA-seq analysis of TCGA breast invasive
 carcinoma (BRCA) tumor and normal samples. The project combines DESeq2,
@@ -10,9 +10,9 @@ The biological question is:
 > Which tumor-associated expression programs and co-expression modules are
 > visible in TCGA-BRCA, and which hub genes best represent those programs?
 
-The repo is designed as a portfolio case study for bioinformatics analyst and
-computational biology roles. It emphasizes not only code that runs, but also
-data provenance, interpretation, reproducibility, and limitations.
+The repository is designed as a reproducible bioinformatics analysis that can
+be inspected, rerun, and adapted. It emphasizes not only code that runs, but
+also data provenance, interpretation, reproducibility, and limitations.
 
 ## Quick Links
 
@@ -116,8 +116,8 @@ environment.yml
 ```
 
 Large raw/intermediate data and generated result files are intentionally ignored
-by git. The rendered report in `docs/index.html` is the compact portfolio-facing
-artifact.
+by git. The rendered report in `docs/index.html` is the compact shareable
+analysis summary.
 
 ## Method Choices
 
@@ -145,10 +145,9 @@ artifact.
   purity, treatment history, or sequencing center.
 - Hub genes are candidates for interpretation, not proven drivers.
 
-## Why This Repo Is Portfolio-Relevant
+## Project Strengths
 
-This project is meant to show bioinformatics maturity rather than only tool
-usage:
+This project is structured to make the analysis easy to inspect and rerun:
 
 - clear biological question and public data source
 - numbered, reproducible scripts

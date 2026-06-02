@@ -6,7 +6,7 @@ session or from the command line.
 ## 1. Start From The Repo Root
 
 ```r
-setwd("C:/Users/user/Desktop/Portfolio_Project/Rna-seq_DE_gene_CO_expression")
+setwd("path/to/Rna-seq_DE_gene_CO_expression")
 ```
 
 The main configuration file is:
@@ -109,5 +109,4 @@ preservation:
   n_permutations: 50
 ```
 
-For final portfolio results, keep the configured value higher.
-
+For final analysis results, keep the configured value higher.
